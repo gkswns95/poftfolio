@@ -54,8 +54,8 @@
     top: 0;
     left: 100%;
     margin-left: 24px;
-    width: 360px;
-    /* Increased further to ensure better flow */
+    width: 400px;
+    /* Increased to 400px for optimal layout */
     pointer-events: none;
     display: flex;
     flex-direction: column;
