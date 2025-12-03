@@ -12,14 +12,14 @@
 
 #experience .timeline-icon {
     flex-shrink: 0;
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
     border-radius: 16px;
-    padding: 16px;
+    padding: 20px;
 }
 
 #experience .timeline-icon img {
