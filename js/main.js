@@ -86,16 +86,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Close Viewer (Back Button in UI)
+    // Close Viewer (Back Button in UI) - Always go to Home
     if (backBtn) {
         backBtn.addEventListener('click', () => {
-            // Go back in history (which triggers popstate)
-            if (history.state) {
-                history.back();
-            } else {
-                // Fallback if opened directly (though unlikely in this flow)
-                closeViewer();
-            }
+            closeViewer();
+            // Reset URL to root (remove hash) so it looks like Home
+            // We use pushState to add a "Home" entry, so browser Back button works as expected (returns to previous section)
+            history.pushState(null, '', window.location.pathname);
         });
     }
 
