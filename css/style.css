@@ -15,42 +15,42 @@ body {
     height: 100vh;
     z-index: 0;
     overflow: hidden;
-    background: #F8FAFC;
+    background: linear-gradient(135deg, #FFF5EB 0%, #FFE4D6 50%, #FFF0E5 100%);
 }
 
 .blob {
     position: absolute;
     border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.6;
-    animation: float-blob 20s infinite ease-in-out alternate;
+    filter: blur(100px);
+    opacity: 0.4;
+    animation: float-blob 25s infinite ease-in-out alternate;
 }
 
 .blob-1 {
-    top: -10%;
+    top: -15%;
     left: -10%;
-    width: 50vw;
-    height: 50vw;
-    background: radial-gradient(circle, var(--primary-light) 0%, rgba(255, 255, 255, 0) 70%);
+    width: 55vw;
+    height: 55vw;
+    background: radial-gradient(circle, #FFB088 0%, rgba(255, 176, 136, 0) 70%);
     animation-delay: 0s;
 }
 
 .blob-2 {
-    bottom: -10%;
+    bottom: -15%;
     right: -10%;
-    width: 40vw;
-    height: 40vw;
-    background: radial-gradient(circle, var(--accent-light) 0%, rgba(255, 255, 255, 0) 70%);
-    animation-delay: -5s;
+    width: 45vw;
+    height: 45vw;
+    background: radial-gradient(circle, #FFA07A 0%, rgba(255, 160, 122, 0) 70%);
+    animation-delay: -8s;
 }
 
 .blob-3 {
-    top: 40%;
-    left: 40%;
-    width: 30vw;
-    height: 30vw;
-    background: radial-gradient(circle, #E0F2FE 0%, rgba(255, 255, 255, 0) 70%);
-    animation-delay: -10s;
+    top: 35%;
+    right: 15%;
+    width: 35vw;
+    height: 35vw;
+    background: radial-gradient(circle, #FFDAB9 0%, rgba(255, 218, 185, 0) 70%);
+    animation-delay: -15s;
 }
 
 .grid-overlay {
@@ -60,28 +60,67 @@ body {
     width: 100%;
     height: 100%;
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
-    background-size: 40px 40px;
+        radial-gradient(circle, rgba(139, 69, 19, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
     z-index: 1;
     pointer-events: none;
 }
 
+/* Decorative floating elements */
+.grid-overlay::before,
+.grid-overlay::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(210, 105, 30, 0.15);
+    animation: float-ring 20s infinite ease-in-out;
+}
+
+.grid-overlay::before {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    right: 5%;
+    animation-delay: -5s;
+}
+
+.grid-overlay::after {
+    width: 200px;
+    height: 200px;
+    bottom: 15%;
+    left: 8%;
+    animation-delay: -12s;
+}
+
 @keyframes float-blob {
     0% {
-        transform: translate(0, 0) scale(1);
+        transform: translate(0, 0) scale(1) rotate(0deg);
     }
 
     33% {
-        transform: translate(30px, -50px) scale(1.1);
+        transform: translate(40px, -60px) scale(1.1) rotate(120deg);
     }
 
     66% {
-        transform: translate(-20px, 20px) scale(0.9);
+        transform: translate(-30px, 30px) scale(0.9) rotate(240deg);
     }
 
     100% {
+        transform: translate(0, 0) scale(1) rotate(360deg);
+    }
+}
+
+@keyframes float-ring {
+
+    0%,
+    100% {
         transform: translate(0, 0) scale(1);
+        opacity: 0.15;
+    }
+
+    50% {
+        transform: translate(20px, -30px) scale(1.2);
+        opacity: 0.25;
     }
 }
 
@@ -144,7 +183,7 @@ body {
 .hero-card {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+    background: linear-gradient(135deg, #FFFAF5 0%, #FFF4E6 100%);
     cursor: default;
     padding: 40px;
 }
