@@ -1,0 +1,42 @@
+/* Experience Section Styles */
+#experience .timeline-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+#experience .timeline-text-content {
+    flex: 1;
+}
+
+#experience .timeline-icon {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
+    border-radius: 16px;
+    padding: 16px;
+}
+
+#experience .timeline-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #experience .timeline-content {
+        flex-direction: column;
+    }
+
+    #experience .timeline-icon {
+        width: 100px;
+        height: 100px;
+        align-self: center;
+    }
+}
