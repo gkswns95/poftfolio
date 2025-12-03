@@ -11,7 +11,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/variables.css">
@@ -206,16 +207,31 @@
                 <div class="container">
                     <h2 class="section-title">About Me</h2>
 
-                    <!-- Introduction -->
-                    <div class="intro-section">
-                        <h3 class="intro-heading">Introduce.</h3>
-                        <p class="intro-text">
-                            Hi, I am an AI researcher passionate about solving various practical challenges encountered
-                            when deploying AI models in real-world settings. I've been working at the Korea Electronics
-                            Technology Institute (KETI), focusing on designing multimodal fusion frameworks that perform
-                            robustly under incomplete and noisy data. I received a B.S. and an M.S. in Computer and
-                            Communication Engineering from Kangwon National University, advised by Prof. Sang-Ki Ko.
-                        </p>
+                    <!-- Profile and Introduction -->
+                    <div class="about-header">
+                        <!-- Profile Image -->
+                        <div class="profile-section">
+                            <div class="profile-image-box">
+                                <img src="images/profile_placeholder.png" alt="Han-Jun Choi" class="profile-img"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                <div class="fallback-avatar">HC</div>
+                            </div>
+                        </div>
+
+                        <!-- Introduction -->
+                        <div class="intro-section">
+                            <h3 class="intro-heading">Introduce.</h3>
+                            <div class="intro-callout">
+                                <p class="intro-text">
+                                    Hi, I am an AI researcher passionate about solving various practical challenges
+                                    encountered when deploying AI models in real-world settings. I've been working at
+                                    the Korea Electronics Technology Institute (KETI), focusing on designing multimodal
+                                    fusion frameworks that perform robustly under incomplete and noisy data. I received
+                                    a B.S. and an M.S. in Computer and Communication Engineering from Kangwon National
+                                    University, advised by Prof. Sang-Ki Ko.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- News Timeline -->
@@ -224,8 +240,10 @@
 
                         <div class="timeline-container">
                             <!-- 2025 -->
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="CIKM Paper">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">CIKM Paper</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2025.08</span>
                                     <p class="timeline-text">
@@ -237,8 +255,10 @@
                                 </div>
                             </div>
 
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="Best Paper Award">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">Best Paper Award</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2025.06</span>
                                     <p class="timeline-text">
@@ -249,8 +269,10 @@
                                 </div>
                             </div>
 
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="ECML PKDD Paper">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">ECML PKDD Paper</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2025.05</span>
                                     <p class="timeline-text">
@@ -262,8 +284,10 @@
                             </div>
 
                             <!-- 2024 -->
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="HCLT Paper">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">HCLT Paper</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2024.09</span>
                                     <p class="timeline-text">
@@ -273,8 +297,10 @@
                                 </div>
                             </div>
 
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="KCTP Publication">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">KCTP Publication</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2024.02</span>
                                     <p class="timeline-text">
@@ -284,8 +310,10 @@
                                 </div>
                             </div>
 
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="Joined KETI">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">Joined KETI</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2024.01</span>
                                     <p class="timeline-text">
@@ -296,8 +324,10 @@
                             </div>
 
                             <!-- 2023 -->
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="KCC Award">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">KCC Award</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2023.06</span>
                                     <p class="timeline-text">
@@ -308,8 +338,10 @@
                                 </div>
                             </div>
 
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="First KDD Paper">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">First KDD Paper</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2023.05</span>
                                     <p class="timeline-text">
@@ -322,8 +354,10 @@
                             </div>
 
                             <!-- 2022 -->
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="KSC Paper">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">KSC Paper</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2022.12</span>
                                     <p class="timeline-text">
@@ -333,8 +367,10 @@
                                 </div>
                             </div>
 
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="KCC Paper">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">KCC Paper</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2022.06</span>
                                     <p class="timeline-text">
@@ -344,8 +380,10 @@
                                 </div>
                             </div>
 
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="ICTC Paper">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">ICTC Paper</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2022.02</span>
                                     <p class="timeline-text">
@@ -356,8 +394,10 @@
                             </div>
 
                             <!-- 2021 -->
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="KSC Award">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">KSC Award</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2021.12</span>
                                     <p class="timeline-text">
@@ -368,8 +408,10 @@
                                 </div>
                             </div>
 
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
+                            <div class="timeline-item" data-keyword="First Paper">
+                                <div class="timeline-marker">
+                                    <span class="timeline-tooltip">First Paper</span>
+                                </div>
                                 <div class="timeline-content">
                                     <span class="timeline-date">2021.06</span>
                                     <p class="timeline-text">
