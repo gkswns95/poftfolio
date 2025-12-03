@@ -14,13 +14,11 @@
     align-items: flex-start;
     gap: 24px;
     position: relative;
-    /* Allow keywords to show outside the card */
     overflow: visible;
 }
 
 #experience .timeline-text-content {
     flex: 1;
-    /* Limit text width to ensure space for larger icon */
     max-width: calc(100% - 260px);
     z-index: 10;
     position: relative;
@@ -29,9 +27,7 @@
 #experience .timeline-icon {
     flex-shrink: 0;
     width: 240px;
-    /* Increased size */
     height: 240px;
-    /* Increased size */
     min-width: 240px;
     display: flex;
     align-items: center;
@@ -52,25 +48,29 @@
     display: block;
 }
 
-/* Keyword Container - Positioned OUTSIDE the card to the right */
+/* Keyword Container */
 .experience-keywords {
     position: absolute;
     top: 0;
     left: 100%;
-    /* Start at the right edge of the card */
     margin-left: 24px;
-    /* Gap between card and keywords */
-    width: 240px;
-    /* Fixed width for the keyword column */
+    width: 280px;
+    /* Increased width slightly for better layout */
     pointer-events: none;
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    /* Start from top */
-    justify-content: flex-start;
-    /* Align left */
-    gap: 8px;
+    flex-direction: column;
+    /* Stack groups vertically */
+    gap: 12px;
+    /* Gap between groups */
     z-index: 5;
+}
+
+/* Keyword Groups */
+.keyword-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-content: flex-start;
 }
 
 /* Keyword Tags (Bubbles) */
@@ -86,7 +86,6 @@
     /* Initial State */
     opacity: 0;
     transform: translateX(-20px) scale(0.8);
-    /* Slide in from left */
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
@@ -113,9 +112,7 @@
 /* Frameworks Style - Green */
 .keyword-tag.framework {
     background: #ECFDF5;
-    /* Light Green */
     color: #059669;
-    /* Emerald 600 */
     border: 1px solid rgba(5, 150, 105, 0.2);
 }
 
@@ -145,75 +142,23 @@
     animation: float-bubble 3.5s ease-in-out infinite 0.5s;
 }
 
-/* Staggered transition delays for appearance */
-.keyword-tag:nth-child(1) {
-    transition-delay: 0.03s;
+/* Staggered transition delays - simplified to apply generally */
+.keyword-group:nth-child(1) .keyword-tag {
+    transition-delay: 0.05s;
 }
 
-.keyword-tag:nth-child(2) {
-    transition-delay: 0.06s;
-}
-
-.keyword-tag:nth-child(3) {
-    transition-delay: 0.09s;
-}
-
-.keyword-tag:nth-child(4) {
-    transition-delay: 0.12s;
-}
-
-.keyword-tag:nth-child(5) {
+.keyword-group:nth-child(2) .keyword-tag {
     transition-delay: 0.15s;
 }
 
-.keyword-tag:nth-child(6) {
-    transition-delay: 0.18s;
-}
-
-.keyword-tag:nth-child(7) {
-    transition-delay: 0.21s;
-}
-
-.keyword-tag:nth-child(8) {
-    transition-delay: 0.24s;
-}
-
-.keyword-tag:nth-child(9) {
-    transition-delay: 0.27s;
-}
-
-.keyword-tag:nth-child(10) {
-    transition-delay: 0.30s;
-}
-
-.keyword-tag:nth-child(11) {
-    transition-delay: 0.33s;
-}
-
-.keyword-tag:nth-child(12) {
-    transition-delay: 0.36s;
-}
-
-.keyword-tag:nth-child(13) {
-    transition-delay: 0.39s;
-}
-
-.keyword-tag:nth-child(14) {
-    transition-delay: 0.42s;
-}
-
-.keyword-tag:nth-child(15) {
-    transition-delay: 0.45s;
+.keyword-group:nth-child(3) .keyword-tag {
+    transition-delay: 0.25s;
 }
 
 /* Responsive */
 @media (max-width: 1200px) {
-
-    /* On smaller screens where right margin isn't enough, 
-       move keywords below the card or adjust layout */
     .experience-keywords {
         display: none;
-        /* Hide on smaller screens to prevent overflow */
     }
 }
 
@@ -233,7 +178,4 @@
         min-width: 120px;
         align-self: flex-start;
     }
-
-    /* On mobile, we might want to show them below if needed, 
-       but for now keeping consistent with hiding complex hover effects */
 }
