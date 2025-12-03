@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const navCards = document.querySelectorAll('.nav-card');
     const viewSections = document.querySelectorAll('.view-section');
     const navItems = document.querySelectorAll('.nav-item');
-    const currentTitle = document.querySelector('.current-section-title');
 
     // Navigation Mapping
     const sectionTitles = {
@@ -33,9 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     item.classList.remove('active');
                 }
             });
-
-            // Update Title
-            currentTitle.textContent = sectionTitles[targetId] || 'Profile';
 
             // Show Viewer
             contentViewer.classList.add('active');
