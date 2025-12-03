@@ -1,7 +1,7 @@
 /* Experience Section Styles */
 #experience .timeline {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 #experience .timeline-item {
@@ -42,7 +42,7 @@
     #experience .timeline-content {
         flex-direction: column;
     }
-    
+
     #experience .timeline-icon {
         width: 100px;
         height: 100px;
