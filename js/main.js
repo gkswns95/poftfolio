@@ -14,42 +14,86 @@ document.addEventListener('DOMContentLoaded', () => {
         'awards': 'Awards'
     };
 
-    // Open Section
+    // Function to open a section
+    function openSection(targetId) {
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            // Hide all sections first
+            viewSections.forEach(sec => sec.classList.remove('active'));
+
+            // Show target section
+            targetSection.classList.add('active');
+
+            // Update Title
+            currentTitle.textContent = sectionTitles[targetId] || 'Profile';
+
+            // Show Viewer
+            contentViewer.classList.add('active');
+
+            // Scroll to top of viewer
+            contentViewer.scrollTop = 0;
+        }
+    }
+
+    // Function to close the viewer
+    function closeViewer() {
+        contentViewer.classList.remove('active');
+        // Clear active sections after transition (optional, but good for clean state)
+        setTimeout(() => {
+            viewSections.forEach(sec => sec.classList.remove('active'));
+        }, 500);
+    }
+
+    // Open Section on Card Click
     navCards.forEach(card => {
         card.addEventListener('click', () => {
             const targetId = card.getAttribute('data-target');
-            const targetSection = document.getElementById(targetId);
 
-            if (targetSection) {
-                // Hide all sections first
-                viewSections.forEach(sec => sec.classList.remove('active'));
+            // Push state to history
+            history.pushState({ section: targetId }, '', `#${targetId}`);
 
-                // Show target section
-                targetSection.classList.add('active');
-
-                // Update Title
-                currentTitle.textContent = sectionTitles[targetId] || 'Profile';
-
-                // Show Viewer
-                contentViewer.classList.add('active');
-
-                // Scroll to top of viewer
-                contentViewer.scrollTop = 0;
-            }
+            openSection(targetId);
         });
     });
 
-    // Close Viewer (Back to Dashboard)
+    // Handle Browser Back Button (Popstate)
+    window.addEventListener('popstate', (event) => {
+        if (event.state && event.state.section) {
+            // If there is a state (e.g., forward navigation), open it
+            openSection(event.state.section);
+        } else {
+            // If no state (back to root), close viewer
+            closeViewer();
+        }
+    });
+
+    // Close Viewer (Back Button in UI)
     if (backBtn) {
         backBtn.addEventListener('click', () => {
-            contentViewer.classList.remove('active');
+            // Go back in history (which triggers popstate)
+            if (history.state) {
+                history.back();
+            } else {
+                // Fallback if opened directly (though unlikely in this flow)
+                closeViewer();
+            }
         });
     }
 
     // Close on Escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && contentViewer.classList.contains('active')) {
-            contentViewer.classList.remove('active');
+            if (history.state) {
+                history.back();
+            } else {
+                closeViewer();
+            }
         }
     });
+
+    // Handle initial load with hash (e.g., refreshing on #about)
+    const initialHash = window.location.hash.substring(1);
+    if (initialHash && sectionTitles[initialHash]) {
+        openSection(initialHash);
+    }
 });
