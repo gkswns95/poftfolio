@@ -48,14 +48,14 @@
     display: block;
 }
 
-/* Keyword Container */
+/* Keyword Container - Positioned OUTSIDE the card to the right */
 .experience-keywords {
     position: absolute;
     top: 0;
     left: 100%;
     margin-left: 24px;
-    width: 280px;
-    /* Increased width slightly for better layout */
+    width: 320px;
+    /* Increased width to accommodate longer keywords */
     pointer-events: none;
     display: flex;
     flex-direction: column;
