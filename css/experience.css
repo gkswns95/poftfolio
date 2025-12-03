@@ -54,8 +54,8 @@
     top: 0;
     left: 100%;
     margin-left: 24px;
-    width: 320px;
-    /* Increased width to accommodate longer keywords */
+    width: 360px;
+    /* Increased further to ensure better flow */
     pointer-events: none;
     display: flex;
     flex-direction: column;
