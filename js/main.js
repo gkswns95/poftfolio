@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const backBtn = document.getElementById('back-btn');
     const navCards = document.querySelectorAll('.nav-card');
     const viewSections = document.querySelectorAll('.view-section');
+    const navItems = document.querySelectorAll('.nav-item');
     const currentTitle = document.querySelector('.current-section-title');
 
     // Navigation Mapping
@@ -24,6 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
             // Show target section
             targetSection.classList.add('active');
 
+            // Update Menu Active State
+            navItems.forEach(item => {
+                if (item.getAttribute('data-target') === targetId) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
             // Update Title
             currentTitle.textContent = sectionTitles[targetId] || 'Profile';
 
@@ -41,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clear active sections after transition (optional, but good for clean state)
         setTimeout(() => {
             viewSections.forEach(sec => sec.classList.remove('active'));
+            navItems.forEach(item => item.classList.remove('active'));
         }, 500);
     }
 
@@ -48,6 +59,18 @@ document.addEventListener('DOMContentLoaded', () => {
     navCards.forEach(card => {
         card.addEventListener('click', () => {
             const targetId = card.getAttribute('data-target');
+
+            // Push state to history
+            history.pushState({ section: targetId }, '', `#${targetId}`);
+
+            openSection(targetId);
+        });
+    });
+
+    // Open Section on Menu Click (Inside Viewer)
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const targetId = item.getAttribute('data-target');
 
             // Push state to history
             history.pushState({ section: targetId }, '', `#${targetId}`);
