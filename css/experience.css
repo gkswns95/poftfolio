@@ -1,4 +1,13 @@
 /* Experience Section Styles */
+#experience .timeline {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#experience .timeline-item {
+    padding-left: 0;
+}
+
 #experience .timeline-content {
     display: flex;
     justify-content: space-between;
@@ -33,7 +42,7 @@
     #experience .timeline-content {
         flex-direction: column;
     }
-
+    
     #experience .timeline-icon {
         width: 100px;
         height: 100px;
