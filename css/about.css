@@ -1,0 +1,188 @@
+/* ===================================
+   ABOUT SECTION STYLES
+   =================================== */
+
+/* Introduction Section */
+.intro-section {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgba(37, 99, 235, 0.1);
+}
+
+.intro-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0 0 24px;
+    position: relative;
+    display: inline-block;
+}
+
+.intro-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary) 0%, transparent 100%);
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    max-width: 900px;
+}
+
+/* News Section */
+.news-section {
+    margin-top: 60px;
+}
+
+.news-heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0 0 40px;
+}
+
+/* Timeline Container */
+.timeline-container {
+    position: relative;
+    padding-left: 40px;
+}
+
+/* Timeline vertical line */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    bottom: 8px;
+    width: 3px;
+    background: linear-gradient(180deg,
+            var(--primary-light) 0%,
+            var(--primary) 50%,
+            var(--accent) 100%);
+    border-radius: 2px;
+}
+
+/* Timeline Item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 32px;
+    padding-left: 32px;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.timeline-item:hover .timeline-marker {
+    transform: scale(1.3);
+    background: var(--primary);
+    box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.1);
+}
+
+/* Timeline Marker (dot) */
+.timeline-marker {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 4px solid var(--primary);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+/* Timeline Content */
+.timeline-content {
+    background: white;
+    padding: 20px 24px;
+    border-radius: 12px;
+    border-left: 3px solid var(--primary-light);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.12);
+    transform: translateX(4px);
+    border-left-color: var(--primary);
+}
+
+.timeline-date {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--primary);
+    background: rgba(37, 99, 235, 0.08);
+    padding: 4px 12px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+.timeline-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.timeline-text strong {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.timeline-text .highlight {
+    color: var(--primary);
+    font-weight: 700;
+    background: rgba(37, 99, 235, 0.08);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.timeline-text .award {
+    color: #D97706;
+    font-weight: 700;
+    background: rgba(217, 119, 6, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .timeline-container {
+        padding-left: 30px;
+    }
+
+    .timeline-item {
+        padding-left: 24px;
+    }
+
+    .intro-heading {
+        font-size: 1.5rem;
+    }
+
+    .news-heading {
+        font-size: 1.4rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+}
