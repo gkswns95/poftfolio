@@ -1,0 +1,1050 @@
+AI Researcher
+
+실용적 가치를 추구하는 AI 연구자
+
+최한준
+010-8704-4603
+hanjun_c@naver.com
+
+CONTENTS
+
+1. INTRODUCE
+2. WORK EXPERIENCE
+3. RESEARCH PAPERS
+4. KEY PAPER 소개-1
+5. KEY PAPER 소개-2
+6. KEY PAPER #1 발표자료
+7. 추천서
+
+INTRODUCE
+AI Researcher, Data Scientist
+
+최한준
+
+About Me.
+인공지능 기술을 통해 현실 세계의 문제를 해결하고
+사회적 가치 창출에 기여하고자 하는 AI 연구자입니다.
+
+연구실 환경을 넘어 실제 산업 현장에서 활용 가능한
+실용적인 AI 기술 연구/개발에 관심을 갖고 있습니다.
+
+Research Interests.
+ü Multimodal Sentiment Analysis
+ü Time series Analysis
+Channel
+LinkedIn
+Google Site
+GitHub
+Notion
+
+ü Multi-agent Trajectory Prediction & Imputation
+ü Industrial Anomaly Detection
+ü Recommender System
+
+INTRODUCE
+
+WORK EXPERIENCES.
+
+RESEARCH EXPERIENCES.
+
+AWARDS.
+
+멀티모달 데이터 기반 감정 분석 연구
+
+ü Multimodal Sentiment Analysis (MSA)
+
+[2025.06] 최우수 논문상 수상 🏆
+
+AI 연구원 | 한국전자기술연구원(KETI) · 연구원
+
+•
+
+멀티모달(영상, 음성, 텍스트) 데이터 전처리 파이프라인 구축
+
+2024년 1월 – 현재
+
+•
+
+결측·노이즈 입력에 강건한 멀티모달 융합 모델 설계
+
+•
+
+인간과 AI간 자연스러운 공감 대화를 위한 모델링 및 연구 담당
+
+•
+
+멀티모달 감성 데이터셋 전처리 알고리즘 구축 (SW 프로그램 등록)
+
+•
+
+노이즈 데이터에 강건한 멀티모달 융합 모델 개발 (SW 프로그램 등록)
+
+•
+
+[HIBM 2025] 논문 게재, Oral presentation, 최우수 논문상 수상 🏆
+
+•
+
+[HCLT 2024] 논문 게재, Oral presentation
+
+•
+•
+
+ü Multi-agent Trajectory (Prediction, Imputation, Tracking)
+
+발행: 한국방송미디어공학회(KIBME)
+
+[2023.06] 우수발표 논문상 수상 🏆
+발행: 한국컴퓨터종합학술대회(KCC)
+
+[2021.12] 우수 논문상 수상 🏆
+발행: 한국소프트웨어종합학술대회(KSC)
+
+•
+
+축구 선수의 이동 궤적 및 행동 패턴 기반 공 궤적 예측
+
+•
+
+객체 간 상호작용과 물리적 특성을 고려한 결측 궤적 보간
+
+•
+
+딥러닝 기반 다중 객체 궤적 추적 알고리즘
+
+ü Time Series Analysis (Classification, Imputation, etc.)
+
+EDUCATION.
+Kangwon National University (M.S)
+전공: 컴퓨터정보통신공학과, 학점: 4.38 / 4.5
+
+Kangwon National University (B.S)
+•
+
+IMU 센서 데이터 기반 운동 분류 및 횟수 카운트 연구
+
+2024, 2025 ICT 기술산업화 페스티벌 홍보 부스 운영
+
+•
+
+시공간 데이터 전처리 및 시각화 툴 개발
+
+최신 인공지능 논문 세미나 발표 4회
+
+•
+
+풍속 시계열 데이터 기반 결측치 보간 연구
+
+•
+
+딥러닝 기반 보간 기법의 최적의 학습 데이터 생성 기법 연구
+
+전공: 컴퓨터정보통신공학과, 학점: 3.88 / 4.5
+
+RESEARCH PAPERS
+*: Equal Contribution, 🏆: Award, 📍: Key Paper
+
+1. Imputing Multi-Agent Trajectories from Event and Snapshot Data in Soccer
+Geonhee Jo, Miru Hong, Han-Jun Choi, Pascal Bauer and Sang-Ki Ko
+
+[CIKM] · 2025년 8월 5일 | BK21 최우수 국제 학술대회
+
+📍 2. Trajectory Imputation in Multi-Agent Sports with Derivative-Accumulating Self-Ensemble
+Han-Jun Choi *, Hyunsung Kim *, Minho Lee, Minchul Jeong, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
+[ECML PKDD] · 2025년 6월 20일 | BK21 우수 국제 학술대회
+
+3. Multimodal Sentiment Analysis under Incomplete Modalities with Missing Text Localization and Confidence Aware Fusion
+Han-Jun Choi , Byunggill Joe, Jin Yea Jang | 최우수 논문상 수상
+[KIBME] · 2025년 5월 26일
+
+🏆
+
+4. Analysis of Missing Modality Problems with Korean Multimodal Sentiment Data
+Han-Jun Choi, Saim Shin, Jin Yea Jang
+[HCLT 2024] · 2024년 10월 12일
+
+5. Transformer-Based Multi-Agent Trajectory Imputation Model using Permutation Equivariance
+Han-Jun Choi, Park Hyun Woo, Sang-Ki Ko
+[KTCP 2024] · 2024년 2월 1일
+
+📍 6. Ball trajectory inference from Multi-Agent Sports Contexts Using Set Transformer and Hierarchical Bi-LSTM
+Hyunsung Kim, Han-Jun Choi, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
+
+[KDD 2023] · 2023년 8월 8일 | BK21. 최우수 국제 학술대회
+
+RESEARCH PAPERS
+*: Equal Contribution, 🏆: Award, 📍: Key Paper
+
+7. Deep-learning-based Multi-Agent Trajectory Imputation
+Han-Jun Choi, Park Hyun Woo, Sang-Ki Ko / 우수발표 논문상 수상
+
+🏆
+
+[KCC 2022] · 2022년 6월 30일
+
+8. Comparison Study of Deep Learning-based Spatiotemporal Data Imputation Algorithms
+Park Hyun Woo, Han-Jun Choi, Sang-Ki Ko
+
+[KSC 2022] · 2022년 6월 30일
+
+9. Deep learning-based workout classification and repetition counting using IMU sensor data
+Han-Jun Choi, Min Gi Jeon, Su-Hyeon Kim, Sang-Ki Ko, Hak-Gyun Jeong
+[ITCT 2022] · 2022년 2월 9일
+
+10. Optimal Data Generation Strategy for Training RNN-based Time-series Data Imputation Models
+Han-Jun Choi, Park Hyun Woo, Sang-Ki Ko
+[KSC 2022] · 2022년 1월 19일
+
+11. Deep learning-based coordinate tracking algorithm for automated soccer video analysis
+Han-Jun choi, Hyun-Woo Park, Hyun-Sung Kim, Dong-Wook Chung, Jinsung Yoon, and Sang-Ki ko
+[KSC 2021] · 2021년 12월 20일 / 우수 논문상 수상
+
+🏆
+
+12. Deep learning-based time-series wind speed data imputation algorithm using temperature data
+Han-Jun Choi, Sang-Ki Ko, and Jongyeon Lim
+[KSC 2021] · 2021년 6월 23일
+
+KEY PAPER #1
+Trajectory Imputation in Multi-Agent Sports with Derivative-Accumulating Self-Ensemble
+Han-Jun Choi *, Hyunsung Kim *, Minho Lee, Minchul Jeong, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
+[ECML PKDD] · 2025년 6월 20일/ [Paper] [Code] [Poster]
+
+[연구 요약 및 핵심 기여]
+주요 목표
+축구, 농구, 미식 축구 등 다중 객체 환경에서 취득된 시공간 데이터의
+결측 궤적 문제를 해결하기 위한 딥러닝 프레임워크 구현
+
+핵심 기여
+1. 입력 데이터의 순열 동변성을 고려한 위치 보간 신경망 제안 (1차 예측)
+2. 속도, 가속도 누적 기반 위치 예측 알고리즘 제안 (2차 예측)
+
+3. 결측 길이/상황에 따른 1&2차 위치 예측 동적 융합 신경망 제안
+
+담당 역할
+•
+
+축구, 농구, 미식 축구 등 시공간 데이터 전처리 알고리즘 구축
+
+•
+
+속도, 가속도 기반 위치 예측 모델 설계 및 구현
+
+•
+
+위치 예측값 동적 융합 모델 설계 및 구현
+
+•
+
+Baseline model 구현 및 전반적인 실험 및 결과 분석
+
+•
+
+논문 작성 및 학회 발표
+
+성과
+•
+
+ECML PKDD 2025 게재(Oral presentation)
+
+-1-
+
+KEY PAPER #1
+Trajectory Imputation in Multi-Agent Sports with Derivative-Accumulating Self-Ensemble
+Han-Jun Choi *, Hyunsung Kim *, Minho Lee, Minchul Jeong, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
+[ECML PKDD] · 2025년 6월 20일/ [Paper] [Code] [Poster]
+
+[연구 배경]
+Multi-Agent 시공간 데이터의 결측 궤적 문제
+예시) 기기 오류, 객체 인식 실패, 스포츠 중계 카메라 밖의 선수 등
+
+•
+
+일부 궤적이 없는 데이터로는 downstream task 수행 불가
+
+•
+
+결측된 궤적을 그럴듯한 값으로 보간(Imputation)하는 것이 중요
+
+Ø 딥러닝 기반의 보간 기법들이 활발히 연구되는 추세
+기존 연구의 한계점
+1. 비현실적인 궤적 예측 문제
+
+•
+
+현실 궤적의 생체역학적 제약(예: 속도, 가속도 등) 고려 부족
+
+•
+
+실제와 다른 부자연스럽고 비현실적인 궤적을 생성하는 결과 초래
+
+2. 집합 데이터의 순열 동변성(Permutation-equivariant) 고려 부족
+
+•
+
+취득된 데이터의 선수 순서가 고정되어 있지 않음
+예시) Seq 1: [A선수, B선수, …], Seq 2: [B선수, A선수, ...]
+
+•
+
+[카메라 밖의 선수들이 결측된 상황 예시]
+
+모든 입력 순서를 학습해야 할 경우 => 학습 복잡도 급격히 증가
+
+[보간 예시(Close-up
+view)]
+
+예시) 축구의 경우 최대 22! 조합을 학습해야 함
+
+Ø 입력 순서에 관계없이 일관된 출력 보장할 수 있고 생체역학적으로
+현실적인 궤적을 예측할 수 있는 모델 구조 필요
+
+-2-
+
+KEY PAPER #1
+Trajectory Imputation in Multi-Agent Sports with Derivative-Accumulating Self-Ensemble
+Han-Jun Choi *, Hyunsung Kim *, Minho Lee, Minchul Jeong, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
+[ECML PKDD] · 2025년 6월 20일/ [Paper] [Code] [Poster]
+
+[제안 방법]
+Core neural network: 신경망 기반 궤적 보간 모델 (1차 궤적 예측)
+•
+
+순열 동변성 고려를 위한 SetTransformer + Bi-LSTM 구조의 모델 활용
+
+•
+
+관측 궤적 정보 기반 결측 궤적의 1차 위치·속도·가속도 정보 예측
+
+Derivative accumulation: 속도·가속도 기반 궤적 예측 (2차 궤적 예측)
+•
+
+속도·가속도의 물리적 관계식 기반 2차 결측 위치 정보 예측
+
+=> 결측 구간에 대해 1차 속도·가속도 예측값 누적
+
+Weighted ensemble: 예측 궤적 동적 융합 모델 (최종 궤적 예측)
+•
+
+1차 궤적 예측 & 2차 궤적 예측 단점 보완
+- 1차 궤적 예측: Fluctuation & Physical-inconsistency 문제
+- 2차 궤적 에측: Error Compounding 문제
+
+•
+
+결측 구간 길이/상황에 따라 1차·2차 궤적 예측값을 최적의 가중치로 융합
+
+[제안하는 프레임워크 구조]
+
+-3-
+
+KEY PAPER #1
+Trajectory Imputation in Multi-Agent Sports with Derivative-Accumulating Self-Ensemble
+Han-Jun Choi *, Hyunsung Kim *, Minho Lee, Minchul Jeong, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
+[ECML PKDD] · 2025년 6월 20일/ [Paper] [Code] [Poster]
+
+[실험 결과]
+실험 셋팅
+•
+
+Uniform, Agent-wise, Camera 등 다양한 결측 시나리오에 대한 성능 비교
+- Uniform: 모든 선수가 동시에 결측된 상황
+– Agent-wise: 선수별로 독립적으로 결측된 상황
+- Camera: 카메라 밖의 선수들을 결측치로 가정한 상황
+
+•
+
+평가 지표
+- Position Error (PE): 실제 위치와 예측 위치 간 평균 유클리드 거리 오차
+– Step Change Error (SCE): 실제 속도 변화량과 예측 속도 변화량 간 평균 오차
+
+•
+
+데이터셋
+- Soccer, Basketball, American Football 세 개의 팀 스포츠 데이터 사용
+
+[메인 실험 결과]
+
+정량적 실험 결과 비교
+ü
+
+SOTA 기록 달성: 위치 정확도 및 궤적의 현실성 개선
+- 보간 위치 정확도(PE): 기존 SOTA 대비 최대 25.6% 성능 향상
+- 보간 현실성 정확도(SCE): 기존 SOTA 대비 약 76% 성능 향상
+
+ü
+
+데이터 효율성 개선: 제한된 데이터로 우수한 성능 확보
+
+(a) Ground Truth
+
+(b) Linear Interpolation
+
+(c) NRTSI
+
+(d) CSDI
+
+(e) ImputeFormer
+
+(c) MIDAS (ours)
+
+- 소량의 데이터만 있는 Soccer 데이터에 대해서도 일관성 있는 성능 확인
+- 학습 복잡도 개선을 위한 SetTransformer 모델 배치의 타당성 입증
+
+정성적 실험 결과 비교
+ü
+
+물리적 일관성을 갖춘 자연스러운 궤적 예측
+- 위치 정확도, 현실성 측면에서 정답 궤적과 가장 비슷하게 예측함을 확인
+
+-4-
+
+[보간 결과 비교]
+
+KEY PAPER #1
+Trajectory Imputation in Multi-Agent Sports with Derivative-Accumulating Self-Ensemble
+Han-Jun Choi *, Hyunsung Kim *, Minho Lee, Minchul Jeong, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
+[ECML PKDD] · 2025년 6월 20일/ [Paper] [Code] [Poster]
+
+[현실 세계 문제 적용 실험]
+Physical Statistics
+•
+
+플레이어의 총 이동 거리와 스프린트 횟수를 얼마나 정확히 복원할 수 있는지 평가
+- 총 이동 거리: 선수가 경기 동안 이동한 거리의 총합
+- 스프린트: 일정 속도(6m/s) 이상으로 빠르게 달린 수
+
+Pass Success Probability
+
+[Real world application 적용 예시 1]
+
+보간된 선수 위치 기반 Pitch Control (패스 성공 확률 맵) 생성 정확도 비교
+- Pitch Control: 특정 위치로 패스할 때 어느 팀이 공을 점유할 가능성이 있는지에 대한 확률
+
+ü
+
+Ground Truth
+- 블루팀이 좌우 공간에서 높은 점유 확률을 지님
+
+ü
+
+CSDI / ImputeFormer
+- 선수 위치 예측 오류 (예시: 오프사이드 위치로 잘못 예측)
+- 중요한 지역에서의 패스 성공 확률 과대 또는 과소 추정
+
+ü MIDAS (Proposed framework)
+
+(a) Ground Truth
+
+(b) CSDI
+
+(e) ImputeFormer
+
+(c) MIDAS (ours)
+
+- 실제 선수 움직임을 보다 정확히 복원
+- 실제 경기 상황을 잘 반영한 패스 성공 확률 맵 생성
+
+-5-
+
+[Real world application 적용 예시 2]
+
+KEY PAPER #2
+Ball trajectory inference from Multi-Agent Sports Contexts Using Set Transformer and Hierarchical Bi-LSTM
+Hyunsung Kim *, Han-Jun Choi, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
+[KDD 2023] · 2023년 8월 8일 / [Paper] [Code] [Poster]
+
+[연구 요약 및 핵심 기여]
+주요 목표
+축구 경기에서 공의 궤적을 취득하기 어려운 문제를 해결하기 위한 딥러닝 프레임워크 구현
+
+핵심 기여
+1. 계층적 구조의 공 궤적 추론 프레임워크
+2. 공의 물리적인 특성을 반영한 손실 함수
+
+3. 현실성 있는 궤적 추론을 위한 후처리 알고리즘 제안
+
+담당 역할
+•
+
+축구 데이터 전처리 알고리즘 구축
+
+•
+
+계층적 구조의 공 궤적 추론 방법론 제안
+
+•
+
+전반적인 실험 및 결과 분석
+
+•
+
+시각화 애니메이션 툴 구현
+
+•
+
+논문 작성 도움
+
+성과
+•
+
+KDD 2023 게재 (oral presentation)
+
+-1-
+
+KEY PAPER #2
+Ball trajectory inference from Multi-Agent Sports Contexts Using Set Transformer and Hierarchical Bi-LSTM
+Hyunsung Kim *, Han-Jun Choi, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
+[KDD 2023] · 2023년 8월 8일 / [Paper] [Code] [Poster]
+
+[연구 배경]
+스포츠 데이터에서 공 궤적 취득 문제
+•
+
+AI 발전으로 인해 스포츠 분석 분야에서 자동화 기술을 적용하려는 관심 증가
+예시) 자동 중계 시스템, 패스 자동 주석 시스템 등
+
+•
+
+모델 학습을 위해 고품질 데이터(High-quality data) 수집이 필수적이나, 실제 경기 중
+연속적인 이동 데이터의 자동 수집이 어려운 실정
+
+•
+
+특히, 작고 빠르게 움직이는 공을 정확히 추적하는 것은 매우 어려운 작업
+
+Ø 정확한 공의 궤적을 취득하는 방법 필요
+기존 연구의 한계점
+•
+
+기존 공 궤적 취득 방법으로는 GPS 기반, Video 기반의 방법론 존재
+- GPS 기반: 공 안에 IMU 센서를 삽입 => 센서 고장, 고비용 문제
+- Video 기반: 경기 중계 영상으로부터 객체 인식(Object detection), 객체
+추적(Object Tracking) 시스템 활용 => Occlusion, Miss detection 문제
+
+[공 궤적 취득이 어려운 이유]
+
+-2-
+
+KEY PAPER #2
+Ball trajectory inference from Multi-Agent Sports Contexts Using Set Transformer and Hierarchical Bi-LSTM
+Hyunsung Kim *, Han-Jun Choi, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
+[KDD 2023] · 2023년 8월 8일 / [Paper] [Code] [Poster]
+
+[제안 방법]
+선수 궤적을 활용한 공 궤적 추론 방법
+•
+
+공에 비해 선수의 궤적은 상대적으로 취득하기 쉬운 데이터
+공에 비해 비교적 큰 객체, 선수를 특정할 수 있는 유니폼 정보가 있기 때문
+
+•
+
+선수의 이동 궤적 정보를 기반으로 공의 위치를 추론하는 방법 제안
+1. Hierarchical Neural Network
+2. Rule-Based Postprocessing
+
+1. 계층적 구조의 인공 신경망(Hierarchical Neural Network)
+•
+
+스포츠 경기의 domain-specific knowledge 학습 => 공 위치 추론
+- Step 1: 선수별 공 소유권 확률 예측(Classification task)
+- Step 2: 공 위치 추론(Regression task)
+
+2. 룰 기반 후처리 알고리즘(Rule-Based Postprocessing)
+•
+
+신경망 기반 공 위치 예측은 정확하지만, 물리적 특성을 따르지 않는 경우 존재
+예시) 공이 패스되는 도중 급격히 방향을 바꾸는 문제 등
+
+•
+
+공의 위치 변화는 선수에 의해 컨트롤 되는 경우에만 발생하도록 후처리 수행
+
+[제안 프레임워크 개요]
+
+- 공 소유 확률과 예측된 공 위치를 기반으로 터치/비터치 상황을 구분
+- 터치하지 않은 구간은 패스로 간주하고 선형 보간하여 자연스럽게 연결
+
+-3-
+
+KEY PAPER #2
+Ball trajectory inference from Multi-Agent Sports Contexts Using Set Transformer and Hierarchical Bi-LSTM
+Hyunsung Kim *, Han-Jun Choi, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
+[KDD 2023] · 2023년 8월 8일 / [Paper] [Code] [Poster]
+
+[실험 결과]
+실험 셋팅
+•
+
+비교 모델
+- VRNN, Transformer, LSTM: 비계층 구조 기반 모델
+– H-Transformer, H-LSTM: 계층(Hierarchical) 기반 모델
+
+•
+
+평가 지표
+- Position Error (PE): 실제 위치와 예측 위치 간 평균 거리 오차
+- Reality Loss (RL): 공이 부자연스럽게 방향을 바꾸는 정도
+- Player/Team Possession Accuracy (PPA/TPA): 선수/팀 소유 예측 정확도
+
+•
+
+데이터셋
+- GPS/비디오 기반 축구 경기 데이터 (Fitogether + Metrica)
+
+정량적 실험 결과
+ü 계층적 구조(Hierarchical structure) 도입 효과
+- H-계열 모델이 비계층 모델 대비 모든 평가지표에서 성능 개선됨을 확인
+- 공 소유 예측을 학습하는 것이 궤적 예측 성능 향상에 기여할 수 있음을 확인
+
+ü Transformer vs LSTM
+- H-LSTM이 H-Transformer 대비 PE 및 RL에서 모두 우수
+
+[메인 실험 결과]
+
+- 공 궤적 예측 문제에서는 recurrence 기반 모델인 LSTM이 효과적임
+
+ü 후처리(Postprocessing) 효과 입증
+- PE는 약간 증가하지만, 물리적 일관성 및 이벤트 인식 정확도 확보
+
+-4-
+
+KEY PAPER #2
+Ball trajectory inference from Multi-Agent Sports Contexts Using Set Transformer and Hierarchical Bi-LSTM
+Hyunsung Kim *, Han-Jun Choi, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
+[KDD 2023] · 2023년 8월 8일 / [Paper] [Code] [Poster]
+
+[현실 세계 문제 적용 실험]
+축구 경기 자동 분석(Automatic Match Broadcasting)
+•
+
+예측된 공 위치를 중심으로 카메라를 이동하여 경기 자동 중계 정확도 확인
+
+•
+
+실제 공 위치(빨간색 점)와 비교했을 때, 추정 정확도가 높은 것을 확인
+
+•
+
+300x300 영역 기준, 약 80% 이상의 정확도로 공을 화면 중앙에 포착
+
+팀 소유권 기반 러닝 지표 분석 정확도
+•
+
+공 소유 팀(공격/수비 상황)을 추정, 선수들의 이동 거리 및 고강도 러
+
+[축구 경기 자동 분석 예시]
+
+닝 거리 정확도 비교
+•
+
+총 이동 거리 및 고강도 러닝 지표 모두에서 우수한 성능 확인
+
+•
+
+특히, 공격 상황에서 고강도 러닝 거리 추정 오차를 60% 이상 감소
+
+Ø 현실 세계의 다양한 문제에 적용할 수 있음을 확인
+
+[러닝 지표 분석 정확도 비교]
+-5-
+
+KEY PAPER #1 발표자료
+
+Trajectory Imputation in Multi-Agent Sports with Derivative
+Accumulating Self-Ensemble
+Han-Jun Choi1*, Hyunsung Kim2,3*, Minho Lee4, Minchul Jeong5,
+Changjo Kim3, Jinsung Yoon3, and Sang-Ki Ko6
+
+1. KETI
+Seongnam, South Korea
+
+2. KAIST
+Daejeon, South Korea
+
+3. Fitogether Inc.
+Seoul, South Korea
+
+4. Saarland University
+Saarbrücken, Germany
+
+5. Weflo Inc.
+Seoul, South Korea
+
+6. University of Seoul
+Seoul, South Korea
+
+*Equal contribution
+
+Background: Sports Player Tracking
+§ Collected from wearable sensors or computer vision systems
+§ Contain missing values for various reasons (e.g., out-of-camera view, occlusion, etc.)
+§ Many downstream tasks require complete tracking data
+
+Wearable tracking
+
+(usually via GPS/IMU sensors)
+
+Optical tracking
+
+(usually via cameras and CV
+techniques)
+
+19
+
+Background: Sports Trajectory ImputaDon
+§ Goal: Impute missing player trajectories in mul;-agent sports
+§ Challenges compared to general ?me-series imputa?on
+• Dynamic inter-player rela?onships
+• Biomechanical constraints (e.g., limited speed and accelera?on)
+• Data scarcity in real-world sports due to conﬁden?ality and cost
+
+20
+
+Proposed Framework: MIDAS
+MIDAS: Multi-agent Imputer with Derivative-Accumulating Self-ensemble
+§ Initial prediction of position, velocity, and acceleration using Set Transformer and Bi-LSTM
+§ Alternative predictions by forward/backward accumulation of velocity and acceleration values
+§ Weighted ensemble of the initial prediction and alternative predictions
+
+Lee et al., Set Transformer: A framework for attention-based permutation-invariant neural networks. ICML 2019.
+Hochreither and Schmidhuber. Long short-term memory. Neural Computation 9(8), 1997.
+
+21
+
+Neural Network-Based IniDal PredicDon (IP)
+§ Set Transformer encoder for permutation-equivariant player embeddings
+§ Bi-LSTM for player-wise temporal modeling
+§ Joint prediction of position, velocity, and acceleration for each time step:
+",$ ",$ ",$ ",$ ",$ ",$
+$",$
+!!",$ , 𝐚! ",$
+𝐱! !",$ = 𝐩
+= (𝑝̂!,%
+, 𝑝̂!,& , 𝑣!!,% , 𝑣!!,& , 𝑎!!,% , 𝑎!!,& )
+! ,𝐯
+!
+Observed
+
+Missing
+
+Input trajectories
+
+𝐳!"
+
+𝐳!(
+
+$',$
+!!',$ , 𝐚!',$
+𝐩
+! ,𝐯
+!
+
+Bi-LSTM
+$",$
+𝐩
+!
+Bi-LSTM
+
+𝐯!!",$
+𝐚! ",$
+!
+
+…
+
+…
+
+𝐱!(
+
+𝐳!'
+…
+
+…
+
+𝐱!"
+
+Set Transformer
+
+𝐱'!
+
+Initial prediction
+
+Player embeddings
+
+Bi-LSTM
+
+Lee et al., Set Transformer: A framework for aWenXon-based permutaXon-invariant neural networks. ICML 2019.
+Hochreither and Schmidhuber. Long short-term memory. Neural ComputaXon 9(8), 1997.
+
+$(,$
+𝐩
+!!(,$ , 𝐚! (,$
+! ,𝐯
+!
+22
+
+Derivative-Accumulating Predictions (DAP)
+§ Physical rela?onships between posi?on, velocity, and accelera?on:
+"
+𝐩"!)' ≈ 𝐩"! + 𝐯!)'
+Δ𝑡 ≈ 𝐩"! + (𝐯!" + 𝐚"! Δ𝑡)Δ𝑡
+
+§ Ini?al predic?on does not enforce this rela?onships.
+$",,
+$",§ For each missing interval (𝑡* , 𝑡+ ), the model produces alterna?ve predic?ons 𝐩
+! by
+! and 𝐩
+accumula;ng velocity and accelera;on values on the posi;on at either observed endpoint.
+"
+$",,
+𝐩
+!! = 𝐩!! ,
+
+",,
+",$
+",$
+$",,
+$
+!
+!
+𝐩
+≈
+𝐩
++
+𝐯
++
+𝐚
+!
+! Δ𝑡 Δ𝑡 𝑡* < 𝑡 < 𝑡+
+!)'
+!
+
+"
+$",𝐩
+!" = 𝐩!" ,
+
+$",$",!!",$ − 𝐚! ",$
+𝐩
+!.' ≈ 𝐩
+! − 𝐯
+! Δ𝑡 Δ𝑡 (𝑡* < 𝑡 < 𝑡+ )
+
+Forward DAP
+
+𝑡*
+$",,
+𝐩
+!
+𝐯!!",$ Δ𝑡
+𝐚! ",$
+! Δ𝑡
+
+Input trajectory
+
+𝐩"!
++ + +
+
+𝑡*
+
+(Observed)
+
+𝑡+
+(Missing)
+
+Forward DAP
+
++ +
+
+𝐩$#!
+
+Backward DAP
+
+𝑡+
+
+(Observed)
+
+𝑘
+
+-
+
+-
+
+-
+
+𝐩$#"
+
+Backward DAP
+
+-
+
+-
+
+$",𝐩
+!
+𝐯!!",$ Δ𝑡
+
+𝐚! ",$
+! Δ𝑡
+
+23
+
+Dynamic Ensemble of Multiple Predictions
+§ Trade-oﬀ between IP and DAP
+• IP does not enforce rela?onships between physical quan??es and thus lacks stability.
+• DAP suﬀers from error compounding problem, especially for long missing intervals.
+§ Dynamic ensemble by learnable weights to mix IP and forward/backward DAPs:
+",, ",,
+$"! = 𝜆",$
+$",$
+$! + 𝜆",$",𝐩
+! 𝐩
+! + 𝜆! 𝐩
+! 𝐩
+!
+Observed
+
+Imputed
+
+Initial prediction
+
+Backward DAP
+
+𝑡*
+
+𝑡*
+$",,
+𝐩
+!
+
+Bi-LSTM
+
+$",𝐩
+!
+
+𝑡+
+Ensemble
+
+Output trajectory
+
+$"!
+𝐩
+
+𝜆",$
+!
+
+𝑡+
+Softmax
+
+Forward DAP
+
+$",$
+𝐩
+!
+
+𝑡*
+
+",,
+
+1
+
+𝜆!
+
+0.5
+
+𝜆",!
+
+0
+
+Ensemble weights
+
+𝑡+
+
+24
+
+Experiments
+§ Datasets
+
+§ Missing Scenarios
+
+• Soccer: 3 matches provided by Metrica Sports
+
+• Uniform: Same missing interval for all players
+
+• Basketball: 100 NBA matches provided by
+SportsVU
+
+• Agent-wise: Different missing intervals per player
+• Camera: Players outside camera view are missing
+
+• American football: Preprocessed NFL sequences
+released with a Kaggle competition
+
+Soccer
+
+Basketball
+
+Observed
+
+Uniform missing
+
+Agent-wise missing
+
+Missing
+
+Broadcasting camera
+25
+
+Experiments
+§ Results
+
+26
+
+ApplicaDons
+§ Es;ma;ng physical metrics
+
+§ Estimating pass success probability maps (Pitch Control)
+
+Ground truth
+
+CSDI
+
+ImputeFormer
+
+MIDAS (ours)
+
+27
+
+Conclusions
+§ Main contribu4ons
+• Imputa?on framework that exploits physical rela?onships
+• Experiments on various missing scenarios and datasets
+• Demonstra?ng applicability to real-world applica?ons
+
+§ Future work
+• Adap?ng MIDAS to other domains
+• Developing metrics for quan?ta?ve evalua?on in real-world applica?ons
+• Applying MIDAS to downstream tasks in an end-to-end manner
+
+28
+
+Trajectory Imputation in Multi-Agent Sports with Derivative
+Accumulating Self-Ensemble
+
+Thank you for listening!
+Contact informa?on
+Han-Jun Choi (co-ﬁrst author): hanjun_c@keI.re.ke
+Hyunsung Kim (co-ﬁrst author): hyunsung.kim@kaist.ac.kr
+Sang-Ki Ko (corresponding): sangkiko@uos.ac.kr
+
+함께 일한 동료들의 추천서
+
+Letter of Recommendation # 1
+
+Letter of Recommendation # 2
+
+Letter of Recommendation # 3
+
+E.O.D
+
+
