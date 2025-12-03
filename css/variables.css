@@ -1,23 +1,23 @@
 :root {
-    /* Colors - Warm Cozy Theme */
-    --bg-body: #FFF5EB;
+    /* Colors - Cool Blue Theme */
+    --bg-body: #F8F9FA;
     --bg-surface: #FFFFFF;
-    --bg-surface-alt: #FFF0E5;
+    --bg-surface-alt: #F1F5F9;
 
-    --text-main: #3E2723;
-    --text-secondary: #5D4037;
-    --text-muted: #8D6E63;
+    --text-main: #1E293B;
+    --text-secondary: #475569;
+    --text-muted: #94A3B8;
 
-    --primary: #D2691E;
-    /* Chocolate/Warm Orange */
-    --primary-dark: #A0522D;
-    --primary-light: #F4A460;
+    --primary: #2563EB;
+    /* Royal Blue */
+    --primary-dark: #1D4ED8;
+    --primary-light: #60A5FA;
 
-    --accent: #CD853F;
-    /* Peru/Warm Tan */
-    --accent-light: #DEB887;
+    --accent: #7C3AED;
+    /* Soft Purple */
+    --accent-light: #A78BFA;
 
-    --gradient-primary: linear-gradient(135deg, #D2691E 0%, #CD853F 100%);
+    --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
 
     /* Spacing */
     --container-width: 1200px;
@@ -29,10 +29,10 @@
     --radius-lg: 24px;
 
     /* Shadows */
-    --shadow-sm: 0 1px 3px rgba(62, 39, 35, 0.08);
-    --shadow-md: 0 4px 6px -1px rgba(62, 39, 35, 0.08), 0 2px 4px -1px rgba(62, 39, 35, 0.05);
-    --shadow-lg: 0 10px 15px -3px rgba(62, 39, 35, 0.1), 0 4px 6px -2px rgba(62, 39, 35, 0.05);
-    --shadow-glow: 0 0 20px rgba(210, 105, 30, 0.2);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+    --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.15);
 }
 
 html {

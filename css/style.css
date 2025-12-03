@@ -15,14 +15,14 @@ body {
     height: 100vh;
     z-index: 0;
     overflow: hidden;
-    background: linear-gradient(135deg, #FFF5EB 0%, #FFE4D6 50%, #FFF0E5 100%);
+    background: #F8FAFC;
 }
 
 .blob {
     position: absolute;
     border-radius: 50%;
     filter: blur(100px);
-    opacity: 0.4;
+    opacity: 0.35;
     animation: float-blob 25s infinite ease-in-out alternate;
 }
 
@@ -31,7 +31,7 @@ body {
     left: -10%;
     width: 55vw;
     height: 55vw;
-    background: radial-gradient(circle, #FFB088 0%, rgba(255, 176, 136, 0) 70%);
+    background: radial-gradient(circle, var(--primary-light) 0%, rgba(96, 165, 250, 0) 70%);
     animation-delay: 0s;
 }
 
@@ -40,7 +40,7 @@ body {
     right: -10%;
     width: 45vw;
     height: 45vw;
-    background: radial-gradient(circle, #FFA07A 0%, rgba(255, 160, 122, 0) 70%);
+    background: radial-gradient(circle, var(--accent-light) 0%, rgba(167, 139, 250, 0) 70%);
     animation-delay: -8s;
 }
 
@@ -49,7 +49,7 @@ body {
     right: 15%;
     width: 35vw;
     height: 35vw;
-    background: radial-gradient(circle, #FFDAB9 0%, rgba(255, 218, 185, 0) 70%);
+    background: radial-gradient(circle, #E0F2FE 0%, rgba(224, 242, 254, 0) 70%);
     animation-delay: -15s;
 }
 
@@ -60,7 +60,7 @@ body {
     width: 100%;
     height: 100%;
     background-image:
-        radial-gradient(circle, rgba(139, 69, 19, 0.03) 1px, transparent 1px);
+        radial-gradient(circle, rgba(37, 99, 235, 0.02) 1px, transparent 1px);
     background-size: 50px 50px;
     z-index: 1;
     pointer-events: none;
@@ -72,7 +72,7 @@ body {
     content: '';
     position: absolute;
     border-radius: 50%;
-    border: 2px solid rgba(210, 105, 30, 0.15);
+    border: 2px solid rgba(37, 99, 235, 0.12);
     animation: float-ring 20s infinite ease-in-out;
 }
 
@@ -115,12 +115,12 @@ body {
     0%,
     100% {
         transform: translate(0, 0) scale(1);
-        opacity: 0.15;
+        opacity: 0.12;
     }
 
     50% {
         transform: translate(20px, -30px) scale(1.2);
-        opacity: 0.25;
+        opacity: 0.2;
     }
 }
 
@@ -183,7 +183,7 @@ body {
 .hero-card {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    background: linear-gradient(135deg, #FFFAF5 0%, #FFF4E6 100%);
+    background: #FFFFFF;
     cursor: default;
     padding: 40px;
 }
