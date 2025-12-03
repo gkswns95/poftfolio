@@ -1,28 +1,55 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Portfolio loaded');
+    const dashboard = document.getElementById('dashboard');
+    const contentViewer = document.getElementById('content-viewer');
+    const backBtn = document.getElementById('back-btn');
+    const navCards = document.querySelectorAll('.nav-card');
+    const viewSections = document.querySelectorAll('.view-section');
+    const currentTitle = document.querySelector('.current-section-title');
 
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-                // Close mobile menu if open
-                document.querySelector('.nav-links').classList.remove('active');
+    // Navigation Mapping
+    const sectionTitles = {
+        'about': 'About Me',
+        'experience': 'Experience',
+        'papers': 'Publications',
+        'awards': 'Awards'
+    };
+
+    // Open Section
+    navCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const targetId = card.getAttribute('data-target');
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                // Hide all sections first
+                viewSections.forEach(sec => sec.classList.remove('active'));
+
+                // Show target section
+                targetSection.classList.add('active');
+
+                // Update Title
+                currentTitle.textContent = sectionTitles[targetId] || 'Profile';
+
+                // Show Viewer
+                contentViewer.classList.add('active');
+
+                // Scroll to top of viewer
+                contentViewer.scrollTop = 0;
             }
         });
     });
 
-    // Mobile Menu Toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (hamburger) {
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+    // Close Viewer (Back to Dashboard)
+    if (backBtn) {
+        backBtn.addEventListener('click', () => {
+            contentViewer.classList.remove('active');
         });
     }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && contentViewer.classList.contains('active')) {
+            contentViewer.classList.remove('active');
+        }
+    });
 });
