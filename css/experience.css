@@ -14,55 +14,36 @@
     align-items: flex-start;
     gap: 24px;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
 }
 
 #experience .timeline-text-content {
     flex: 1;
-    max-width: calc(100% - 260px);
+    max-width: 55%;
     z-index: 10;
     position: relative;
 }
 
-#experience .timeline-icon {
-    flex-shrink: 0;
-    width: 240px;
-    height: 240px;
-    min-width: 240px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
-    border-radius: 16px;
-    padding: 20px;
-    z-index: 10;
-    position: relative;
-    overflow: hidden;
-    box-sizing: border-box;
-}
 
-#experience .timeline-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
 
-/* Keyword Container - Positioned OUTSIDE the card to the right */
+/* Keyword Container - Positioned INSIDE the card on the right */
 .experience-keywords {
     position: absolute;
-    top: 0;
-    left: 100%;
-    margin-left: 24px;
-    width: 400px;
-    /* Increased to 400px for optimal layout */
-    pointer-events: none;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    width: 250px;
+    max-width: 40%;
     display: flex;
     flex-direction: column;
-    /* Stack groups vertically */
-    gap: 12px;
-    /* Gap between groups */
+    gap: 8px;
     z-index: 5;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+#experience .timeline-content:hover .experience-keywords {
+    opacity: 1;
 }
 
 /* Keyword Groups */
@@ -82,18 +63,10 @@
     white-space: nowrap;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     background: white;
-
-    /* Initial State */
-    opacity: 0;
-    transform: translateX(-20px) scale(0.8);
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* Show keywords on hover */
-#experience .timeline-content:hover .keyword-tag {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-}
+/* Show keywords on hover - already handled by parent opacity */
 
 /* Tech Stack Style - Blue */
 .keyword-tag.tech {
@@ -170,12 +143,5 @@
 
     #experience .timeline-text-content {
         max-width: 100%;
-    }
-
-    #experience .timeline-icon {
-        width: 120px;
-        height: 120px;
-        min-width: 120px;
-        align-self: flex-start;
     }
 }

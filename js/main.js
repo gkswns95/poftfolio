@@ -112,4 +112,69 @@ document.addEventListener('DOMContentLoaded', () => {
     if (initialHash && sectionTitles[initialHash]) {
         openSection(initialHash);
     }
+
+    // Award Medal Celebration Animation with Cooldown
+    const awardBadges = document.querySelectorAll('.award-badge');
+    const cooldownTime = 10000; // 10 seconds
+    const lastCelebrationTime = new Map();
+
+    console.log('Award badges found:', awardBadges.length);
+
+    awardBadges.forEach((badge, index) => {
+        badge.addEventListener('mouseenter', () => {
+            console.log('Mouse entered badge', index);
+            const now = Date.now();
+            const lastTime = lastCelebrationTime.get(index) || 0;
+
+            // Check if cooldown has passed
+            if (now - lastTime >= cooldownTime) {
+                console.log('Triggering celebration for badge', index);
+                // Add celebrating class
+                badge.classList.add('celebrating');
+
+                // Create confetti particles
+                createConfetti(badge);
+
+                // Update last celebration time
+                lastCelebrationTime.set(index, now);
+
+                // Remove class after animation completes
+                setTimeout(() => {
+                    badge.classList.remove('celebrating');
+                }, 1500);
+            } else {
+                console.log('Cooldown active for badge', index, 'Time remaining:', (cooldownTime - (now - lastTime)) / 1000, 'seconds');
+            }
+        });
+    });
+
+    // Function to create confetti particles
+    function createConfetti(badge) {
+        const colors = ['#FFD700', '#FF6B6B', '#4ECDC4', '#95E1D3', '#F38181', '#AA96DA', '#FFA500', '#FF1493'];
+        const particleCount = 16; // Doubled for more dramatic effect
+
+        for (let i = 0; i < particleCount; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'confetti-particle';
+
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            const angle = (360 / particleCount) * i;
+            const distance = 60 + Math.random() * 30;
+
+            const x = Math.cos(angle * Math.PI / 180) * distance;
+            const y = Math.sin(angle * Math.PI / 180) * distance;
+
+            particle.style.setProperty('--x', `${x}px`);
+            particle.style.setProperty('--y', `${y}px`);
+            particle.style.background = color;
+            particle.style.animationDelay = `${i * 0.05}s`; // Staggered burst
+
+            badge.appendChild(particle);
+
+            // Remove particle after animation
+            setTimeout(() => {
+                particle.remove();
+            }, 1500);
+        }
+    }
 });

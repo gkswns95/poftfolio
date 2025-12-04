@@ -77,16 +77,82 @@
     border-radius: 50%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    position: relative;
 }
 
 .award-item:hover .award-badge {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1);
 }
+
+/* Celebration animation - triggered by JS */
+.award-badge.celebrating .award-medal {
+    animation: spin-medal-dramatic 1.5s ease-in-out;
+}
+
+@keyframes spin-medal-dramatic {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    15% {
+        transform: rotate(180deg) scale(1.1);
+    }
+
+    30% {
+        transform: rotate(360deg) scale(1);
+    }
+
+    45% {
+        transform: rotate(540deg) scale(1.15);
+    }
+
+    60% {
+        transform: rotate(720deg) scale(1.05);
+    }
+
+    75% {
+        transform: rotate(900deg) scale(1.2);
+    }
+
+    100% {
+        transform: rotate(1080deg) scale(1);
+    }
+}
+
+
+
+@keyframes confetti-burst {
+    0% {
+        transform: translate(0, 0) scale(0);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(var(--x, 40px), var(--y, -40px)) scale(1);
+        opacity: 0;
+    }
+}
+
+/* Confetti particles created by JS */
+.confetti-particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: confetti-burst 1.5s ease-out forwards;
+}
+
 
 .award-medal {
     width: 50px;
     height: 50px;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
 }
 
 /* Award Details */
