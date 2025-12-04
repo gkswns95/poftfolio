@@ -96,9 +96,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Close on Escape key
+    // Close on Escape key (only if modal is not active)
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && contentViewer.classList.contains('active')) {
+            // Check if paper modal is active - if so, let modal handler deal with it
+            const modalOverlay = document.getElementById('paper-modal-overlay');
+            if (modalOverlay && modalOverlay.classList.contains('active')) {
+                return; // Let modal handler handle this
+            }
+
             if (history.state) {
                 history.back();
             } else {
@@ -281,6 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!modalOverlay.classList.contains('active')) return;
 
         if (e.key === 'Escape') {
+            e.stopPropagation(); // Prevent event from bubbling to content viewer handler
             closePaperModal();
         } else if (e.key === 'ArrowLeft') {
             if (currentPaperIndex > 0) {

@@ -316,19 +316,21 @@
 
 .modal-links {
     display: flex;
-    gap: 16px;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .modal-link-btn {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 20px;
+    padding: 10px 18px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: all 0.2s;
+    white-space: nowrap;
 }
 
 .btn-primary {
@@ -414,5 +416,14 @@
     .modal-links {
         width: 100%;
         justify-content: center;
+    }
+
+    .modal-link-btn {
+        font-size: 0.85rem;
+        padding: 10px 14px;
+    }
+
+    .selected-papers-grid {
+        grid-template-columns: 1fr;
     }
 }
