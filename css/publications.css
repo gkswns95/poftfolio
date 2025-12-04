@@ -59,23 +59,36 @@
     padding: 20px;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 12px;
-    border-left: 4px solid transparent;
+    border-left: 4px solid rgba(0, 0, 0, 0.05);
+    /* Default subtle border */
     transition: all 0.3s ease;
 }
 
+/* General paper hover - only background change */
 .paper-item:hover {
     background: rgba(255, 255, 255, 0.8);
-    border-left-color: var(--primary);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transform: translateX(4px);
 }
 
+/* Award papers - yellow border */
 .paper-item.has-award {
     border-left-color: #f59e0b;
 }
 
+.paper-item.has-award:hover {
+    border-left-color: #d97706;
+    /* Darker yellow on hover */
+}
+
+/* Key papers - blue border */
 .paper-item.has-key {
     border-left-color: var(--primary);
+}
+
+.paper-item.has-key:hover {
+    border-left-color: #2563eb;
+    /* Darker blue on hover */
 }
 
 .paper-number {
@@ -133,7 +146,7 @@
 .paper-venue {
     font-size: 1.1rem;
     /* Increased from 0.85rem */
-    color: #97a0ac;
+    color: #9ea9b8;
     /* Darker gray instead of var(--text-muted) */
     margin: 0;
     font-style: italic;
