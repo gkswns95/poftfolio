@@ -269,12 +269,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (currentLang === 'ko') {
                 abstractKo.style.display = 'block';
                 abstractEn.style.display = 'none';
-                if (langLabel) langLabel.textContent = 'Ko';
             } else {
                 abstractKo.style.display = 'none';
                 abstractEn.style.display = 'block';
-                if (langLabel) langLabel.textContent = 'En';
             }
+            // Always show 'Ko/En' regardless of current language
+            if (langLabel) langLabel.textContent = 'Ko/En';
         }
     }
 

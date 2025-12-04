@@ -214,27 +214,28 @@
 
 /* Language Toggle Button */
 .lang-toggle-btn {
-    background: white;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    height: 40px;
-    padding: 0 16px;
-    border-radius: 20px;
+    background: var(--primary);
+    border: none;
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
     cursor: pointer;
-    color: var(--text-main);
+    color: white;
     transition: all 0.2s;
     flex-shrink: 0;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
 }
 
 .lang-toggle-btn:hover {
-    background: var(--primary);
-    color: white;
-    border-color: var(--primary);
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
 }
 
 .lang-toggle-btn svg {
