@@ -279,3 +279,25 @@ nohup: 입력 무시
 127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /js/main.js HTTP/1.1" 200 -
 127.0.0.1 - - [04/Dec/2025 23:35:59] code 404, message File not found
 127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 23:45:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:45:23] "GET /css/recommendations.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:45:23] "GET /css/selected-papers.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:45:23] "GET /css/study-note.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:45:23] "GET /js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:45:23] "GET /images/study-note-banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:46:27] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:46:27] "GET /css/study-note.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:46:27] "GET /css/recommendations.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:46:57] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:46:57] "GET /css/recommendations.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:46:57] "GET /images/study-note-banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:52:14] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:52:14] "GET /css/experience.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:52:14] "GET /css/selected-papers.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:52:14] "GET /css/awards.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:52:14] "GET /css/study-note.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:52:14] "GET /css/recommendations.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:52:14] "GET /js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:52:14] "GET /images/study-note-banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:52:17] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:52:17] "GET / HTTP/1.1" 304 -
