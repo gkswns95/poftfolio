@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/publications.css">
 </head>
 
 <body>
@@ -40,13 +41,14 @@
                     <h1 class="hero-name">Han-Jun Choi</h1>
                     <p class="hero-title">AI Researcher & Data Scientist</p>
                     <p class="hero-tagline">Pursuing Practical Value through <span class="gradient-text">AI
-                            Technology</span></p>
+                            Technology</span> by Solving Real-World Problems </p>
 
                     <div class="hero-specialties">
                         <span class="specialty-tag">Multimodal Fusion</span>
                         <span class="specialty-tag">Time-series Analysis</span>
-                        <span class="specialty-tag">Multi-agent Trajectory Prediction</span>
+                        <span class="specialty-tag">Anomaly Detection</span>
                         <span class="specialty-tag">Sentiment Analysis</span>
+                        <span class="specialty-tag">Multi-agent Trajectory Prediction & Imputation</span>
                     </div>
 
                     <div class="hero-stats-mini">
@@ -566,86 +568,229 @@
             <!-- Papers Section -->
             <section id="papers" class="view-section">
                 <div class="container">
-                    <h2 class="section-title">Selected Publications</h2>
+                    <h2 class="section-title">Research Papers</h2>
 
-                    <!-- Key Paper 1 -->
-                    <div class="paper-card featured">
-                        <div class="paper-header">
-                            <div class="paper-badges">
-                                <span class="badge badge-key">Key Paper</span>
-                                <span class="badge badge-award">Oral Presentation</span>
-                            </div>
-                            <h3 class="paper-title">Trajectory Imputation in Multi-Agent Sports with
-                                Derivative-Accumulating Self-Ensemble</h3>
-                            <p class="paper-authors">Han-Jun Choi*, Hyunsung Kim*, Minho Lee, Minchul Jeong, Chang-Jo
-                                Kim, Jinsung Yoon, Sang-Ki Ko</p>
-                            <p class="paper-venue">ECML PKDD 2025 · BK21 Excellent International Conference</p>
-                        </div>
-                        <div class="paper-body">
-                            <div class="paper-summary">
-                                <p><strong>Goal:</strong> Multi-agent 환경에서 결측된 궤적(Trajectory)을 복원하기 위한 딥러닝 프레임워크 제안</p>
-                                <p><strong>Contribution:</strong> 순열 동변성을 고려한 1차 예측과 속도/가속도 누적 기반 2차 예측을 동적으로 융합하여 SOTA
-                                    성능 달성</p>
-                            </div>
-                            <div class="paper-links">
-                                <a href="#" class="btn-link">Paper</a>
-                                <a href="#" class="btn-link">Code</a>
-                                <a href="#" class="btn-link">Poster</a>
-                            </div>
-                        </div>
+                    <!-- Legend -->
+                    <div class="papers-legend">
+                        <span class="legend-item"><span class="icon-equal">*</span> Equal Contribution</span>
+                        <span class="legend-item"><span class="icon-award">🏆</span> Award</span>
+                        <span class="legend-item"><span class="icon-key">📌</span> Key Paper</span>
                     </div>
 
-                    <!-- Key Paper 2 -->
-                    <div class="paper-card featured">
-                        <div class="paper-header">
-                            <div class="paper-badges">
-                                <span class="badge badge-key">Key Paper</span>
-                                <span class="badge badge-award">Oral Presentation</span>
-                            </div>
-                            <h3 class="paper-title">Ball trajectory inference from Multi-Agent Sports Contexts Using Set
-                                Transformer and Hierarchical Bi-LSTM</h3>
-                            <p class="paper-authors">Hyunsung Kim*, Han-Jun Choi, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko
-                            </p>
-                            <p class="paper-venue">KDD 2023 · BK21 Best International Conference</p>
-                        </div>
-                        <div class="paper-body">
-                            <div class="paper-summary">
-                                <p><strong>Goal:</strong> 선수들의 궤적 정보를 기반으로 공의 위치를 추론하는 계층적 딥러닝 모델 제안</p>
-                                <p><strong>Contribution:</strong> 공 소유권 확률 예측과 위치 추론을 결합하고, 물리적 특성을 반영한 후처리 알고리즘 적용</p>
-                            </div>
-                            <div class="paper-links">
-                                <a href="#" class="btn-link">Paper</a>
-                                <a href="#" class="btn-link">Code</a>
-                                <a href="#" class="btn-link">Poster</a>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Publications Timeline -->
+                    <div class="publications-timeline">
 
-                    <h3 class="subsection-title">Other Publications</h3>
-                    <ul class="paper-list">
-                        <li class="paper-item">
-                            <span class="paper-year">2025</span>
-                            <div class="paper-info">
-                                <h4>Imputing Multi-Agent Trajectories from Event and Snapshot Data in Soccer</h4>
-                                <p>Geonhee Jo, Miru Hong, Han-Jun Choi, Pascal Bauer and Sang-Ki Ko [CIKM]</p>
+                        <!-- Year 2025 -->
+                        <div class="year-group">
+                            <div class="year-marker">2025</div>
+
+                            <div class="paper-item">
+                                <span class="paper-number">1.</span>
+                                <div class="paper-content">
+                                    <h3 class="paper-title">Imputing Multi-Agent Trajectories from Event and Snapshot
+                                        Data in Soccer</h3>
+                                    <p class="paper-authors">
+                                        <span class="author-link">Geonhee Jo</span>,
+                                        <span class="author-link">Miru Hong</span>,
+                                        <strong>Han-Jun Choi</strong>,
+                                        <span class="author-link">Pascal Bauer</span> and
+                                        <span class="author-link">Sang-Ki Ko</span>
+                                    </p>
+                                    <p class="paper-venue">[CIKM] · 2025년 8월 | BK21 최우수 국제 학술대회</p>
+                                </div>
                             </div>
-                        </li>
-                        <li class="paper-item">
-                            <span class="paper-year">2025</span>
-                            <div class="paper-info">
-                                <h4>Multimodal Sentiment Analysis under Incomplete Modalities... <span
-                                        class="badge-sm badge-award">Best Paper Award</span></h4>
-                                <p>Han-Jun Choi, Byunggill Joe, Jin Yea Jang [KIBME]</p>
+
+                            <div class="paper-item has-award has-key">
+                                <span class="paper-number">2. <span class="icon-key">📌</span></span>
+                                <div class="paper-content">
+                                    <h3 class="paper-title">Trajectory Imputation in Multi-Agent Sports with
+                                        Derivative-Accumulating Self-Ensemble</h3>
+                                    <p class="paper-authors">
+                                        <strong>Han-Jun Choi</strong><span class="icon-equal">*</span>,
+                                        <span class="author-link underline">Hyunsung Kim</span><span
+                                            class="icon-equal">*</span>,
+                                        <span class="author-link underline">Minho Lee</span>,
+                                        <span class="author-link underline">Minchul Jeong</span>,
+                                        <span class="author-link underline">Chang-Jo Kim</span>,
+                                        <span class="author-link underline">Jinsung Yoon</span>,
+                                        <span class="author-link underline">Sang-Ki Ko</span>
+                                    </p>
+                                    <p class="paper-venue">[ECML PKDD] · 2025년 6월 29일 | BK21 우수 국제 학술대회</p>
+                                </div>
                             </div>
-                        </li>
-                        <li class="paper-item">
-                            <span class="paper-year">2024</span>
-                            <div class="paper-info">
-                                <h4>Analysis of Missing Modality Problems with Korean Multimodal Sentiment Data</h4>
-                                <p>Han-Jun Choi, Saim Shin, Jin Yea Jang [HCLT 2024]</p>
+
+                            <div class="paper-item has-award">
+                                <span class="paper-number">3. <span class="icon-award">🏆</span></span>
+                                <div class="paper-content">
+                                    <h3 class="paper-title">Multimodal Sentiment Analysis under Incomplete Modalities
+                                        with Missing Text Localization and Confidence Aware Fusion</h3>
+                                    <p class="paper-authors">
+                                        <strong>Han-Jun Choi</strong>,
+                                        <span class="author-link underline">Byunggill Joe</span>,
+                                        <span class="author-link underline">Jin Yea Jang</span> | 최우수 논문상 <span
+                                            class="icon-award">🏆</span>
+                                    </p>
+                                    <p class="paper-venue">[KIBME] · 2025년 2월 29일</p>
+                                </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+
+                        <!-- Year 2024 -->
+                        <div class="year-group">
+                            <div class="year-marker">2024</div>
+
+                            <div class="paper-item">
+                                <span class="paper-number">4.</span>
+                                <div class="paper-content">
+                                    <h3 class="paper-title">Analysis of Missing Modality Problems with Korean Multimodal
+                                        Sentiment Data</h3>
+                                    <p class="paper-authors">
+                                        <strong>Han-Jun Choi</strong>,
+                                        <span class="author-link underline">Saim Shin</span>,
+                                        <span class="author-link underline">Jin Yea Jang</span>
+                                    </p>
+                                    <p class="paper-venue">[HCLT 2024] · 2024년 10월 17일</p>
+                                </div>
+                            </div>
+
+                            <div class="paper-item">
+                                <span class="paper-number">5.</span>
+                                <div class="paper-content">
+                                    <h3 class="paper-title">Transformer-Based Multi-Agent Trajectory Imputation Model
+                                        using Permutation Equivariance</h3>
+                                    <p class="paper-authors">
+                                        <strong>Han-Jun Choi</strong>,
+                                        <span class="author-link underline">Park Hyun Woo</span>,
+                                        <span class="author-link underline">Sang-Ki Ko</span>
+                                    </p>
+                                    <p class="paper-venue">[KTCP 2024] · 2024년 2월 1일</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Year 2023 -->
+                        <div class="year-group">
+                            <div class="year-marker">2023</div>
+
+                            <div class="paper-item has-award has-key">
+                                <span class="paper-number">6. <span class="icon-key">📌</span></span>
+                                <div class="paper-content">
+                                    <h3 class="paper-title">Ball trajectory inference from Multi-Agent Sports Contexts
+                                        Using Set Transformer and Hierarchical Bi-LSTM</h3>
+                                    <p class="paper-authors">
+                                        <span class="author-link underline">Hyunsung Kim</span>,
+                                        <strong>Han-Jun Choi</strong>,
+                                        <span class="author-link underline">Chang-Jo Kim</span>,
+                                        <span class="author-link underline">Jinsung Yoon</span>,
+                                        <span class="author-link underline">Sang-Ki Ko</span>
+                                    </p>
+                                    <p class="paper-venue">[KDD 2023] · 2023년 8월 6일 | BK21 최우수 국제 학술대회</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Year 2022 -->
+                        <div class="year-group">
+                            <div class="year-marker">2022</div>
+
+                            <div class="paper-item has-award">
+                                <span class="paper-number">7. <span class="icon-award">🏆</span></span>
+                                <div class="paper-content">
+                                    <h3 class="paper-title">Deep-learning-based Multi-Agent Trajectory Imputation</h3>
+                                    <p class="paper-authors">
+                                        <strong>Han-Jun Choi</strong>,
+                                        <span class="author-link underline">Park Hyun Woo</span>,
+                                        <span class="author-link underline">Sang-Ki Ko</span> / 우수발표 논문상 <span
+                                            class="icon-award">🏆</span>
+                                    </p>
+                                    <p class="paper-venue">[KCC 2022] · 2022년 6월 30일</p>
+                                </div>
+                            </div>
+
+                            <div class="paper-item">
+                                <span class="paper-number">8.</span>
+                                <div class="paper-content">
+                                    <h3 class="paper-title">Comparison Study of Deep Learning-based Spatiotemporal Data
+                                        Imputation Algorithms</h3>
+                                    <p class="paper-authors">
+                                        <span class="author-link underline">Park Hyun Woo</span>,
+                                        <strong>Han-Jun Choi</strong>,
+                                        <span class="author-link underline">Sang-Ki Ko</span>
+                                    </p>
+                                    <p class="paper-venue">[KSC 2022] · 2022년 6월 30일</p>
+                                </div>
+                            </div>
+
+                            <div class="paper-item">
+                                <span class="paper-number">9.</span>
+                                <div class="paper-content">
+                                    <h3 class="paper-title">Deep learning-based workout classification and repetition
+                                        counting using IMU sensor data</h3>
+                                    <p class="paper-authors">
+                                        <strong>Han-Jun Choi</strong>,
+                                        <span class="author-link underline">Min Gi Jeon</span>,
+                                        <span class="author-link underline">Su-Hyeon Kim</span>,
+                                        <span class="author-link underline">Sang-Ki Ko</span>,
+                                        <span class="author-link underline">Hal-Gyun Jeong</span>
+                                    </p>
+                                    <p class="paper-venue">[ITCT 2022] · 2022년 2월 9일</p>
+                                </div>
+                            </div>
+
+                            <div class="paper-item">
+                                <span class="paper-number">10.</span>
+                                <div class="paper-content">
+                                    <h3 class="paper-title">Optimal Data Generation Strategy for Training RNN-based
+                                        Time-series Data Imputation Models</h3>
+                                    <p class="paper-authors">
+                                        <strong>Han-Jun Choi</strong>,
+                                        <span class="author-link underline">Park Hyun Woo</span>,
+                                        <span class="author-link underline">Sang-Ki Ko</span>
+                                    </p>
+                                    <p class="paper-venue">[KSC 2022] · 2022년 1월 19일</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Year 2021 -->
+                        <div class="year-group">
+                            <div class="year-marker">2021</div>
+
+                            <div class="paper-item has-award">
+                                <span class="paper-number">11. <span class="icon-award">🏆</span></span>
+                                <div class="paper-content">
+                                    <h3 class="paper-title">Deep learning-based coordinate tracking algorithm for
+                                        automated soccer video analysis</h3>
+                                    <p class="paper-authors">
+                                        <strong>Han-Jun choi</strong>,
+                                        <span class="author-link underline">Hyun-Woo Park</span>,
+                                        <span class="author-link underline">Hyun-Sung Kim</span>,
+                                        <span class="author-link underline">Dong-Wook Chung</span>,
+                                        <span class="author-link underline">Jongeun Chung</span>,
+                                        <span class="author-link underline">Sang-Ki ko</span> and
+                                        <span class="author-link underline">Jongeun Chung</span>
+                                    </p>
+                                    <p class="paper-venue">[KSC 2021] · 2021년 12월 20일 / 우수 논문상 수상 <span
+                                            class="icon-award">🏆</span></p>
+                                </div>
+                            </div>
+
+                            <div class="paper-item">
+                                <span class="paper-number">12.</span>
+                                <div class="paper-content">
+                                    <h3 class="paper-title">Deep learning-based time-series wind speed data imputation
+                                        algorithm using temperature data</h3>
+                                    <p class="paper-authors">
+                                        <strong>Han-Jun Choi</strong>,
+                                        <span class="author-link underline">Sang-Ki Ko</span>, and
+                                        <span class="author-link underline">Jongwoon Lim</span>
+                                    </p>
+                                    <p class="paper-venue">[KSC 2021] · 2021년 6월 23일</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
