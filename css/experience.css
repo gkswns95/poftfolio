@@ -14,7 +14,7 @@
     align-items: flex-start;
     gap: 24px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; Removed to allow content to expand and shadows to show */
 }
 
 #experience .timeline-text-content {
@@ -26,12 +26,13 @@
 
 
 
-/* Keyword Container - Positioned INSIDE the card on the right */
+/* Keyword Container - Positioned in flow on the right */
 .experience-keywords {
-    position: absolute;
-    top: 50%;
-    right: 16px;
-    transform: translateY(-50%);
+    /* position: absolute; Removed to prevent clipping */
+    /* top: 50%; */
+    /* right: 16px; */
+    /* transform: translateY(-50%); */
+    position: relative;
     width: 250px;
     max-width: 40%;
     display: flex;
@@ -40,6 +41,8 @@
     z-index: 5;
     opacity: 0;
     transition: opacity 0.4s ease;
+    /* Align vertically with text if needed, or let it sit at top */
+    align-self: center;
 }
 
 #experience .timeline-content:hover .experience-keywords {

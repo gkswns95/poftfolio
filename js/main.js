@@ -177,4 +177,122 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500);
         }
     }
+
+
+    /* =========================================
+       Selected Papers Modal Logic
+       ========================================= */
+    const paperCards = document.querySelectorAll('.paper-card');
+    const modalOverlay = document.getElementById('paper-modal-overlay');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+    const prevPaperBtn = document.getElementById('prev-paper-btn');
+    const nextPaperBtn = document.getElementById('next-paper-btn');
+
+    // Modal Elements to Populate
+    const modalVenue = document.getElementById('modal-venue');
+    const modalTitle = document.getElementById('modal-title');
+    const modalAuthors = document.getElementById('modal-authors');
+    const modalAbstract = document.getElementById('modal-abstract');
+    const modalPoints = document.getElementById('modal-points');
+    const modalTags = document.getElementById('modal-tags');
+    const modalLinks = document.getElementById('modal-links');
+
+    let currentPaperIndex = 0;
+
+    function openPaperModal(index) {
+        currentPaperIndex = index;
+        updateModalContent(index);
+        modalOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    function closePaperModal() {
+        modalOverlay.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    function updateModalContent(index) {
+        const card = paperCards[index];
+        const details = card.querySelector('.paper-details-content');
+
+        // Basic Info from Card
+        modalVenue.textContent = card.querySelector('.paper-card-venue').textContent;
+        modalTitle.textContent = card.querySelector('.paper-card-title').textContent;
+        modalAuthors.textContent = card.querySelector('.paper-card-authors').textContent;
+
+        // Detailed Content from Hidden Div
+        modalAbstract.innerHTML = details.querySelector('.detail-abstract').innerHTML;
+        modalPoints.innerHTML = details.querySelector('.detail-points').innerHTML;
+        modalTags.innerHTML = details.querySelector('.detail-tags').innerHTML;
+        modalLinks.innerHTML = details.querySelector('.detail-links').innerHTML;
+
+        // Update Button States (Optional: Disable if start/end)
+        prevPaperBtn.style.opacity = index === 0 ? '0.5' : '1';
+        prevPaperBtn.style.pointerEvents = index === 0 ? 'none' : 'auto';
+
+        nextPaperBtn.style.opacity = index === paperCards.length - 1 ? '0.5' : '1';
+        nextPaperBtn.style.pointerEvents = index === paperCards.length - 1 ? 'none' : 'auto';
+    }
+
+    // Event Listeners for Cards
+    paperCards.forEach((card, index) => {
+        card.addEventListener('click', (e) => {
+            // Prevent triggering if clicking a link inside the card (if any)
+            if (e.target.tagName === 'A') return;
+            openPaperModal(index);
+        });
+    });
+
+    // Close Button
+    if (modalCloseBtn) {
+        modalCloseBtn.addEventListener('click', closePaperModal);
+    }
+
+    // Overlay Click to Close
+    if (modalOverlay) {
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) {
+                closePaperModal();
+            }
+        });
+    }
+
+    // Navigation Buttons
+    if (prevPaperBtn) {
+        prevPaperBtn.addEventListener('click', () => {
+            if (currentPaperIndex > 0) {
+                currentPaperIndex--;
+                updateModalContent(currentPaperIndex);
+            }
+        });
+    }
+
+    if (nextPaperBtn) {
+        nextPaperBtn.addEventListener('click', () => {
+            if (currentPaperIndex < paperCards.length - 1) {
+                currentPaperIndex++;
+                updateModalContent(currentPaperIndex);
+            }
+        });
+    }
+
+    // Keyboard Navigation for Modal
+    document.addEventListener('keydown', (e) => {
+        if (!modalOverlay.classList.contains('active')) return;
+
+        if (e.key === 'Escape') {
+            closePaperModal();
+        } else if (e.key === 'ArrowLeft') {
+            if (currentPaperIndex > 0) {
+                currentPaperIndex--;
+                updateModalContent(currentPaperIndex);
+            }
+        } else if (e.key === 'ArrowRight') {
+            if (currentPaperIndex < paperCards.length - 1) {
+                currentPaperIndex++;
+                updateModalContent(currentPaperIndex);
+            }
+        }
+    });
+
 });

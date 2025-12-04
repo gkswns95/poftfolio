@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/experience.css">
     <link rel="stylesheet" href="css/publications.css">
     <link rel="stylesheet" href="css/awards.css">
+    <link rel="stylesheet" href="css/selected-papers.css">
 </head>
 
 <body>
@@ -931,15 +932,325 @@
                 </div>
             </section>
 
-            <!-- Selected Papers Section -->
             <section id="selected-papers" class="view-section">
                 <div class="container">
                     <h2 class="section-title">Selected Papers</h2>
-                    <div class="coming-soon">
-                        <p>📄 Content coming soon...</p>
+
+                    <div class="selected-papers-grid">
+                        <!-- Paper 1 -->
+                        <div class="paper-card" data-id="paper-1">
+                            <span class="paper-card-venue">ECML PKDD 2025</span>
+                            <h3 class="paper-card-title">Trajectory Imputation in Multi-Agent Sports with
+                                Derivative-Accumulating Self-Ensemble</h3>
+                            <p class="paper-card-authors">Han-Jun Choi*, Hyunsung Kim*, Minho Lee, Minchul Jeong,
+                                Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko</p>
+
+                            <div class="paper-card-footer">
+                                <button class="view-details-btn">
+                                    View Project
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <!-- Hidden Content for Modal -->
+                            <div class="paper-details-content" style="display: none;">
+                                <div class="detail-abstract">
+                                    <p>This paper proposes a novel method for imputing missing trajectories in
+                                        multi-agent sports scenarios. By leveraging a derivative-accumulating
+                                        self-ensemble mechanism, we significantly improve the accuracy of trajectory
+                                        reconstruction even in highly dynamic environments.</p>
+                                </div>
+                                <div class="detail-points">
+                                    <li>Proposed a derivative-accumulating self-ensemble technique.</li>
+                                    <li>Achieved state-of-the-art performance on soccer trajectory datasets.</li>
+                                    <li>Robust against long-term missing data.</li>
+                                </div>
+                                <div class="detail-tags">
+                                    <span class="modal-tag">Multi-Agent</span>
+                                    <span class="modal-tag">Trajectory Imputation</span>
+                                    <span class="modal-tag">Sports Analytics</span>
+                                    <span class="modal-tag">Self-Ensemble</span>
+                                </div>
+                                <div class="detail-links">
+                                    <a href="#" class="modal-link-btn btn-primary">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                            <polyline points="10 9 9 9 8 9"></polyline>
+                                        </svg>
+                                        Read Paper
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paper 2 -->
+                        <div class="paper-card" data-id="paper-2">
+                            <span class="paper-card-venue">KIBME 2025 (Best Paper)</span>
+                            <h3 class="paper-card-title">Multimodal Sentiment Analysis under Incomplete Modalities with
+                                Missing Text Localization</h3>
+                            <p class="paper-card-authors">Han-Jun Choi, Byunggill Joe, Jin Yea Jang</p>
+
+                            <div class="paper-card-footer">
+                                <button class="view-details-btn">
+                                    View Project
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="paper-details-content" style="display: none;">
+                                <div class="detail-abstract">
+                                    <p>We address the challenge of multimodal sentiment analysis when text modalities
+                                        are incomplete or missing. Our confidence-aware fusion strategy effectively
+                                        localizes missing text segments and compensates for them using other modalities.
+                                    </p>
+                                </div>
+                                <div class="detail-points">
+                                    <li>Introduced a confidence-aware multimodal fusion layer.</li>
+                                    <li>Developed a missing text localization algorithm.</li>
+                                    <li>Won Best Paper Award at KIBME 2025.</li>
+                                </div>
+                                <div class="detail-tags">
+                                    <span class="modal-tag">Multimodal</span>
+                                    <span class="modal-tag">Sentiment Analysis</span>
+                                    <span class="modal-tag">Deep Learning</span>
+                                    <span class="modal-tag">Fusion</span>
+                                </div>
+                                <div class="detail-links">
+                                    <a href="#" class="modal-link-btn btn-primary">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                            <polyline points="10 9 9 9 8 9"></polyline>
+                                        </svg>
+                                        Read Paper
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paper 3 -->
+                        <div class="paper-card" data-id="paper-3">
+                            <span class="paper-card-venue">KDD 2023</span>
+                            <h3 class="paper-card-title">Ball trajectory inference from Multi-Agent Sports Contexts
+                                Using Set Transformer</h3>
+                            <p class="paper-card-authors">Hyunsung Kim, Han-Jun Choi, Chang-Jo Kim, Jinsung Yoon,
+                                Sang-Ki Ko</p>
+
+                            <div class="paper-card-footer">
+                                <button class="view-details-btn">
+                                    View Project
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="paper-details-content" style="display: none;">
+                                <div class="detail-abstract">
+                                    <p>Inferring the ball trajectory in sports videos is challenging due to occlusions
+                                        and small object size. We propose a Set Transformer and Hierarchical Bi-LSTM
+                                        based approach to infer ball positions from player contexts.</p>
+                                </div>
+                                <div class="detail-points">
+                                    <li>Utilized Set Transformer to model player interactions.</li>
+                                    <li>Hierarchical Bi-LSTM for temporal consistency.</li>
+                                    <li>Published at KDD 2023 (Top Tier).</li>
+                                </div>
+                                <div class="detail-tags">
+                                    <span class="modal-tag">Sports Analytics</span>
+                                    <span class="modal-tag">Transformer</span>
+                                    <span class="modal-tag">Bi-LSTM</span>
+                                    <span class="modal-tag">Computer Vision</span>
+                                </div>
+                                <div class="detail-links">
+                                    <a href="#" class="modal-link-btn btn-primary">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                            <polyline points="10 9 9 9 8 9"></polyline>
+                                        </svg>
+                                        Read Paper
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Paper 4 -->
+                        <div class="paper-card" data-id="paper-4">
+                            <span class="paper-card-venue">CIKM 2025</span>
+                            <h3 class="paper-card-title">Imputing Multi-Agent Trajectories from Event and Snapshot Data
+                                in Soccer</h3>
+                            <p class="paper-card-authors">Geonhee Jo, Miru Hong, Han-Jun Choi, Pascal Bauer, Sang-Ki Ko
+                            </p>
+
+                            <div class="paper-card-footer">
+                                <button class="view-details-btn">
+                                    View Project
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="paper-details-content" style="display: none;">
+                                <div class="detail-abstract">
+                                    <p>We combine event data and snapshot data to reconstruct complete multi-agent
+                                        trajectories in soccer matches. This hybrid approach overcomes the limitations
+                                        of using either data source alone.</p>
+                                </div>
+                                <div class="detail-points">
+                                    <li>Hybrid data fusion of events and snapshots.</li>
+                                    <li>Improved trajectory reconstruction accuracy.</li>
+                                    <li>Applicable to various team sports.</li>
+                                </div>
+                                <div class="detail-tags">
+                                    <span class="modal-tag">Data Fusion</span>
+                                    <span class="modal-tag">Soccer Analytics</span>
+                                    <span class="modal-tag">Trajectory Reconstruction</span>
+                                </div>
+                                <div class="detail-links">
+                                    <a href="#" class="modal-link-btn btn-primary">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                            <polyline points="10 9 9 9 8 9"></polyline>
+                                        </svg>
+                                        Read Paper
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
+
+            <!-- Paper Detail Modal -->
+            <div id="paper-modal-overlay" class="paper-modal-overlay">
+                <div class="paper-modal">
+                    <div class="modal-header">
+                        <div class="modal-title-group">
+                            <span id="modal-venue" class="modal-venue">Venue Name</span>
+                            <h2 id="modal-title" class="modal-title">Paper Title Goes Here</h2>
+                            <p id="modal-authors" class="modal-authors">Author Names...</p>
+                        </div>
+                        <button id="modal-close-btn" class="modal-close-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Left Column -->
+                        <div class="modal-left-col">
+                            <div class="modal-section">
+                                <h4 class="modal-section-title">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    Abstract
+                                </h4>
+                                <div id="modal-abstract" class="modal-text">
+                                    <!-- Abstract content injected here -->
+                                </div>
+                            </div>
+
+                            <div class="modal-section">
+                                <h4 class="modal-section-title">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                    </svg>
+                                    Key Contributions
+                                </h4>
+                                <ul id="modal-points" class="modal-list">
+                                    <!-- Points injected here -->
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="modal-right-col">
+                            <div class="modal-visuals">
+                                <div class="visual-placeholder">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1" style="margin-bottom: 10px;">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                        <polyline points="21 15 16 10 5 21"></polyline>
+                                    </svg>
+                                    <p>Visual / Diagram Placeholder</p>
+                                </div>
+                            </div>
+
+                            <div class="modal-section">
+                                <h4 class="modal-section-title">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                                        <line x1="16" y1="8" x2="2" y2="22"></line>
+                                        <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                                    </svg>
+                                    Tech Stack & Keywords
+                                </h4>
+                                <div id="modal-tags" class="modal-tags">
+                                    <!-- Tags injected here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <div id="modal-links" class="modal-links">
+                            <!-- Links injected here -->
+                        </div>
+
+                        <div class="modal-nav">
+                            <button id="prev-paper-btn" class="nav-btn" title="Previous Paper">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <button id="next-paper-btn" class="nav-btn" title="Next Paper">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Etc. Section -->
             <section id="etc" class="view-section">
