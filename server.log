@@ -255,3 +255,27 @@ nohup: 입력 무시
 127.0.0.1 - - [04/Dec/2025 23:28:12] "GET / HTTP/1.1" 200 -
 127.0.0.1 - - [04/Dec/2025 23:28:12] "GET /css/selected-papers.css HTTP/1.1" 200 -
 127.0.0.1 - - [04/Dec/2025 23:28:12] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:55] "GET /css/study-note.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:55] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:35:55] "GET /css/about.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:35:55] "GET /css/experience.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:35:55] "GET /css/awards.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:35:55] "GET /css/selected-papers.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:35:55] "GET /js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:35:55] "GET /images/profile.png HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:35:55] "GET /images/study-note-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /css/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /css/about.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /css/experience.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /css/publications.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /css/awards.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /css/study-note.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /images/profile.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /images/study-note-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:35:59] code 404, message File not found
+127.0.0.1 - - [04/Dec/2025 23:35:59] "GET /favicon.ico HTTP/1.1" 404 -
