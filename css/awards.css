@@ -1,0 +1,194 @@
+/* Awards Section Styles */
+
+.awards-timeline {
+    position: relative;
+}
+
+/* Year Groups */
+.award-year-group {
+    margin-bottom: 48px;
+}
+
+.award-year-marker {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--primary);
+    display: inline-block;
+}
+
+/* Award Items */
+.award-item {
+    display: flex;
+    gap: 24px;
+    padding: 28px;
+    margin-bottom: 24px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    border-left: 5px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.award-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.3) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.award-item:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+.award-item:hover::before {
+    opacity: 1;
+}
+
+/* Award Type Specific Borders */
+.award-item.best {
+    border-left-color: #FFD700;
+}
+
+.award-item.excellent {
+    border-left-color: #C0C0C0;
+}
+
+/* Medal Badge */
+.award-badge {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.award-item:hover .award-badge {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.award-medal {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Award Details */
+.award-details {
+    flex: 1;
+}
+
+.award-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.award-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.award-rank {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.award-rank.gold {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+}
+
+.award-rank.silver {
+    background: linear-gradient(135deg, #C0C0C0, #A8A8A8);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(192, 192, 192, 0.3);
+}
+
+.award-organization {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin: 0 0 12px 0;
+}
+
+.award-paper {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0 0 12px 0;
+    font-style: italic;
+}
+
+.award-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.award-date::before {
+    content: '📅';
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .award-item {
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .award-badge {
+        width: 60px;
+        height: 60px;
+        align-self: center;
+    }
+
+    .award-medal {
+        width: 40px;
+        height: 40px;
+    }
+
+    .award-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .award-title {
+        font-size: 1.1rem;
+    }
+
+    .award-year-marker {
+        font-size: 1.3rem;
+    }
+}
