@@ -957,22 +957,79 @@
 
                             <!-- Hidden Content for Modal -->
                             <div class="paper-details-content" style="display: none;">
-                                <div class="detail-abstract">
-                                    <p>This paper proposes a novel method for imputing missing trajectories in
-                                        multi-agent sports scenarios. By leveraging a derivative-accumulating
-                                        self-ensemble mechanism, we significantly improve the accuracy of trajectory
-                                        reconstruction even in highly dynamic environments.</p>
+                                <div class="detail-abstract" data-lang="ko">
+                                    <h4 style="font-weight: 700; margin-bottom: 12px; color: var(--primary);">주요 목표</h4>
+                                    <p>축구, 농구, 미식 축구 등 다중 객체 환경에서 취득된 시공간 데이터의 결측 궤적 문제를 해결하기 위한 딥러닝 프레임워크 구현</p>
+
+                                    <h4 style="font-weight: 700; margin: 20px 0 12px; color: var(--primary);">핵심 기여</h4>
+                                    <ol style="padding-left: 20px; line-height: 1.8;">
+                                        <li>입력 데이터의 순열 동변성을 고려한 위치 보간 신경망 제안 (1차 예측)</li>
+                                        <li>속도, 가속도 누적 기반 위치 예측 알고리즘 제안 (2차 예측)</li>
+                                        <li>결측 길이/상황에 따른 1&2차 위치 예측 동적 융합 신경망 제안</li>
+                                    </ol>
+
+                                    <h4 style="font-weight: 700; margin: 20px 0 12px; color: var(--primary);">담당 역할</h4>
+                                    <ul style="padding-left: 20px; line-height: 1.8;">
+                                        <li>축구, 농구, 미식 축구 등 시공간 데이터 전처리 및 알고리즘 구축</li>
+                                        <li>속도, 가속도 기반 위치 예측 모델 설계 및 구현</li>
+                                        <li>위치 예측값 동적 융합 모델 설계 및 구현</li>
+                                        <li>Baseline model 구현 및 전반적인 실험 및 결과 분석</li>
+                                        <li>논문 작성 및 학회 발표</li>
+                                    </ul>
+
+                                    <h4 style="font-weight: 700; margin: 20px 0 12px; color: var(--primary);">성과</h4>
+                                    <ul style="padding-left: 20px; line-height: 1.8;">
+                                        <li>ECML PKDD 2025 게재 (Oral presentation)</li>
+                                    </ul>
                                 </div>
-                                <div class="detail-points">
-                                    <li>Proposed a derivative-accumulating self-ensemble technique.</li>
-                                    <li>Achieved state-of-the-art performance on soccer trajectory datasets.</li>
-                                    <li>Robust against long-term missing data.</li>
+                                <div class="detail-abstract" data-lang="en" style="display: none;">
+                                    <h4 style="font-weight: 700; margin-bottom: 12px; color: var(--primary);">Research
+                                        Objectives</h4>
+                                    <p>Implementation of a deep learning framework to solve missing trajectory problems
+                                        in spatiotemporal data acquired from multi-agent environments such as soccer,
+                                        basketball, and American football</p>
+
+                                    <h4 style="font-weight: 700; margin: 20px 0 12px; color: var(--primary);">Core
+                                        Contributions</h4>
+                                    <ol style="padding-left: 20px; line-height: 1.8;">
+                                        <li>Proposed a position interpolation neural network considering permutation
+                                            equivariance of input data (1st prediction)</li>
+                                        <li>Proposed a position prediction algorithm based on velocity and acceleration
+                                            accumulation (2nd prediction)</li>
+                                        <li>Proposed a dynamic fusion neural network for 1st and 2nd position
+                                            predictions according to missing length and situations</li>
+                                    </ol>
+
+                                    <h4 style="font-weight: 700; margin: 20px 0 12px; color: var(--primary);">
+                                        Responsibilities</h4>
+                                    <ul style="padding-left: 20px; line-height: 1.8;">
+                                        <li>Preprocessing spatiotemporal data and building algorithms for soccer,
+                                            basketball, and American football</li>
+                                        <li>Designing and implementing velocity and acceleration-based position
+                                            prediction models</li>
+                                        <li>Designing and implementing dynamic fusion models for position predictions
+                                        </li>
+                                        <li>Implementing baseline models and conducting comprehensive experiments and
+                                            result analysis</li>
+                                        <li>Paper writing and conference presentation</li>
+                                    </ul>
+
+                                    <h4 style="font-weight: 700; margin: 20px 0 12px; color: var(--primary);">
+                                        Achievements</h4>
+                                    <ul style="padding-left: 20px; line-height: 1.8;">
+                                        <li>Published at ECML PKDD 2025 (Oral presentation)</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-points" style="display: none;">
+                                    <!-- Legacy content hidden -->
                                 </div>
                                 <div class="detail-tags">
                                     <span class="modal-tag">Multi-Agent</span>
                                     <span class="modal-tag">Trajectory Imputation</span>
                                     <span class="modal-tag">Sports Analytics</span>
                                     <span class="modal-tag">Self-Ensemble</span>
+                                    <span class="modal-tag">Permutation Equivariance</span>
+                                    <span class="modal-tag">Derivative Accumulation</span>
                                 </div>
                                 <div class="detail-links">
                                     <a href="#" class="modal-link-btn btn-primary">
@@ -1259,13 +1316,25 @@
                             <h2 id="modal-title" class="modal-title">Paper Title Goes Here</h2>
                             <p id="modal-authors" class="modal-authors">Author Names...</p>
                         </div>
-                        <button id="modal-close-btn" class="modal-close-btn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <line x1="18" y1="6" x2="6" y2="18"></line>
-                                <line x1="6" y1="6" x2="18" y2="18"></line>
-                            </svg>
-                        </button>
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <button id="lang-toggle-btn" class="lang-toggle-btn" title="Switch Language">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4">
+                                    </path>
+                                    <path d="M12 12l-2 4m0 0l-2-2m2 2l2-2"></path>
+                                </svg>
+                                <span id="lang-label">Ko</span>
+                            </button>
+                            <button id="modal-close-btn" class="modal-close-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
 
                     <div class="modal-body">

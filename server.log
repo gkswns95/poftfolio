@@ -240,3 +240,7 @@ nohup: 입력 무시
 127.0.0.1 - - [04/Dec/2025 22:55:47] "GET /images/profile.png HTTP/1.1" 200 -
 127.0.0.1 - - [04/Dec/2025 22:55:47] code 404, message File not found
 127.0.0.1 - - [04/Dec/2025 22:55:47] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [04/Dec/2025 23:06:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:06:10] "GET /css/experience.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:06:11] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:06:11] "GET /js/main.js HTTP/1.1" 200 -

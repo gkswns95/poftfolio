@@ -204,10 +204,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalLinks = document.getElementById('modal-links');
 
     let currentPaperIndex = 0;
+    let currentLang = 'ko'; // Track current language
 
     function openPaperModal(index) {
         currentPaperIndex = index;
+        currentLang = 'ko'; // Reset to Korean when opening modal
         updateModalContent(index);
+        updateLanguageDisplay();
         modalOverlay.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
     }
@@ -226,8 +229,25 @@ document.addEventListener('DOMContentLoaded', () => {
         modalTitle.textContent = card.querySelector('.paper-card-title').textContent;
         modalAuthors.textContent = card.querySelector('.paper-card-authors').textContent;
 
-        // Detailed Content from Hidden Div
-        modalAbstract.innerHTML = details.querySelector('.detail-abstract').innerHTML;
+        // Detailed Content from Hidden Div - Get all language versions
+        const abstractKo = details.querySelector('.detail-abstract[data-lang="ko"]');
+        const abstractEn = details.querySelector('.detail-abstract[data-lang="en"]');
+
+        // Clear and set content based on language
+        modalAbstract.innerHTML = '';
+        if (abstractKo && abstractEn) {
+            // Has both languages
+            modalAbstract.appendChild(abstractKo.cloneNode(true));
+            modalAbstract.appendChild(abstractEn.cloneNode(true));
+            updateLanguageDisplay();
+        } else {
+            // Fallback to old content
+            const singleAbstract = details.querySelector('.detail-abstract');
+            if (singleAbstract) {
+                modalAbstract.innerHTML = singleAbstract.innerHTML;
+            }
+        }
+
         modalPoints.innerHTML = details.querySelector('.detail-points').innerHTML;
         modalTags.innerHTML = details.querySelector('.detail-tags').innerHTML;
         modalLinks.innerHTML = details.querySelector('.detail-links').innerHTML;
@@ -238,6 +258,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
         nextPaperBtn.style.opacity = index === paperCards.length - 1 ? '0.5' : '1';
         nextPaperBtn.style.pointerEvents = index === paperCards.length - 1 ? 'none' : 'auto';
+    }
+
+    function updateLanguageDisplay() {
+        const langLabel = document.getElementById('lang-label');
+        const abstractKo = modalAbstract.querySelector('[data-lang="ko"]');
+        const abstractEn = modalAbstract.querySelector('[data-lang="en"]');
+
+        if (abstractKo && abstractEn) {
+            if (currentLang === 'ko') {
+                abstractKo.style.display = 'block';
+                abstractEn.style.display = 'none';
+                if (langLabel) langLabel.textContent = 'Ko';
+            } else {
+                abstractKo.style.display = 'none';
+                abstractEn.style.display = 'block';
+                if (langLabel) langLabel.textContent = 'En';
+            }
+        }
+    }
+
+    function toggleLanguage() {
+        currentLang = currentLang === 'ko' ? 'en' : 'ko';
+        updateLanguageDisplay();
     }
 
     // Event Listeners for Cards
@@ -252,6 +295,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Close Button
     if (modalCloseBtn) {
         modalCloseBtn.addEventListener('click', closePaperModal);
+    }
+
+    // Language Toggle Button
+    const langToggleBtn = document.getElementById('lang-toggle-btn');
+    if (langToggleBtn) {
+        langToggleBtn.addEventListener('click', toggleLanguage);
     }
 
     // Overlay Click to Close
