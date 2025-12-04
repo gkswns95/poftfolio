@@ -244,3 +244,11 @@ nohup: 입력 무시
 127.0.0.1 - - [04/Dec/2025 23:06:10] "GET /css/experience.css HTTP/1.1" 304 -
 127.0.0.1 - - [04/Dec/2025 23:06:11] "GET /css/selected-papers.css HTTP/1.1" 200 -
 127.0.0.1 - - [04/Dec/2025 23:06:11] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:18:23] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:18:23] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:18:23] "GET /css/about.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:18:23] "GET /css/experience.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:18:23] "GET /css/awards.css HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:18:23] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [04/Dec/2025 23:18:23] "GET /images/profile.png HTTP/1.1" 304 -
+127.0.0.1 - - [04/Dec/2025 23:18:23] "GET /js/main.js HTTP/1.1" 304 -
