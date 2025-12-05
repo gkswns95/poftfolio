@@ -304,13 +304,14 @@
 .modal-visuals {
     background: #F1F5F9;
     border-radius: 16px;
-    padding: 20px;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 300px;
     margin-bottom: 30px;
-    border: 2px dashed rgba(0, 0, 0, 0.1);
+    border: none;
+    overflow: hidden;
 }
 
 .visual-placeholder {

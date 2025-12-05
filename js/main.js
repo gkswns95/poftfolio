@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'about': 'About Me',
         'experience': 'Experience',
         'papers': 'Publications',
-        'awards': 'Awards'
+        'awards': 'Awards',
+        'etc': 'Recommendations'
     };
 
     // Function to open a section
@@ -252,6 +253,31 @@ document.addEventListener('DOMContentLoaded', () => {
         modalTags.innerHTML = details.querySelector('.detail-tags').innerHTML;
         modalLinks.innerHTML = details.querySelector('.detail-links').innerHTML;
 
+        // Visual Content
+        const detailVisual = details.querySelector('.detail-visual');
+        const modalVisuals = document.querySelector('.modal-visuals');
+
+        if (detailVisual && modalVisuals) {
+            const visualPath = detailVisual.textContent.trim();
+            if (visualPath.toLowerCase().endsWith('.pdf')) {
+                modalVisuals.innerHTML = `<embed src="${visualPath}" type="application/pdf" width="100%" height="400px" style="border-radius: 8px;">`;
+            } else {
+                modalVisuals.innerHTML = `<img src="${visualPath}" alt="Paper Visual" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">`;
+            }
+        } else if (modalVisuals) {
+            // Restore placeholder
+            modalVisuals.innerHTML = `
+                <div class="visual-placeholder">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1" style="margin-bottom: 10px;">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                    <p>Visual / Diagram Placeholder</p>
+                </div>`;
+        }
+
         // Update Button States (Optional: Disable if start/end)
         prevPaperBtn.style.opacity = index === 0 ? '0.5' : '1';
         prevPaperBtn.style.pointerEvents = index === 0 ? 'none' : 'auto';
@@ -350,5 +376,49 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    /* =========================================
+       Recommendations Password Logic
+       ========================================= */
+    const recPasswordInput = document.getElementById('rec-password-input');
+    const recPasswordSubmit = document.getElementById('rec-password-submit');
+    const recPasswordError = document.getElementById('rec-password-error');
+    const recPasswordContainer = document.getElementById('rec-password-container');
+    const recContent = document.getElementById('rec-content');
+
+    function checkPassword() {
+        if (!recPasswordInput) return;
+
+        const password = recPasswordInput.value;
+        if (password === '1234') {
+            // Correct Password
+            recPasswordContainer.style.display = 'none';
+            recContent.style.display = 'block';
+            recPasswordError.style.display = 'none';
+        } else {
+            // Incorrect Password
+            recPasswordError.style.display = 'block';
+            recPasswordInput.classList.add('shake-animation');
+
+            // Clear input for better UX? No, usually keep it.
+
+            setTimeout(() => {
+                recPasswordInput.classList.remove('shake-animation');
+            }, 500);
+        }
+    }
+
+    if (recPasswordSubmit) {
+        recPasswordSubmit.addEventListener('click', checkPassword);
+    }
+
+    if (recPasswordInput) {
+        recPasswordInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                checkPassword();
+            }
+        });
+    }
 
 });

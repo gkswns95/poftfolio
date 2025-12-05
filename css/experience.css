@@ -1,6 +1,6 @@
 /* Experience Section Styles */
 #experience .timeline {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0;
 }
 
@@ -19,7 +19,6 @@
 
 #experience .timeline-text-content {
     flex: 1;
-    max-width: 55%;
     z-index: 10;
     position: relative;
 }
@@ -43,6 +42,7 @@
     transition: opacity 0.4s ease;
     /* Align vertically with text if needed, or let it sit at top */
     align-self: center;
+    flex-shrink: 0;
 }
 
 #experience .timeline-content:hover .experience-keywords {
@@ -132,7 +132,7 @@
 }
 
 /* Responsive */
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
     .experience-keywords {
         display: none;
     }
