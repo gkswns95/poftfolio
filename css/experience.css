@@ -148,3 +148,9 @@
         max-width: 100%;
     }
 }
+
+/* Timeline List Strong Elements - Consistent sizing */
+.timeline-list li>strong {
+    font-size: 1rem;
+    font-weight: 600;
+}

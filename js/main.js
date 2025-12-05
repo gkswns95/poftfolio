@@ -259,10 +259,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (detailVisual && modalVisuals) {
             const visualPath = detailVisual.textContent.trim();
+            const gifPath = detailVisual.getAttribute('data-gif');
+
             if (visualPath.toLowerCase().endsWith('.pdf')) {
                 modalVisuals.innerHTML = `<embed src="${visualPath}" type="application/pdf" width="100%" height="400px" style="border-radius: 8px;">`;
             } else {
-                modalVisuals.innerHTML = `<img src="${visualPath}" alt="Paper Visual" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">`;
+                if (gifPath) {
+                    // Interactive Image with GIF hover
+                    modalVisuals.innerHTML = `
+                        <div class="visual-container" style="position: relative; width: 100%; height: 100%;">
+                            <img src="${visualPath}" 
+                                 data-static="${visualPath}" 
+                                 data-gif="${gifPath}" 
+                                 alt="Paper Visual" 
+                                 class="interactive-visual" 
+                                 style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px; cursor: pointer; transition: opacity 0.3s;">
+                            <div class="visual-label" style="position: absolute; top: 10px; left: 10px; background: rgba(200, 200, 200, 0.9); color: white; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; pointer-events: none; backdrop-filter: blur(4px); transition: opacity 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                                ▶️ Play animation
+                            </div>
+                        </div>`;
+
+                    // Add event listeners
+                    const img = modalVisuals.querySelector('.interactive-visual');
+                    const label = modalVisuals.querySelector('.visual-label');
+
+                    // Preload GIF
+                    const preloadImg = new Image();
+                    preloadImg.src = gifPath;
+
+                    img.addEventListener('mouseenter', () => {
+                        img.src = gifPath;
+                        if (label) label.style.opacity = '0';
+                    });
+                    img.addEventListener('mouseleave', () => {
+                        img.src = visualPath;
+                        if (label) label.style.opacity = '1';
+                    });
+                } else {
+                    modalVisuals.innerHTML = `<img src="${visualPath}" alt="Paper Visual" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">`;
+                }
             }
         } else if (modalVisuals) {
             // Restore placeholder
@@ -420,5 +455,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    /* =========================================
+       Auto-calculate CAREER years
+       ========================================= */
+    function updateCareerYears() {
+        const careerElement = document.getElementById('career-years');
+        if (!careerElement) return;
+
+        const startDate = new Date('2024-01-01'); // Start date: January 1, 2024
+        const currentDate = new Date();
+
+        // Calculate difference in years
+        const diffInMs = currentDate - startDate;
+        const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365.25);
+
+        // Round up to nearest whole number
+        const yearsRounded = Math.round(diffInYears);
+
+        careerElement.textContent = yearsRounded;
+    }
+
+    // Update on page load
+    updateCareerYears();
 
 });

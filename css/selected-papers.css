@@ -46,6 +46,27 @@
     opacity: 1;
 }
 
+/* Paper Card Image */
+.paper-card-image {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #F8FAFC;
+}
+
+.card-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.paper-card:hover .card-thumbnail {
+    transform: scale(1.05);
+}
+
 .paper-card-venue {
     font-size: 0.85rem;
     font-weight: 700;
