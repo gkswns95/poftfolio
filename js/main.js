@@ -15,6 +15,28 @@ document.addEventListener('DOMContentLoaded', () => {
         'etc': 'Recommendations'
     };
 
+    // Setup paper card preview images
+    const paperCardsWithPreview = document.querySelectorAll('.paper-card[data-preview]');
+    console.log('Paper cards with preview:', paperCardsWithPreview.length);
+
+    paperCardsWithPreview.forEach(card => {
+        const previewUrl = card.getAttribute('data-preview');
+        console.log('Setting preview for card:', previewUrl);
+        if (previewUrl) {
+            // Create preview image element
+            const previewDiv = document.createElement('div');
+            previewDiv.className = 'paper-card-preview';
+
+            const previewImg = document.createElement('img');
+            previewImg.src = previewUrl;
+            previewImg.alt = 'Framework Preview';
+
+            previewDiv.appendChild(previewImg);
+            card.appendChild(previewDiv);
+        }
+    });
+
+
     // Function to open a section
     function openSection(targetId) {
         const targetSection = document.getElementById(targetId);
