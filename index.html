@@ -1350,15 +1350,139 @@
                             </div>
 
                             <div class="paper-details-content" style="display: none;">
-                                <div class="detail-abstract">
-                                    <p>Inferring the ball trajectory in sports videos is challenging due to occlusions
-                                        and small object size. We propose a Set Transformer and Hierarchical Bi-LSTM
-                                        based approach to infer ball positions from player contexts.</p>
+                                <div class="detail-abstract" data-lang="ko">
+                                    <h4
+                                        style="font-weight: 700; margin-bottom: 12px; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M12 6v6l4 2"></path>
+                                        </svg>
+                                        주요 목표
+                                    </h4>
+                                    <p>축구 경기 환경에서 발생하는 공 궤적 취득의 어려움을 해결하기 위한 공 궤적 추론 딥러닝 프레임워크 구현</p>
+
+                                    <h4
+                                        style="font-weight: 700; margin: 20px 0 12px; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                        </svg>
+                                        핵심 기여
+                                    </h4>
+                                    <ol style="padding-left: 20px; line-height: 1.8;">
+                                        <li style="margin-bottom: 10px;"><strong>계층적 구조의 공 궤적 추론 프레임워크 설계</strong>
+                                            <ul
+                                                style="list-style-type: circle; padding-left: 20px; margin-top: 5px; color: #555; word-break: keep-all;">
+                                                <li>Set Transformer를 활용한 Game context embeddings를 활용한 궤적 예측 정확도 향상</li>
+                                                <li>Player-level Ball Possession을 intermediate target으로 활용하여 경기 상황의 맥락
+                                                    정보를 반영한 궤적 예측 모델링 수행</li>
+                                            </ul>
+                                        </li>
+                                        <li style="margin-bottom: 10px;"><strong>물리적 제약을 반영한 Reality Loss 함수 제안</strong>
+                                            <ul
+                                                style="list-style-type: circle; padding-left: 20px; margin-top: 5px; color: #555; word-break: keep-all;">
+                                                <li>공의 진행 방향 변화와 가장 가까운 선수와의 거리 정보를 기반으로 공과 선수 간의 상호작용 제약을 손실 함수에 반영
+                                                </li>
+                                                <li>비접촉 상황에서 발생하는 비정상적 방향 전환에 패널티를 부과함으로써 예측 궤적의 물리적 현실성 강화</li>
+                                            </ul>
+                                        </li>
+                                        <li style="margin-bottom: 10px;"><strong>Rule-based Postprocessing 알고리즘
+                                                제안</strong>
+                                            <ul
+                                                style="list-style-type: circle; padding-left: 20px; margin-top: 5px; color: #555; word-break: keep-all;">
+                                                <li>Possession Score를 기반으로 선수가 공을 소유하는 구간과 공이 이동 중인 구간을 분리하여 예측된 공의 위치를
+                                                    소유 선수에게 할당하거나 전이 구간을 보간함으로써 운동학적 일관성이 보장된 자연스러운 궤적 생성</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+
+                                    <h4
+                                        style="font-weight: 700; margin: 20px 0 12px; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                            </path>
+                                        </svg>
+                                        성과
+                                    </h4>
+                                    <ul style="padding-left: 20px; line-height: 1.8;">
+                                        <li>KDD 2023 게재 (Oral presentation)</li>
+                                    </ul>
                                 </div>
-                                <div class="detail-points">
-                                    <li>Utilized Set Transformer to model player interactions.</li>
-                                    <li>Hierarchical Bi-LSTM for temporal consistency.</li>
-                                    <li>Published at KDD 2023 (Top Tier).</li>
+                                <div class="detail-abstract" data-lang="en" style="display: none;">
+                                    <h4
+                                        style="font-weight: 700; margin-bottom: 12px; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M12 6v6l4 2"></path>
+                                        </svg>
+                                        Research Objectives
+                                    </h4>
+                                    <p>Implementation of a deep learning framework for ball trajectory inference to
+                                        address the challenges of ball trajectory acquisition in soccer game
+                                        environments</p>
+
+                                    <h4
+                                        style="font-weight: 700; margin: 20px 0 12px; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                        </svg>
+                                        Core Contributions
+                                    </h4>
+                                    <ol style="padding-left: 20px; line-height: 1.8;">
+                                        <li style="margin-bottom: 10px;"><strong>Hierarchical Ball Trajectory Inference
+                                                Framework Design</strong>
+                                            <ul
+                                                style="list-style-type: circle; padding-left: 20px; margin-top: 5px; color: #555; word-break: keep-all;">
+                                                <li>Improved trajectory prediction accuracy using Game context
+                                                    embeddings with Set Transformer</li>
+                                                <li>Trajectory prediction modeling reflecting match context by utilizing
+                                                    Player-level Ball Possession as an intermediate target</li>
+                                            </ul>
+                                        </li>
+                                        <li style="margin-bottom: 10px;"><strong>Reality Loss Function Reflecting
+                                                Physical Constraints</strong>
+                                            <ul
+                                                style="list-style-type: circle; padding-left: 20px; margin-top: 5px; color: #555; word-break: keep-all;">
+                                                <li>Incorporated ball-player interaction constraints into the loss
+                                                    function based on ball direction changes and distance to the nearest
+                                                    player</li>
+                                                <li>Enhanced physical plausibility of predicted trajectories by
+                                                    penalizing abnormal direction changes in non-contact situations</li>
+                                            </ul>
+                                        </li>
+                                        <li style="margin-bottom: 10px;"><strong>Rule-based Postprocessing
+                                                Algorithm</strong>
+                                            <ul
+                                                style="list-style-type: circle; padding-left: 20px; margin-top: 5px; color: #555; word-break: keep-all;">
+                                                <li>Generated kinematically consistent natural trajectories by
+                                                    separating possession and transition segments based on Possession
+                                                    Score, assigning predicted ball positions to possessing players or
+                                                    interpolating transition segments</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+
+                                    <h4
+                                        style="font-weight: 700; margin: 20px 0 12px; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                            </path>
+                                        </svg>
+                                        Achievements
+                                    </h4>
+                                    <ul style="padding-left: 20px; line-height: 1.8;">
+                                        <li>Published at KDD 2023 (Oral presentation)</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-points" style="display: none;">
+                                    <!-- Legacy content hidden -->
                                 </div>
                                 <div class="detail-tags">
                                     <span class="modal-tag">Sports Analytics</span>
