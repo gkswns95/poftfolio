@@ -57,6 +57,17 @@
     align-content: flex-start;
 }
 
+/* Keywords Section Title */
+.keywords-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e2e8f0;
+    width: 100%;
+}
+
 /* Keyword Tags (Bubbles) */
 .keyword-tag {
     font-size: 0.75rem;

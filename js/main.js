@@ -227,11 +227,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalLinks = document.getElementById('modal-links');
 
     let currentPaperIndex = 0;
-    let currentLang = 'en'; // Track current language
+    let currentLang = 'ko'; // Track current language
 
     function openPaperModal(index) {
         currentPaperIndex = index;
-        currentLang = 'en'; // Reset to English when opening modal
+        currentLang = 'ko'; // Reset to Korean when opening modal
         updateModalContent(index);
         updateLanguageDisplay();
         modalOverlay.classList.add('active');
