@@ -1095,16 +1095,204 @@
                             </div>
 
                             <div class="paper-details-content" style="display: none;">
-                                <div class="detail-abstract">
-                                    <p></p>
+                                <div class="detail-abstract" data-lang="ko">
+                                    <h4
+                                        style="font-weight: 700; margin-bottom: 12px; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M12 6v6l4 2"></path>
+                                        </svg>
+                                        주요 목표
+                                    </h4>
+                                    <p>데이터 수집 과정에서 발생하는 결측치/노이즈에 강건한 신뢰도 기반 텍스트 중심의 멀티모달 감정 분석 프레임워크(Text-centric
+                                        Multimodal Sentiment Analysis Framework) 구현</p>
+
+                                    <h4
+                                        style="font-weight: 700; margin: 20px 0 12px; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                        </svg>
+                                        핵심 기여
+                                    </h4>
+                                    <ol style="padding-left: 20px; line-height: 1.8;">
+                                        <li style="margin-bottom: 10px;"><strong>Text Confidence Estimation (TCE) 모듈
+                                                제안</strong>
+                                            <ul
+                                                style="list-style-type: circle; padding-left: 20px; margin-top: 5px; color: #555; word-break: keep-all;">
+                                                <li>불완전 텍스트 입력 내에 남아있는 감정 관련 의미 정보(Sentiment-relevant semantic
+                                                    information)의 보존 정도를 정량화하기 위한 신뢰도 정의 및 Confidence Network 제안</li>
+                                                <li>단순 결측률에 의존하여 정보량을 판단하던 기존 연구와 달리, 핵심 감정 토큰의 유무를 반영하여 Semantic
+                                                    completeness을 정밀하게 추정</li>
+                                            </ul>
+                                        </li>
+                                        <li style="margin-bottom: 10px;"><strong>Importance-aware Proxy Feature
+                                                Generation (IPFG) & Confidence-guided Text Semantic
+                                                Reconstruction</strong>
+                                            <ul
+                                                style="list-style-type: circle; padding-left: 20px; margin-top: 5px; color: #555; word-break: keep-all;">
+                                                <li>오디오와 영상을 보조 모달리티로 활용하여 손실된 텍스트 정보를 대체할 수 있는 Proxy feature 생성</li>
+                                                <li>Gating Network를 도입하여 텍스트 의미 복원에 대한 각 보조 모달리티의 기여도를 평가하고 이를 기반으로 최적의
+                                                    Proxy feature 생성</li>
+                                                <li>추정된 신뢰도를 가중치로 적용하여 불완전 텍스트 특징과 생성된 프록시 특징을 융합함으로써 신뢰도 기반의 정교한
+                                                    Semantic Reconstruction 수행</li>
+                                            </ul>
+                                        </li>
+                                        <li style="margin-bottom: 10px;"><strong>Alternative Optimization Strategy (AOS)
+                                                학습 전략 제안</strong>
+                                            <ul
+                                                style="list-style-type: circle; padding-left: 20px; margin-top: 5px; color: #555; word-break: keep-all;">
+                                                <li>모듈을 공유하는 Main task와 Sub task 간의 최적화 과정에서 발생하는 Gradient Conflict 문제를
+                                                    완화하기 위한 학습 전략 제안</li>
+                                                <li>두 태스크를 동시에 최적화하는 신뢰도 학습과 메인 태스크 학습을 분리함으로써 상호 간섭을 배제하여 학습 안정성을 확보하고
+                                                    최적화 효율 극대화</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+
+                                    <h4
+                                        style="font-weight: 700; margin: 20px 0 12px; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                            </path>
+                                        </svg>
+                                        성과
+                                    </h4>
+                                    <ul style="padding-left: 20px; line-height: 1.8;">
+                                        <li>Top-tier conference submission (Under-review)</li>
+                                    </ul>
                                 </div>
-                                <div class="detail-points">
+                                <div class="detail-abstract" data-lang="en" style="display: none;">
+                                    <h4
+                                        style="font-weight: 700; margin-bottom: 12px; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <path d="M12 6v6l4 2"></path>
+                                        </svg>
+                                        Research Objectives
+                                    </h4>
+                                    <p>Implementation of a text-centric multimodal sentiment analysis framework that is
+                                        robust to missing data and noise occurring during data collection (Text-centric
+                                        Multimodal Sentiment Analysis Framework)</p>
+
+                                    <h4
+                                        style="font-weight: 700; margin: 20px 0 12px; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                                        </svg>
+                                        Core Contributions
+                                    </h4>
+                                    <ol style="padding-left: 20px; line-height: 1.8;">
+                                        <li style="margin-bottom: 10px;"><strong>Text Confidence Estimation (TCE)
+                                                Module</strong>
+                                            <ul
+                                                style="list-style-type: circle; padding-left: 20px; margin-top: 5px; color: #555; word-break: keep-all;">
+                                                <li>Proposed a confidence definition and Confidence Network to quantify
+                                                    the degree of preservation of sentiment-relevant semantic
+                                                    information remaining in incomplete text input</li>
+                                                <li>Unlike previous studies that relied on simple missing rates to
+                                                    determine information quantity, precisely estimates semantic
+                                                    completeness by reflecting the presence or absence of key sentiment
+                                                    tokens</li>
+                                            </ul>
+                                        </li>
+                                        <li style="margin-bottom: 10px;"><strong>Importance-aware Proxy Feature
+                                                Generation (IPFG) & Confidence-guided Text Semantic
+                                                Reconstruction</strong>
+                                            <ul
+                                                style="list-style-type: circle; padding-left: 20px; margin-top: 5px; color: #555; word-break: keep-all;">
+                                                <li>Generates proxy features that can replace lost text information by
+                                                    utilizing audio and video as auxiliary modalities</li>
+                                                <li>Introduces a Gating Network to evaluate each auxiliary modality's
+                                                    contribution to text semantic reconstruction and generates optimal
+                                                    proxy features based on this evaluation</li>
+                                                <li>Performs sophisticated confidence-based Semantic Reconstruction by
+                                                    fusing incomplete text features with generated proxy features using
+                                                    estimated confidence as weights</li>
+                                            </ul>
+                                        </li>
+                                        <li style="margin-bottom: 10px;"><strong>Alternative Optimization Strategy (AOS)
+                                                Training Strategy</strong>
+                                            <ul
+                                                style="list-style-type: circle; padding-left: 20px; margin-top: 5px; color: #555; word-break: keep-all;">
+                                                <li>Proposed a training strategy to alleviate the Gradient Conflict
+                                                    problem occurring in the optimization process between module-sharing
+                                                    Main task and Sub task</li>
+                                                <li>Maximizes optimization efficiency and ensures training stability by
+                                                    separating confidence learning that simultaneously optimizes both
+                                                    tasks from main task learning, thereby excluding mutual interference
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+
+                                    <h4
+                                        style="font-weight: 700; margin: 20px 0 12px; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                            </path>
+                                        </svg>
+                                        Achievements
+                                    </h4>
+                                    <ul style="padding-left: 20px; line-height: 1.8;">
+                                        <li>Top-tier conference submission (Under-review)</li>
+                                    </ul>
+                                </div>
+                                <div class="detail-points" style="display: none;">
                                 </div>
                                 <div class="detail-tags">
                                     <span class="modal-tag">Multimodal Sentiment Analysis</span>
-                                    <span class="modal-tag">Missing Modality</span>
+                                    <span class="modal-tag">Multimodal Learning</span>
+                                    <span class="modal-tag">Uncertainty Learning</span>
+                                    <span class="modal-tag">Incomplete Modality</span>
+                                    <span class="modal-tag">Text-centric Multimodal Fusion</span>
                                 </div>
                                 <div class="detail-links">
+                                    <a href="pdf/TCMR_submission.pdf" target="_blank"
+                                        class="modal-link-btn btn-primary">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                            <polyline points="14 2 14 8 20 8"></polyline>
+                                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                                            <polyline points="10 9 9 9 8 9"></polyline>
+                                        </svg>
+                                        Read Paper
+                                    </a>
+                                    <span class="modal-link-btn btn-disabled">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                                        </svg>
+                                        Open Presentation
+                                    </span>
+                                    <span class="modal-link-btn btn-disabled">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <polyline points="16 18 22 12 16 6"></polyline>
+                                            <polyline points="8 6 2 12 8 18"></polyline>
+                                        </svg>
+                                        Code
+                                    </span>
+                                    <span class="modal-link-btn btn-disabled">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                            <polyline points="21 15 16 10 5 21"></polyline>
+                                        </svg>
+                                        Poster
+                                    </span>
                                 </div>
                                 <div class="detail-visual" style="display: none;">images/TCMR_image.png</div>
                             </div>

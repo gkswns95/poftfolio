@@ -430,6 +430,20 @@
     box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
 }
 
+.btn-disabled {
+    background: #9ca3af;
+    color: white;
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.btn-disabled:hover {
+    background: #9ca3af;
+    transform: none;
+    box-shadow: none;
+}
+
 .modal-nav {
     display: flex;
     gap: 12px;

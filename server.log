@@ -585,3 +585,380 @@ nohup: 입력 무시
 127.0.0.1 - - [05/Dec/2025 23:26:20] "GET /images/TCMR_image.png HTTP/1.1" 304 -
 127.0.0.1 - - [05/Dec/2025 23:26:22] "GET /images/animation_example_(MIDAS,%20camera%20scenario).gif HTTP/1.1" 304 -
 127.0.0.1 - - [05/Dec/2025 23:26:26] "GET /images/ballradar_image.png HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:37:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:37:06] "GET /css/awards.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:37:06] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:37:06] "GET /images/MIDAS_framemwork.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:37:06] "GET /images/BallRadar_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:37:06] "GET /images/TCMR_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:37:06] "GET /js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:38:10] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:38:10] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:38:10] "GET /images/MIDAS_framemwork.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:38:10] "GET /images/TCMR_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:38:10] "GET /images/BallRadar_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:38:41] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:38:41] "GET /images/TCMR_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:38:41] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:38:41] "GET /images/MIDAS_framemwork.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:38:41] "GET /images/BallRadar_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:38:43] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:38:43] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:38:43] "GET /images/MIDAS_framemwork.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:38:44] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:38:44] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /css/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /css/experience.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /css/publications.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /css/study-note.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /css/about.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /css/awards.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /css/recommendations.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /images/profile.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /images/study-note-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /images/TCMR_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /images/MIDAS_framemwork.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /images/BallRadar_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:47] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:38:47] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:38:48] "GET /images/BallRadar_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:50] "GET /images/MIDAS_image.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:50] "GET /images/animation_example_(MIDAS,%20camera%20scenario).gif HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:38:51] "GET /images/animation_example_(MIDAS,%20camera%20scenario).gif HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:44] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:44] "GET /css/experience.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:43:44] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:47] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:43:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:48] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /css/about.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /css/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /css/awards.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /css/experience.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /css/publications.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /css/study-note.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /css/recommendations.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /images/profile.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:50] "GET /images/study-note-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:43:53] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:53] "GET /css/images/TCMR_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:53] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:53] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:53] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:53] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:54] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:54] "GET /css/images/TCMR_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:56] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:56] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:56] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:56] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:56] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:56] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:56] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:56] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:56] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:56] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:56] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:56] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:56] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:56] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:58] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:58] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:59] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:59] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:59] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:59] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:59] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:59] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:59] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:59] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:59] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:59] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:43:59] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:43:59] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /css/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /css/about.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /css/publications.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /css/experience.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /css/awards.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /css/study-note.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /css/recommendations.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /images/profile.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /images/study-note-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:45:47] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:47] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/TCMR_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/TCMR_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:48] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:52] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:52] "GET /css/images/MIDAS_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:52] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:52] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:52] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:52] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:52] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:52] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:52] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:52] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:45:59] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:45:59] "GET /css/images/BallRadar_framework.png HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:52:37] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:52:37] "GET /css/experience.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:52:37] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:52:37] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:52:37] "GET /images/MIDAS_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:52:37] "GET /images/TCMR_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:52:37] "GET /images/BallRadar_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /css/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /css/about.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /css/experience.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /css/publications.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /css/awards.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /css/study-note.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /css/recommendations.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /images/profile.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /images/study-note-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /images/MIDAS_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /images/TCMR_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:04] "GET /images/BallRadar_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:05] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:54:05] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:54:08] "GET /css/selected-papers.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:54:08] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:54:08] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:54:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:10] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:54:10] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:54:10] "GET /css/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:10] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:10] "GET /css/about.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:10] "GET /css/experience.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:10] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:10] "GET /css/publications.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:11] "GET /css/awards.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:11] "GET /css/study-note.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:11] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:11] "GET /css/recommendations.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:11] "GET /images/profile.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:11] "GET /images/study-note-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:12] "GET /images/TCMR_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:12] "GET /images/MIDAS_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:12] "GET /images/BallRadar_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:54:12] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:54:12] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:54:12] "GET /images/BallRadar_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2025 23:55:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:47] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:47] "GET /css/experience.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:47] "GET /css/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:47] "GET /css/about.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:47] "GET /css/publications.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:47] "GET /css/awards.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:47] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:47] "GET /css/study-note.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:47] "GET /css/recommendations.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:47] "GET /images/profile.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:48] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:48] "GET /images/study-note-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:48] "GET /images/TCMR_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:48] "GET /images/MIDAS_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:48] "GET /images/BallRadar_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:55:48] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:55:48] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /css/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /css/publications.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /css/about.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /css/experience.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /css/awards.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /css/recommendations.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /css/study-note.css HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /images/study-note-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /images/profile.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /images/MIDAS_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /images/TCMR_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:18] "GET /images/BallRadar_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [05/Dec/2025 23:58:19] code 404, message File not found
+127.0.0.1 - - [05/Dec/2025 23:58:19] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /css/variables.css HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /css/experience.css HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /css/awards.css HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /css/publications.css HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /css/about.css HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /css/selected-papers.css HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /css/study-note.css HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /css/recommendations.css HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /images/study-note-banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /images/profile.png HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /images/MIDAS_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /images/BallRadar_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:51] "GET /images/TCMR_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:11:52] code 404, message File not found
+127.0.0.1 - - [07/Dec/2025 16:11:52] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [07/Dec/2025 16:14:51] "GET /images/animation_example_(MIDAS,%20camera%20scenario).gif HTTP/1.1" 200 -
+127.0.0.1 - - [07/Dec/2025 16:14:51] "GET /images/MIDAS_image.png HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:15:22] "GET /pdf/20250918.%20ECML%20PKDD%202025%20Slides%20final.pdf HTTP/1.1" 200 -
+127.0.0.1 - - [07/Dec/2025 16:15:28] "GET /pdf/20250918.%20ECML%20PKDD%202025%20Poster.pdf HTTP/1.1" 200 -
+127.0.0.1 - - [07/Dec/2025 16:15:33] "GET /images/ballradar_image.png HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:15:35] "GET /images/TCMR_image.png HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:16:38] "GET /pdf/rec1.pdf HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:16:41] "GET /pdf/rec2.pdf HTTP/1.1" 304 -
+127.0.0.1 - - [07/Dec/2025 16:17:08] "GET /pdf/rec3.pdf HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /css/variables.css HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /css/about.css HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /css/experience.css HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /css/publications.css HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /css/awards.css HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /css/selected-papers.css HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /css/study-note.css HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /css/recommendations.css HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /images/profile.png HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /images/study-note-banner.png HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /images/TCMR_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /images/MIDAS_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:14] "GET /images/BallRadar_framework.png HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:49:15] code 404, message File not found
+127.0.0.1 - - [08/Dec/2025 19:49:15] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [08/Dec/2025 19:50:34] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 19:51:15] "GET /images/animation_example_(MIDAS,%20camera%20scenario).gif HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:51:15] "GET /images/MIDAS_image.png HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:51:35] "GET /images/ballradar_image.png HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 19:51:54] "GET /images/TCMR_image.png HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /css/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /css/about.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /css/awards.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /css/experience.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /css/publications.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /css/study-note.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /css/recommendations.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /images/profile.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /images/study-note-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /images/TCMR_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /images/MIDAS_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:15] "GET /images/BallRadar_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:16] code 404, message File not found
+127.0.0.1 - - [08/Dec/2025 20:01:16] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [08/Dec/2025 20:01:20] "GET /images/MIDAS_image.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:01:20] "GET /images/animation_example_(MIDAS,%20camera%20scenario).gif HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:07:13] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:08:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:10:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:11:25] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 20:11:39] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 20:11:42] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 20:11:43] code 404, message File not found
+127.0.0.1 - - [08/Dec/2025 20:11:43] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [08/Dec/2025 20:11:46] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 20:11:46] code 404, message File not found
+127.0.0.1 - - [08/Dec/2025 20:11:46] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [08/Dec/2025 20:11:47] "GET /images/profile.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:11:47] "GET /images/BallRadar_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:11:51] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 20:11:51] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [08/Dec/2025 20:11:53] "GET /images/TCMR_image.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:04] code 404, message File not found
+127.0.0.1 - - [08/Dec/2025 20:12:04] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /css/publications.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /css/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /css/about.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /css/experience.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /css/awards.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /css/study-note.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /css/recommendations.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] code 404, message File not found
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /images/profile.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /images/study-note-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /images/TCMR_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /images/MIDAS_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /images/BallRadar_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:06] code 404, message File not found
+127.0.0.1 - - [08/Dec/2025 20:12:06] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [08/Dec/2025 20:12:07] "GET /images/MIDAS_image.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:07] "GET /images/animation_example_(MIDAS,%20camera%20scenario).gif HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:08] "GET /images/MIDAS_image.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:08] "GET /images/animation_example_(MIDAS,%20camera%20scenario).gif HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:12:20] "GET /images/ballradar_image.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /css/about.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /css/variables.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /css/experience.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /css/publications.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /css/awards.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /css/selected-papers.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /css/recommendations.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /images/profile.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /css/study-note.css HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /images/study-note-banner.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /images/MIDAS_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /images/TCMR_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:33] "GET /images/BallRadar_framework.png HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:34] code 404, message File not found
+127.0.0.1 - - [08/Dec/2025 20:17:34] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [08/Dec/2025 20:17:47] "GET /pdf/ballradar_slides.pdf HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:17:56] "GET /pdf/ballradar_poster.pdf HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:54:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Dec/2025 20:54:39] "GET /js/main.js HTTP/1.1" 304 -
