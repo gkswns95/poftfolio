@@ -337,7 +337,7 @@
 
 /* Right Column: Visuals & Tech */
 .modal-visuals {
-    background: #F1F5F9;
+    background: transparent;
     border-radius: 16px;
     padding: 0;
     display: flex;
@@ -347,6 +347,10 @@
     margin-bottom: 30px;
     border: none;
     overflow: hidden;
+}
+
+.modal-visuals:has(.visual-placeholder) {
+    background: #F1F5F9;
 }
 
 .visual-placeholder {
