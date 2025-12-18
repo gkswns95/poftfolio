@@ -144,12 +144,10 @@
 }
 
 .paper-venue {
-    font-size: 1.1rem;
-    /* Increased from 0.85rem */
+    font-size: 0.9rem;
     color: #9ea9b8;
-    /* Darker gray instead of var(--text-muted) */
     margin: 0;
-    font-style: italic;
+    font-style: normal;
 }
 
 /* Responsive Design */
