@@ -1,0 +1,458 @@
+/* Resume Print Styles - Optimized for PDF Export */
+
+/* ===== Page Setup ===== */
+@page {
+    size: A4;
+    margin: 15mm 15mm 15mm 15mm;
+}
+
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 10pt;
+    line-height: 1.5;
+    color: #1a1a1a;
+    background: #ffffff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+/* ===== Container ===== */
+.resume-container {
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===== Header Section ===== */
+.resume-header {
+    text-align: center;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.resume-name {
+    font-size: 24pt;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+    letter-spacing: -0.5px;
+}
+
+.resume-title {
+    font-size: 12pt;
+    color: #2563eb;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.resume-contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 9pt;
+    color: #4b5563;
+}
+
+.resume-contact a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.resume-contact span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* ===== Section Styles ===== */
+.resume-section {
+    margin-bottom: 16px;
+}
+
+.section-title {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+}
+
+/* ===== About Section ===== */
+.about-text {
+    font-size: 9.5pt;
+    color: #374151;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* ===== Experience Section ===== */
+.experience-item {
+    margin-bottom: 12px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.experience-company {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.experience-date {
+    font-size: 9pt;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.experience-role {
+    font-size: 9.5pt;
+    color: #2563eb;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.experience-list {
+    margin-left: 15px;
+    font-size: 9pt;
+    color: #374151;
+}
+
+.experience-list li {
+    margin-bottom: 3px;
+}
+
+.experience-list li strong {
+    color: #1a1a1a;
+}
+
+/* ===== Education Section ===== */
+.education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.education-info {
+    flex: 1;
+}
+
+.education-degree {
+    font-size: 10pt;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.education-school {
+    font-size: 9pt;
+    color: #4b5563;
+}
+
+.education-gpa {
+    font-size: 9pt;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* ===== Publications Section ===== */
+.publication-item {
+    margin-bottom: 8px;
+    padding-left: 12px;
+    border-left: 2px solid #e5e7eb;
+}
+
+.publication-item.highlight {
+    border-left-color: #2563eb;
+}
+
+.publication-title {
+    font-size: 9pt;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.4;
+}
+
+.publication-authors {
+    font-size: 8.5pt;
+    color: #4b5563;
+}
+
+.publication-authors .me {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.publication-venue {
+    font-size: 8.5pt;
+    color: #6b7280;
+    font-style: italic;
+}
+
+.publication-venue .venue-name {
+    color: #2563eb;
+    font-weight: 500;
+}
+
+.publication-venue .award {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+/* ===== Awards Section ===== */
+.award-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: 9pt;
+}
+
+.award-info {
+    flex: 1;
+}
+
+.award-name {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.award-details {
+    color: #4b5563;
+}
+
+.award-date {
+    color: #6b7280;
+    font-size: 8.5pt;
+}
+
+/* ===== Skills Section ===== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.skill-category {
+    font-size: 9pt;
+}
+
+.skill-label {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.skill-list {
+    color: #4b5563;
+}
+
+/* ===== Print Specific Styles ===== */
+@media print {
+    body {
+        background: white;
+    }
+
+    .resume-container {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    /* Keep header together */
+    .resume-header {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* Section titles should stay with following content */
+    .section-title {
+        page-break-after: avoid;
+    }
+
+    .subsection-title {
+        page-break-after: avoid;
+    }
+
+    /* Allow sections to break across pages */
+    .resume-section {
+        page-break-inside: auto;
+    }
+
+    /* Keep individual items together when possible, but allow break if needed */
+    .experience-item {
+        page-break-inside: auto;
+    }
+
+    .publication-item,
+    .award-item {
+        page-break-inside: avoid;
+    }
+
+    /* Prevent orphans and widows */
+    p,
+    li {
+        orphans: 2;
+        widows: 2;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    /* Hide print button in print mode */
+    .print-btn {
+        display: none !important;
+    }
+}
+
+/* ===== Screen Only Styles ===== */
+@media screen {
+    body {
+        background: #f3f4f6;
+        padding: 40px 20px;
+    }
+
+    .resume-container {
+        background: white;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+        padding: 40px;
+    }
+
+    .print-btn {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: #2563eb;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.2s;
+    }
+
+    .print-btn:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+    }
+}
+
+/* ===== Two Column Layout for Skills ===== */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.two-column>div {
+    min-width: 0;
+}
+
+/* ===== Tag Styles ===== */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.skill-tag {
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 8pt;
+    font-weight: 500;
+}
+
+.skill-tag.primary {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+/* ===== Underline Styles ===== */
+.underline {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.underline-link {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.underline-link:hover {
+    color: #2563eb;
+}
+
+/* ===== Subsection Title ===== */
+.subsection-title {
+    font-size: 9.5pt;
+    font-weight: 600;
+    color: #2563eb;
+    margin: 12px 0 8px 0;
+    padding-bottom: 2px;
+}
+
+/* ===== Nested Lists ===== */
+.experience-list ul {
+    margin-left: 15px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+.experience-list ul li {
+    margin-bottom: 2px;
+}
+
+/* ===== Award Paper Name ===== */
+.award-paper-name {
+    font-size: 8.5pt;
+    color: #6b7280;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+/* ===== Detailed Skills ===== */
+.skills-detailed {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.skill-row {
+    font-size: 9pt;
+    line-height: 1.5;
+}
+
+.skill-row .skill-label {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.skill-row .skill-list {
+    color: #4b5563;
+}
