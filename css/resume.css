@@ -215,6 +215,23 @@ body {
     font-weight: 600;
 }
 
+/* ===== Certifications Section ===== */
+.certification-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 6px;
+    font-size: 9pt;
+}
+
+.certification-name {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.certification-details {
+    color: #4b5563;
+}
+
 /* ===== Awards Section ===== */
 .award-item {
     display: flex;

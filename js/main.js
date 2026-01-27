@@ -435,48 +435,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* =========================================
-       Recommendations Password Logic
+       Recommendations Password Logic (Removed)
        ========================================= */
-    const recPasswordInput = document.getElementById('rec-password-input');
-    const recPasswordSubmit = document.getElementById('rec-password-submit');
-    const recPasswordError = document.getElementById('rec-password-error');
-    const recPasswordContainer = document.getElementById('rec-password-container');
-    const recContent = document.getElementById('rec-content');
+    // Password protection removed as per request.
 
-    function checkPassword() {
-        if (!recPasswordInput) return;
-
-        const password = recPasswordInput.value;
-        if (password === '1234') {
-            // Correct Password
-            recPasswordContainer.style.display = 'none';
-            recContent.style.display = 'block';
-            recPasswordError.style.display = 'none';
-        } else {
-            // Incorrect Password
-            recPasswordError.style.display = 'block';
-            recPasswordInput.classList.add('shake-animation');
-
-            // Clear input for better UX? No, usually keep it.
-
-            setTimeout(() => {
-                recPasswordInput.classList.remove('shake-animation');
-            }, 500);
-        }
-    }
-
-    if (recPasswordSubmit) {
-        recPasswordSubmit.addEventListener('click', checkPassword);
-    }
-
-    if (recPasswordInput) {
-        recPasswordInput.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                e.preventDefault();
-                checkPassword();
-            }
-        });
-    }
 
     /* =========================================
        Auto-calculate CAREER years
