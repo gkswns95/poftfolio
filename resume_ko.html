@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Han-Jun Choi - Resume</title>
-    <meta name="description" content="Resume of Han-Jun Choi, AI Researcher & Data Scientist">
+    <title>최한준 - 이력서</title>
+    <meta name="description" content="최한준 이력서 - AI 연구원 & 데이터 사이언티스트">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 
     <!-- Resume Styles -->
     <link rel="stylesheet" href="css/resume.css">
+    <style>
+        /* Korean font override */
+        body,
+        .resume-container {
+            font-family: 'Nanum Gothic', 'Nunito', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
     <div class="resume-container">
         <!-- Header -->
         <header class="resume-header">
-            <h1 class="resume-name">Han-Jun Choi</h1>
-            <p class="resume-title">AI Researcher & Data Scientist</p>
+            <h1 class="resume-name">최한준</h1>
+            <p class="resume-title">AI 연구원 & 데이터 사이언티스트</p>
             <div class="resume-contact">
                 <span>📧 <a href="mailto:hanjun_c@naver.com">hanjun_c@naver.com</a></span>
                 <span>🔗 <a href="https://www.linkedin.com/in/han-jun-choi"
@@ -36,72 +43,70 @@
 
         <!-- Experience -->
         <section class="resume-section">
-            <h2 class="section-title">Work Experience</h2>
+            <h2 class="section-title">경력</h2>
 
             <div class="experience-item">
                 <div class="experience-header">
-                    <span class="experience-company"><span class="underline">Korea Electronics Technology Institute
+                    <span class="experience-company"><span class="underline">한국전자기술연구원
                             (KETI)</span></span>
-                    <span class="experience-date">Jan 2024 - Present</span>
+                    <span class="experience-date">2024.01 - 현재</span>
                 </div>
-                <div class="experience-role">AI Researcher, AI Research Center</div>
+                <div class="experience-role">AI 연구원, AI연구센터</div>
                 <ul class="experience-list">
-                    <li><strong>Physical AI-based Vision-Language-Action (VLA) Modeling</strong>
+                    <li><strong>Physical AI 기반 Vision-Language-Action (VLA) 모델링</strong>
                         <ul>
-                            <li>Development of multimodal dialogue model for robot-human interaction</li>
-                            <li>Analysis of VLA research trends for 3D character generation</li>
-                            <li>Implementation of VLA model based on Korean emotional dialogue dataset</li>
+                            <li>로봇-인간 간 상호작용을 위한 멀티모달 대화 모델 개발</li>
+                            <li>3D 캐릭터 생성을 위한 VLA 연구 동향 분석</li>
+                            <li>한국어 감성 대화 데이터셋 기반 VLA 모델 구현</li>
                         </ul>
                     </li>
-                    <li><strong>Multimodal Sentiment Analysis</strong>
+                    <li><strong>멀티모달 감성 분석 (Multimodal Sentiment Analysis)</strong>
                         <ul>
-                            <li>Conference paper submission to <span class="underline">EMNLP</span> (1st author, under
-                                review)</li>
-                            <li>Conference paper publication at KIBME (1st author, <span class="underline">Best Paper
-                                    Award</span>)</li>
-                            <li>Conference paper publication at HCLT (1st author, oral presentation)</li>
-                            <li>Development of a Korean multimodal data preprocessing pipeline (SW program registration)
+                            <li><span class="underline">EMNLP</span> 학술대회 논문 투고 (1저자, 심사 중)</li>
+                            <li>KIBME 학술대회 논문 게재 (1저자, <span class="underline">최우수논문상</span>)</li>
+                            <li>HCLT 학술대회 논문 게재 (1저자, 구두 발표)</li>
+                            <li>한국어 멀티모달 데이터 전처리 파이프라인 개발 (SW 프로그램 등록)
                             </li>
                         </ul>
                     </li>
-                    <li><strong>Multimodal Emotion Recognition</strong>
+                    <li><strong>멀티모달 감정 인식 (Multimodal Emotion Recognition)</strong>
                         <ul>
-                            <li>Development of a multimodal emotion recognition framework</li>
-                            <li>Journal submission in preparation <span class="underline">(SCI(E), IF: 1.7, Q3)</span>
+                            <li>멀티모달 감정 인식 프레임워크 개발</li>
+                            <li>저널 논문 투고 준비 중 <span class="underline">(SCI(E), IF: 1.7, Q3)</span>
                             </li>
                         </ul>
                     </li>
-                    <li><strong>Multi-Object Trajectory Modeling</strong>
+                    <li><strong>다중 객체 궤적 모델링 (Multi-Object Trajectory Modeling)</strong>
                         <ul>
-                            <li>Conference paper publication at <span class="underline">PKDD</span> (1st author, BK21
-                                Second-tier conference)</li>
-                            <li>Conference paper publication at <span class="underline">CIKM</span> (3rd author, BK21
-                                Top-tier conference)</li>
+                            <li><span class="underline">PKDD</span> 학술대회 논문 게재 (1저자, BK21 우수학술대회)</li>
+                            <li><span class="underline">CIKM</span> 학술대회 논문 게재 (3저자, BK21 최우수학술대회)</li>
                         </ul>
                     </li>
-                    <li><strong>Gaze Estimation</strong>
+                    <li><strong>시선 추정 (Gaze Estimation)</strong>
                         <ul>
-                            <li>Data preprocessing and label validity verification</li>
-                            <li>Reviewing key papers in gaze estimation</li>
+                            <li>데이터 전처리 및 라벨 유효성 검증</li>
+                            <li>시선 추정 핵심 논문 리뷰</li>
                         </ul>
                     </li>
-                    <li><strong>MetaHuman Avatar Development</strong>
+                    <li><strong>MetaHuman 아바타 개발 (MetaHuman Avatar Development)</strong>
                         <ul>
-                            <li>Construction of MetaHuman avatar data for empathetic AI chatbots</li>
-                            <li>Preprocessing of MetaHuman avatars using 3D mesh-based tools</li>
+                            <li>공감형 AI 챗봇을 위한 MetaHuman 아바타 데이터 구축</li>
+                            <li>3D 메쉬 기반 도구를 활용한 MetaHuman 아바타 전처리</li>
                         </ul>
                     </li>
-                    <li><strong>Other Activities</strong>
+                    <li><strong>기타 활동 (Other Activities)</strong>
                         <ul>
-                            <li>ICT technology commercialization (2024 & 2025)</li>
-                            <li>Research trend seminar presentations</li>
+                            <li>ICT 기술 사업화 (2024 & 2025)</li>
+                            <li>최신 연구 동향 세미나 발표</li>
                         </ul>
                     </li>
                 </ul>
                 <div class="skill-tags">
+                    <!-- Languages & Frameworks -->
                     <span class="skill-tag primary">Python</span>
                     <span class="skill-tag primary">PyTorch</span>
                     <span class="skill-tag primary">TensorFlow</span>
+                    <!-- Libraries & Tools -->
                     <span class="skill-tag">NumPy</span>
                     <span class="skill-tag">Pandas</span>
                     <span class="skill-tag">Scikit-learn</span>
@@ -109,6 +114,33 @@
                     <span class="skill-tag">OpenCV</span>
                     <span class="skill-tag">Librosa</span>
                     <span class="skill-tag">OpenFace</span>
+                    <!-- Models & Architectures -->
+                    <span class="skill-tag">RNNs</span>
+                    <span class="skill-tag">CNNs</span>
+                    <span class="skill-tag">Transformer</span>
+                    <span class="skill-tag">Multimodal Transformer</span>
+                    <span class="skill-tag">Cross-modal Transformer</span>
+                    <span class="skill-tag">LLMs</span>
+                    <span class="skill-tag">BERT</span>
+                    <span class="skill-tag">VAE</span>
+                    <span class="skill-tag">VQ-VAE</span>
+                    <span class="skill-tag">GAN</span>
+                    <span class="skill-tag">Diffusion</span>
+                    <!-- Research Areas -->
+                    <span class="skill-tag primary">Multimodal Fusion</span>
+                    <span class="skill-tag primary">Emotion Recognition</span>
+                    <span class="skill-tag primary">Sentiment Analysis</span>
+                    <span class="skill-tag">Gaze Estimation</span>
+                    <span class="skill-tag">Prompt Engineering</span>
+                    <span class="skill-tag">Agent</span>
+                    <!-- Learning Methods -->
+                    <span class="skill-tag">Contrastive Learning</span>
+                    <span class="skill-tag">Knowledge Distillation</span>
+                    <span class="skill-tag">Self-supervised Learning</span>
+                    <span class="skill-tag">Multi-task Learning</span>
+                    <span class="skill-tag">Transfer Learning</span>
+                    <span class="skill-tag">Fine-tuning</span>
+                    <!-- Data & Modalities -->
                     <span class="skill-tag">Text</span>
                     <span class="skill-tag">Acoustic</span>
                     <span class="skill-tag">Visual</span>
@@ -116,25 +148,6 @@
                     <span class="skill-tag">MetaHuman</span>
                     <span class="skill-tag">Avatar</span>
                     <span class="skill-tag">3D mesh</span>
-                    <span class="skill-tag primary">Multimodal Fusion</span>
-                    <span class="skill-tag primary">Emotion Recognition</span>
-                    <span class="skill-tag primary">Sentiment Analysis</span>
-                    <span class="skill-tag">Gaze Estimation</span>
-                    <span class="skill-tag">Prompt Engineering</span>
-                    <span class="skill-tag">RNNs</span>
-                    <span class="skill-tag">CNNs</span>
-                    <span class="skill-tag">Transformer</span>
-                    <span class="skill-tag">Multimodal Transformer</span>
-                    <span class="skill-tag">LLMs</span>
-                    <span class="skill-tag">BERT</span>
-                    <span class="skill-tag">Agent</span>
-                    <span class="skill-tag">Cross-modal Transformer</span>
-                    <span class="skill-tag">Contrastive Learning</span>
-                    <span class="skill-tag">Knowledge Distillation</span>
-                    <span class="skill-tag">Self-supervised Learning</span>
-                    <span class="skill-tag">Multi-task Learning</span>
-                    <span class="skill-tag">Transfer Learning</span>
-                    <span class="skill-tag">Fine-tuning</span>
                     <span class="skill-tag">Data Processing</span>
                 </div>
             </div>
@@ -143,9 +156,9 @@
 
         <!-- Publications -->
         <section class="resume-section">
-            <h2 class="section-title">Publications</h2>
-            <p style="font-size: 8.5pt; color: #6b7280; margin-bottom: 10px;">* Equal Contribution · 🏆 Award · 📌 Key
-                Paper</p>
+            <h2 class="section-title">논문 실적</h2>
+            <p style="font-size: 8.5pt; color: #6b7280; margin-bottom: 10px;">* Equal Contribution · 🏆 수상 · 📌 주요
+                논문</p>
 
             <!-- 2025 -->
             <h3 class="subsection-title">2025</h3>
@@ -155,8 +168,10 @@
                     Incomplete Multimodal Sentiment Analysis</div>
                 <div class="publication-authors"><span class="me">Han-Jun Choi</span>, Byunggill Joe, Saim Shin, Jin Yea
                     Jang</div>
-                <div class="publication-venue"><span class="venue-name">[Under Review]</span> · Top-tier Conference
-                    Submission · Nov 2025</div>
+                <div class="publication-venue"><span class="venue-name">[Under Review]</span> · Top-tier conference
+                    submission
+                    (EMNLP)
+                    · 2025년 11월</div>
             </div>
 
             <div class="publication-item highlight">
@@ -164,7 +179,7 @@
                 </div>
                 <div class="publication-authors">Geonhee Jo, Miru Hong, <span class="me">Han-Jun Choi</span>, Pascal
                     Bauer, Sang-Ki Ko</div>
-                <div class="publication-venue"><span class="venue-name">[CIKM]</span> · BK21 Top Conference · Aug 2025
+                <div class="publication-venue"><span class="venue-name">[CIKM]</span> · BK21 최우수학술대회 · 2025년 8월
                 </div>
             </div>
 
@@ -173,16 +188,16 @@
                     Derivative-Accumulating Self-Ensemble</div>
                 <div class="publication-authors"><span class="me">Han-Jun Choi*</span>, Hyunsung Kim*, Minho Lee,
                     Minchul Jeong, Chang-Jo Kim, Jinsung Yoon, Sang-Ki Ko</div>
-                <div class="publication-venue"><span class="venue-name">[ECML PKDD]</span> · BK21 Second-tier Conference
-                    · Jun 2025</div>
+                <div class="publication-venue"><span class="venue-name">[ECML PKDD]</span> · BK21 우수학술대회
+                    · 2025년 6월</div>
             </div>
 
             <div class="publication-item">
                 <div class="publication-title">🏆 Multimodal Sentiment Analysis under Incomplete Modalities with Missing
                     Text Localization and Confidence Aware Fusion</div>
                 <div class="publication-authors"><span class="me">Han-Jun Choi</span>, Byunggill Joe, Jin Yea Jang</div>
-                <div class="publication-venue"><span class="venue-name">[KIBME]</span> · <span class="award">Best Paper
-                        Award</span> · Feb 2025</div>
+                <div class="publication-venue"><span class="venue-name">[KIBME]</span> · <span
+                        class="award">최우수논문상</span> · 2025년 2월</div>
             </div>
 
             <!-- 2024 -->
@@ -192,14 +207,14 @@
                 <div class="publication-title">Analysis of Missing Modality Problems with Korean Multimodal Sentiment
                     Data</div>
                 <div class="publication-authors"><span class="me">Han-Jun Choi</span>, Saim Shin, Jin Yea Jang</div>
-                <div class="publication-venue"><span class="venue-name">[HCLT]</span> · Oct 2024</div>
+                <div class="publication-venue"><span class="venue-name">[HCLT]</span> · 2024년 10월</div>
             </div>
 
             <div class="publication-item">
                 <div class="publication-title">Transformer-Based Multi-Agent Trajectory Imputation Model using
                     Permutation Equivariance</div>
                 <div class="publication-authors"><span class="me">Han-Jun Choi</span>, Hyun-Woo Park, Sang-Ki Ko</div>
-                <div class="publication-venue"><span class="venue-name">[KTCP]</span> · KCI Journal · Feb 2024</div>
+                <div class="publication-venue"><span class="venue-name">[KTCP]</span> · KCI 저널 · 2024년 2월</div>
             </div>
 
             <!-- 2023 -->
@@ -210,15 +225,15 @@
                     Transformer and Hierarchical Bi-LSTM</div>
                 <div class="publication-authors">Hyunsung Kim, <span class="me">Han-Jun Choi</span>, Chang-Jo Kim,
                     Jinsung Yoon, Sang-Ki Ko</div>
-                <div class="publication-venue"><span class="venue-name">[KDD]</span> · BK21 Top Conference · Aug 2023
+                <div class="publication-venue"><span class="venue-name">[KDD]</span> · BK21 최우수학술대회 · 2023년 8월
                 </div>
             </div>
 
             <div class="publication-item">
                 <div class="publication-title">🏆 Deep-learning-based Multi-Agent Trajectory Imputation</div>
                 <div class="publication-authors"><span class="me">Han-Jun Choi</span>, Hyun-Woo Park, Sang-Ki Ko</div>
-                <div class="publication-venue"><span class="venue-name">[KCC]</span> · <span class="award">Excellent
-                        Paper Award</span> · Jun 2023</div>
+                <div class="publication-venue"><span class="venue-name">[KCC]</span> · <span class="award">최우수논문상</span>
+                    · 2023년 6월</div>
             </div>
 
             <!-- 2022 -->
@@ -228,7 +243,7 @@
                 <div class="publication-title">Comparison Study of Deep Learning-based Spatiotemporal Data Imputation
                     Algorithms</div>
                 <div class="publication-authors">Park Hyun Woo, <span class="me">Han-Jun Choi</span>, Sang-Ki Ko</div>
-                <div class="publication-venue"><span class="venue-name">[KSC]</span> · Jun 2022</div>
+                <div class="publication-venue"><span class="venue-name">[KSC]</span> · 2022년 6월</div>
             </div>
 
             <div class="publication-item">
@@ -236,14 +251,14 @@
                     IMU sensor data</div>
                 <div class="publication-authors"><span class="me">Han-Jun Choi</span>, Min Gi Jeon, Su-Hyeon Kim,
                     Sang-Ki Ko, Hal-Gyun Jeong</div>
-                <div class="publication-venue"><span class="venue-name">[ITCT]</span> · Feb 2022</div>
+                <div class="publication-venue"><span class="venue-name">[ITCT]</span> · 2022년 2월</div>
             </div>
 
             <div class="publication-item">
                 <div class="publication-title">Optimal Data Generation Strategy for Training RNN-based Time-series Data
                     Imputation Models</div>
                 <div class="publication-authors"><span class="me">Han-Jun Choi</span>, Park Hyun Woo, Sang-Ki Ko</div>
-                <div class="publication-venue"><span class="venue-name">[KSC]</span> · Jan 2022</div>
+                <div class="publication-venue"><span class="venue-name">[KSC]</span> · 2022년 1월</div>
             </div>
 
             <!-- 2021 -->
@@ -254,15 +269,15 @@
                     video analysis</div>
                 <div class="publication-authors"><span class="me">Han-Jun Choi</span>, Hyun-Woo Park, Hyun-Sung Kim,
                     Dong-Wook Chung, Jongeun Chung, Sang-Ki Ko</div>
-                <div class="publication-venue"><span class="venue-name">[KSC]</span> · <span class="award">Excellent
-                        Paper Award</span> · Dec 2021</div>
+                <div class="publication-venue"><span class="venue-name">[KSC]</span> · <span class="award">최우수논문상</span>
+                    · 2021년 12월</div>
             </div>
 
             <div class="publication-item">
                 <div class="publication-title">Deep learning-based time-series wind speed data imputation algorithm
                     using temperature data</div>
                 <div class="publication-authors"><span class="me">Han-Jun Choi</span>, Sang-Ki Ko, Jongwoon Lim</div>
-                <div class="publication-venue"><span class="venue-name">[KSC]</span> · Jun 2021</div>
+                <div class="publication-venue"><span class="venue-name">[KSC]</span> · 2021년 6월</div>
             </div>
         </section>
 
@@ -270,86 +285,84 @@
 
         <!-- Awards -->
         <section class="resume-section">
-            <h2 class="section-title">Awards</h2>
+            <h2 class="section-title">수상 내역</h2>
 
             <div class="award-item">
                 <div class="award-info">
-                    <span class="award-name">🥇 Best Paper Award</span>
-                    <span class="award-details"> · KIBME 2025 (Korean Institute of Broadcast and Media Engineers)</span>
+                    <span class="award-name">🥇 최우수논문상</span>
+                    <span class="award-details"> · KIBME 2025 (한국방송·미디어공학회)</span>
                 </div>
-                <span class="award-date">Feb 2025</span>
+                <span class="award-date">2025년 2월</span>
             </div>
-            <div class="award-paper-name">Paper: Multimodal Sentiment Analysis under Incomplete Modalities with Missing
+            <div class="award-paper-name">논문: Multimodal Sentiment Analysis under Incomplete Modalities with Missing
                 Text Localization and Confidence Aware Fusion</div>
 
             <div class="award-item">
                 <div class="award-info">
-                    <span class="award-name">🥈 Excellent Paper Award</span>
-                    <span class="award-details"> · KCC 2023 (Korea Computer Congress)</span>
+                    <span class="award-name">🥈 우수발표논문상</span>
+                    <span class="award-details"> · KCC 2023 (한국정보과학회)</span>
                 </div>
-                <span class="award-date">Jun 2023</span>
+                <span class="award-date">2023년 6월</span>
             </div>
-            <div class="award-paper-name">Paper: Deep-learning-based Multi-Agent Trajectory Imputation</div>
+            <div class="award-paper-name">논문: Deep-learning-based Multi-Agent Trajectory Imputation</div>
 
             <div class="award-item">
                 <div class="award-info">
-                    <span class="award-name">🥈 Excellent Paper Award</span>
-                    <span class="award-details"> · KSC 2021 (Korea Software Congress)</span>
+                    <span class="award-name">🥈 우수논문상</span>
+                    <span class="award-details"> · KSC 2021 (한국소프트웨어종합학술대회)</span>
                 </div>
-                <span class="award-date">Dec 2021</span>
+                <span class="award-date">2021년 12월</span>
             </div>
-            <div class="award-paper-name">Paper: Deep learning-based coordinate tracking algorithm for automated soccer
+            <div class="award-paper-name">논문: Deep learning-based coordinate tracking algorithm for automated soccer
                 video analysis</div>
         </section>
 
         <!-- Education -->
         <section class="resume-section">
-            <h2 class="section-title">Education</h2>
+            <h2 class="section-title">학력</h2>
 
             <!-- M.S. Degree -->
             <div class="experience-item">
                 <div class="experience-header">
-                    <span class="experience-company"><span class="underline">Kangwon National University
+                    <span class="experience-company"><span class="underline">강원대학교
                             (KNU)</span></span>
-                    <span class="experience-date">M.S. Degree · GPA: 4.38/4.5</span>
+                    <span class="experience-date">석사 · GPA: 4.38/4.5</span>
                 </div>
-                <div class="experience-role">M.S. in Computer Information & Communication Engineering · Advisor: Prof.
-                    Sang-Ki Ko</div>
+                <div class="experience-role">컴퓨터정보통신공학 석사 · 지도교수: 고상기 교수</div>
                 <ul class="experience-list">
-                    <li><strong>Research Topics</strong>
+                    <li><strong>연구 주제 (Research Topics)</strong>
                         <ul>
                             <li>Multivariate Time-Series Analysis</li>
                             <li>Time-Series Imputation</li>
                             <li>Multi-Object Detection</li>
                             <li>Multi-Object Tracking</li>
-                            <li>Multi-Object Imputation</li>
+                            <li>Multi-Object Trajectory Imputation</li>
                             <li>Sports Analytics</li>
                         </ul>
                     </li>
-                    <li><strong>Research Papers</strong>
+                    <li><strong>연구 논문 (Research Papers)</strong>
                         <ul>
                             <li>[KTCP 2024] Transformer-Based Multi-Agent Trajectory Imputation Model using Permutation
-                                Equivariance (1st author, KCI Journal)</li>
+                                Equivariance (1저자, KCI 저널)</li>
                             <li>[KDD 2023] Ball trajectory inference from Multi-Agent
                                 Sports Contexts Using Set
-                                Transformer and Hierarchical Bi-LSTM (2nd author, <span class="underline">BK21 Top-tier
-                                    conference</span>, oral
-                                presentation)</li>
-                            <li>[KCC 2023] Deep-learning-based Multi-Agent Trajectory Imputation (1st author, domestic
-                                conference, <span class="underline">Excellent Paper Award</span>)</li>
+                                Transformer and Hierarchical Bi-LSTM (2저자, <span class="underline">BK21 최우수
+                                    학술대회</span>, 구두 발표)</li>
+                            <li>[KCC 2023] Deep-learning-based Multi-Agent Trajectory Imputation (1저자, 국내
+                                학술대회, <span class="underline">최우수논문상</span>)</li>
                             <li>[KSC 2022] Comparison Study of Deep Learning-based Spatiotemporal Data Imputation
-                                Algorithms (2nd author, domestic conference, oral presentation)</li>
+                                Algorithms (2저자, 국내 학술대회, 구두 발표)</li>
                             <li>[ITCT 2022] Deep learning-based workout classification and repetition counting using IMU
-                                sensor data (1st author, domestic conference, oral presentation)</li>
+                                sensor data (1저자, 국내 학술대회, 구두 발표)</li>
                             <li>[KSC 2022] Optimal Data Generation Strategy for Training RNN-based Time-series Data
-                                Imputation Models (1st author, domestic conference, oral presentation)</li>
+                                Imputation Models (1저자, 국내 학술대회, 구두 발표)</li>
                         </ul>
                     </li>
-                    <li><strong>Teaching Assistant</strong>
+                    <li><strong>조교 활동 (Teaching Assistant)</strong>
                         <ul>
-                            <li>Understanding of Artificial Intelligence</li>
-                            <li>Programming Languages</li>
-                            <li>Compiler Design</li>
+                            <li>인공지능의 이해</li>
+                            <li>프로그래밍 언어</li>
+                            <li>컴파일러 설계</li>
                         </ul>
                     </li>
                 </ul>
@@ -386,13 +399,13 @@
             <!-- B.S. Degree -->
             <div class="experience-item">
                 <div class="experience-header">
-                    <span class="experience-company"><span class="underline">Kangwon National University
+                    <span class="experience-company"><span class="underline">강원대학교
                             (KNU)</span></span>
-                    <span class="experience-date">B.S. Degree · GPA: 3.88/4.5</span>
+                    <span class="experience-date">학사 · GPA: 3.88/4.5</span>
                 </div>
-                <div class="experience-role">B.S. in Computer Information & Communication Engineering</div>
+                <div class="experience-role">컴퓨터정보통신공학 학사</div>
                 <ul class="experience-list">
-                    <li><strong>Research Topics</strong>
+                    <li><strong>연구 주제 (Research Topics)</strong>
                         <ul>
                             <li>Multivariate Time-Series Analysis</li>
                             <li>Time-Series Imputation</li>
@@ -401,28 +414,27 @@
                             <li>Sports Analytics</li>
                         </ul>
                     </li>
-                    <li><strong>Research Papers</strong>
+                    <li><strong>연구 논문 (Research Papers)</strong>
                         <ul>
                             <li>[KSC 2021] Deep learning-based coordinate tracking algorithm for automated soccer video
-                                analysis (1st author, domestic conference, <span class="underline">Excellent Paper
-                                    Award</span>)</li>
+                                analysis (1저자, 국내 학술대회, <span class="underline">최우수논문상</span>)</li>
                             <li>[KSC 2021] Deep learning-based time-series wind speed data imputation using temperature
-                                data (1st author, domestic conference, Oral Presentation)</li>
+                                data (1저자, 국내 학술대회, 구두 발표)</li>
                         </ul>
                     </li>
-                    <li><strong>Other Activities</strong>
+                    <li><strong>기타 활동 (Other Activities)</strong>
                         <ul>
-                            <li>Participation in the DACON AI Competition: Solar Power Generation Forecasting</li>
-                            <li>Participation in the DACON AI Competition: AI-Based Camera Image Quality Enhancement
+                            <li>DACON AI 경진대회 참가: 태양광 발전량 예측</li>
+                            <li>DACON AI 경진대회 참가: AI 기반 카메라 이미지 화질 향상
                             </li>
-                            <li>Participation in the Joint Hackathon for SW-University</li>
-                            <li>Participation in the AI Grand Challenge: AI system for mathematical problem solving</li>
-                            <li>Project: Developing exercise classification and counting model</li>
+                            <li>SW중심대학 연합 해커톤 참가</li>
+                            <li>AI 그랜드 챌린지 참가: 수학 문제 풀이 AI 시스템</li>
+                            <li>프로젝트: 운동 분류 및 카운팅 모델 개발</li>
                         </ul>
                     </li>
-                    <li><strong>Teaching Assistant</strong>
+                    <li><strong>조교 활동 (Teaching Assistant)</strong>
                         <ul>
-                            <li>Programming Languages</li>
+                            <li>프로그래밍 언어</li>
                         </ul>
                     </li>
                 </ul>
@@ -453,22 +465,22 @@
 
         <!-- Skills Summary -->
         <section class="resume-section">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="section-title">기술 스택</h2>
 
             <div class="skills-detailed">
                 <div class="skill-row">
-                    <span class="skill-label">Programming & ML:</span>
+                    <span class="skill-label">프로그래밍 & ML:</span>
                     <span class="skill-list">Python, PyTorch, TensorFlow, NumPy, Pandas, Scikit-learn, Matplotlib,
                         OpenCV, Librosa, OpenFace</span>
                 </div>
                 <div class="skill-row">
-                    <span class="skill-label">Deep Learning Models:</span>
+                    <span class="skill-label">딥러닝 모델:</span>
                     <span class="skill-list">Transformer, BERT, LLMs, Multimodal Transformer, Cross-modal Transformer,
                         CNNs, RNNs, GRU, Seq2Seq, GNN, VAE, GAN, Diffusion, YOLO, DETR, Fast R-CNN, Hungarian Algorithm,
                         Multi-object Detection, Multi-Object Trajectory Modeling</span>
                 </div>
                 <div class="skill-row">
-                    <span class="skill-label">Research Areas:</span>
+                    <span class="skill-label">연구 분야:</span>
                     <span class="skill-list">Multimodal Fusion, Sentiment Analysis, Emotion Recognition, Time-series
                         Analysis, Multi-agents Trajectory Imputation/Prediction, Sports Analytics, Gaze Estimation,
                         Prompt
@@ -485,7 +497,7 @@
             <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
             <rect x="6" y="14" width="12" height="8"></rect>
         </svg>
-        Save as PDF
+        PDF로 저장
     </button>
 </body>
 
