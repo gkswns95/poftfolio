@@ -176,13 +176,14 @@
 
 #experience .experience-role {
     font-size: 1rem;
-    color: #2563eb !important; /* Resume Blue */
+    color: #2563eb !important;
+    /* Resume Blue */
     font-weight: 600;
     margin-bottom: 12px;
 }
 
 #experience .timeline-list li strong {
-    color: #111827;
+    color: #2563eb;
     font-weight: 700;
 }
 
@@ -197,7 +198,7 @@
     padding-left: 0;
 }
 
-#experience .timeline-list > li {
+#experience .timeline-list>li {
     margin-bottom: 15px;
     list-style-type: none;
 }
