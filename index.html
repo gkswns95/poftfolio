@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/publications.css">
     <link rel="stylesheet" href="css/awards.css">
     <link rel="stylesheet" href="css/selected-papers.css">
-    <link rel="stylesheet" href="css/study-note.css">
+
     <link rel="stylesheet" href="css/recommendations.css">
 </head>
 
@@ -183,16 +183,19 @@
                 <div class="card-decoration"></div>
             </div>
 
-            <!-- Study Note Card -->
-            <div class="card nav-card" data-target="study-note">
+            <!-- Resume Card -->
+            <div class="card nav-card" data-target="resume">
                 <div class="card-icon-wrapper">
                     <svg class="card-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14,2 14,8 20,8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <line x1="10" y1="9" x2="8" y2="9"></line>
                     </svg>
                 </div>
-                <h3>Study Note</h3>
-                <p>Learning & Notes</p>
+                <h3>Resume</h3>
+                <p>CV & Career</p>
                 <div class="card-decoration"></div>
             </div>
 
@@ -242,7 +245,7 @@
                     <li><button class="nav-item" data-target="papers">Publications</button></li>
                     <li><button class="nav-item" data-target="experience">Experience</button></li>
                     <li><button class="nav-item" data-target="awards">Awards</button></li>
-                    <li><button class="nav-item" data-target="study-note">Study Note</button></li>
+                    <li><button class="nav-item" data-target="resume">Resume</button></li>
                     <li><button class="nav-item" data-target="selected-papers">Selected Papers</button></li>
                     <li><button class="nav-item" data-target="etc">Recommendations</button></li>
                 </ul>
@@ -1165,31 +1168,73 @@
                     </div>
             </section>
 
-            <!-- Study Note Section -->
-            <section id="study-note" class="view-section">
+            <!-- Resume Section -->
+            <section id="resume" class="view-section">
                 <div class="container">
-                    <h2 class="section-title">Study Note</h2>
+                    <h2 class="section-title">Resume</h2>
 
-                    <div class="study-note-banner-container">
-                        <a href="https://www.notion.so/hj-ai-engineer/HJ-s-Study-note-289fae49895480d9bafac9fdf69a0194"
-                            target="_blank" rel="noopener noreferrer" class="study-note-banner-link">
-                            <div class="study-note-banner">
-                                <img src="images/study-note-banner.png" alt="HJ's Study Note" class="banner-image">
-                                <div class="banner-overlay">
-                                    <div class="banner-content">
-                                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white"
-                                            stroke-width="2" class="click-icon">
-                                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
-                                        </svg>
-                                        <p class="banner-text">Click to visit HJ's Study Note on Notion</p>
-                                        <p class="banner-subtext">Deep Learning, Coding Study, and more →</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="resume-viewer-controls"
+                        style="display: flex; gap: 12px; margin-bottom: 20px; align-items: center; flex-wrap: wrap;">
+                        <!-- Language Toggle -->
+                        <div class="resume-lang-toggle"
+                            style="display: flex; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05);">
+                            <button id="resume-lang-ko" class="resume-lang-btn active" onclick="switchResumeLang('ko')"
+                                style="padding: 8px 20px; border: none; cursor: pointer; font-weight: 600; font-size: 14px; transition: all 0.3s; background: var(--primary, #6366f1); color: #fff;">KO</button>
+                            <button id="resume-lang-en" class="resume-lang-btn" onclick="switchResumeLang('en')"
+                                style="padding: 8px 20px; border: none; cursor: pointer; font-weight: 600; font-size: 14px; transition: all 0.3s; background: transparent; color: rgba(255,255,255,0.6);">EN</button>
+                        </div>
+                        <!-- PDF Download -->
+                        <button id="resume-pdf-btn" onclick="downloadResumePdf()"
+                            style="padding: 8px 20px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.8); cursor: pointer; font-size: 14px; font-weight: 500; display: flex; align-items: center; gap: 6px; transition: all 0.3s;"
+                            onmouseover="this.style.background='rgba(255,255,255,0.12)'"
+                            onmouseout="this.style.background='rgba(255,255,255,0.05)'">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            PDF Download
+                        </button>
+                    </div>
+
+                    <div class="resume-iframe-wrapper"
+                        style="border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: #fff; box-shadow: 0 4px 24px rgba(0,0,0,0.2);">
+                        <iframe id="resume-iframe" src="resume_ko.html" style="width: 100%; height: 80vh; border: none;"
+                            title="Resume"></iframe>
                     </div>
                 </div>
             </section>
+
+            <script>
+                let currentResumeLang = 'ko';
+
+                function switchResumeLang(lang) {
+                    currentResumeLang = lang;
+                    const iframe = document.getElementById('resume-iframe');
+                    const koBtn = document.getElementById('resume-lang-ko');
+                    const enBtn = document.getElementById('resume-lang-en');
+
+                    if (lang === 'ko') {
+                        iframe.src = 'resume_ko.html';
+                        koBtn.style.background = 'var(--primary, #6366f1)';
+                        koBtn.style.color = '#fff';
+                        enBtn.style.background = 'transparent';
+                        enBtn.style.color = 'rgba(255,255,255,0.6)';
+                    } else {
+                        iframe.src = 'resume.html';
+                        enBtn.style.background = 'var(--primary, #6366f1)';
+                        enBtn.style.color = '#fff';
+                        koBtn.style.background = 'transparent';
+                        koBtn.style.color = 'rgba(255,255,255,0.6)';
+                    }
+                }
+
+                function downloadResumePdf() {
+                    const iframe = document.getElementById('resume-iframe');
+                    iframe.contentWindow.print();
+                }
+            </script>
 
             <!-- Selected Papers Section -->
             <section id="selected-papers" class="view-section">

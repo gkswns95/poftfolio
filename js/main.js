@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'experience': 'Experience',
         'papers': 'Publications',
         'awards': 'Awards',
+        'resume': 'Resume',
         'etc': 'Recommendations'
     };
 
