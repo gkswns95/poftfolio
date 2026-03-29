@@ -136,6 +136,8 @@
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: all 0.2s ease;
+    font-weight: normal;
+    /* Force normal weight for other authors */
 }
 
 .author-link.underline:hover {

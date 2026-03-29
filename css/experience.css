@@ -160,8 +160,58 @@
     }
 }
 
+/* Underline Styles from Resume */
+.underline {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Experience Specific Typography to match Resume */
+#experience .timeline-text-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+#experience .experience-role {
+    font-size: 1rem;
+    color: #2563eb !important; /* Resume Blue */
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+#experience .timeline-list li strong {
+    color: #111827;
+    font-weight: 700;
+}
+
+#experience .timeline-date {
+    font-weight: 600;
+    color: #4b5563;
+}
+
+/* Reset list styles for consistent look */
+#experience .timeline-list {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#experience .timeline-list > li {
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+#experience .timeline-list ul li {
+    margin-bottom: 4px;
+    color: #374151;
+    line-height: 1.6;
+}
+
 /* Timeline List Strong Elements - Consistent sizing */
 .timeline-list li>strong {
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.05rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 6px;
 }

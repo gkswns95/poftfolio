@@ -239,25 +239,32 @@ h6 {
 .hero-specialties {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 14px;
+    gap: 8px;
+    /* Slightly more space for readability */
+    margin-bottom: 18px;
+    /* Better separation */
 }
 
 .specialty-tag {
-    padding: 5px 12px;
-    background: rgba(37, 99, 235, 0.08);
-    border: 1px solid rgba(37, 99, 235, 0.15);
-    border-radius: 16px;
-    font-size: 0.8rem;
-    font-weight: 500;
+    padding: 6px 14px;
+    /* More elegant padding */
+    background: rgba(37, 99, 235, 0.06);
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    /* Slightly bolder for clarity */
     color: var(--primary);
-    transition: all 0.2s;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
 .specialty-tag:hover {
-    background: rgba(37, 99, 235, 0.12);
-    border-color: rgba(37, 99, 235, 0.25);
-    transform: translateY(-1px);
+    background: #FFFFFF;
+    border-color: var(--primary);
+    color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
 }
 
 /* Mini Stats */
@@ -752,6 +759,8 @@ h6 {
 /* Re-using existing styles for Papers, Timeline, etc. */
 .section-title {
     font-size: 2rem;
+    font-weight: 800;
+    color: #1a1a1a;
     margin-bottom: 40px;
 }
 

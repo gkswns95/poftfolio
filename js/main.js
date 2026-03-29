@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Setup paper card preview images
-    const paperCardsWithPreview = document.querySelectorAll('.paper-card[data-preview]');
+    const paperCardsWithPreview = document.querySelectorAll('[data-preview]');
     console.log('Paper cards with preview:', paperCardsWithPreview.length);
 
     paperCardsWithPreview.forEach(card => {
@@ -217,6 +217,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalCloseBtn = document.getElementById('modal-close-btn');
     const prevPaperBtn = document.getElementById('prev-paper-btn');
     const nextPaperBtn = document.getElementById('next-paper-btn');
+    const modalMaximizeBtn = document.getElementById('modal-maximize-btn');
+    const paperModal = document.querySelector('.paper-modal');
 
     // Modal Elements to Populate
     const modalVenue = document.getElementById('modal-venue');
@@ -241,6 +243,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function closePaperModal() {
         modalOverlay.classList.remove('active');
+        paperModal.classList.remove('fullscreen'); // Reset fullscreen on close
+        updateMaximizeIcon(false);
         document.body.style.overflow = ''; // Restore scrolling
     }
 
@@ -283,47 +287,50 @@ document.addEventListener('DOMContentLoaded', () => {
         if (detailVisual && modalVisuals) {
             const visualPath = detailVisual.textContent.trim();
             const gifPath = detailVisual.getAttribute('data-gif');
+            const hoverPath = detailVisual.getAttribute('data-hover');
 
             if (visualPath.toLowerCase().endsWith('.pdf')) {
                 modalVisuals.innerHTML = `<embed src="${visualPath}" type="application/pdf" width="100%" height="400px" style="border-radius: 8px;">`;
+            } else if (gifPath || hoverPath) {
+                const targetPath = gifPath || hoverPath;
+                const labelText = gifPath ? "▶️ Play animation" : "🔍 View Framework";
+
+                modalVisuals.innerHTML = `
+                    <div class="visual-container" style="position: relative; width: 100%; height: 100%;">
+                        <img src="${visualPath}" 
+                             data-static="${visualPath}" 
+                             data-target="${targetPath}" 
+                             alt="Paper Visual" 
+                             class="interactive-visual" 
+                             style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px; cursor: pointer; transition: opacity 0.3s;">
+                        <div class="visual-label" style="position: absolute; top: 10px; left: 10px; background: rgba(50, 50, 50, 0.75); color: white; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; pointer-events: none; backdrop-filter: blur(6px); transition: all 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                            ${labelText}
+                        </div>
+                    </div>`;
+
+                const img = modalVisuals.querySelector('.interactive-visual');
+                const label = modalVisuals.querySelector('.visual-label');
+                const preloadImg = new Image();
+                preloadImg.src = targetPath;
+
+                img.addEventListener('mouseenter', () => {
+                    img.src = targetPath;
+                    if (label) {
+                        label.style.opacity = '0';
+                        label.style.transform = 'translateY(-5px)';
+                    }
+                });
+                img.addEventListener('mouseleave', () => {
+                    img.src = visualPath;
+                    if (label) {
+                        label.style.opacity = '1';
+                        label.style.transform = 'translateY(0)';
+                    }
+                });
             } else {
-                if (gifPath) {
-                    // Interactive Image with GIF hover
-                    modalVisuals.innerHTML = `
-                        <div class="visual-container" style="position: relative; width: 100%; height: 100%;">
-                            <img src="${visualPath}" 
-                                 data-static="${visualPath}" 
-                                 data-gif="${gifPath}" 
-                                 alt="Paper Visual" 
-                                 class="interactive-visual" 
-                                 style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px; cursor: pointer; transition: opacity 0.3s;">
-                            <div class="visual-label" style="position: absolute; top: 10px; left: 10px; background: rgba(200, 200, 200, 0.9); color: white; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; pointer-events: none; backdrop-filter: blur(4px); transition: opacity 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
-                                ▶️ Play animation
-                            </div>
-                        </div>`;
-
-                    // Add event listeners
-                    const img = modalVisuals.querySelector('.interactive-visual');
-                    const label = modalVisuals.querySelector('.visual-label');
-
-                    // Preload GIF
-                    const preloadImg = new Image();
-                    preloadImg.src = gifPath;
-
-                    img.addEventListener('mouseenter', () => {
-                        img.src = gifPath;
-                        if (label) label.style.opacity = '0';
-                    });
-                    img.addEventListener('mouseleave', () => {
-                        img.src = visualPath;
-                        if (label) label.style.opacity = '1';
-                    });
-                } else {
-                    modalVisuals.innerHTML = `<img src="${visualPath}" alt="Paper Visual" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">`;
-                }
+                modalVisuals.innerHTML = `<img src="${visualPath}" alt="Paper Visual" style="width: 100%; height: 100%; object-fit: contain; border-radius: 8px;">`;
             }
         } else if (modalVisuals) {
-            // Restore placeholder
             modalVisuals.innerHTML = `
                 <div class="visual-placeholder">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -336,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>`;
         }
 
-        // Update Button States (Optional: Disable if start/end)
+        // Update Button States
         prevPaperBtn.style.opacity = index === 0 ? '0.5' : '1';
         prevPaperBtn.style.pointerEvents = index === 0 ? 'none' : 'auto';
 
@@ -357,7 +364,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 abstractKo.style.display = 'none';
                 abstractEn.style.display = 'block';
             }
-            // Always show 'Ko/En' regardless of current language
             if (langLabel) langLabel.textContent = 'Ko/En';
         }
     }
@@ -370,7 +376,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event Listeners for Cards
     paperCards.forEach((card, index) => {
         card.addEventListener('click', (e) => {
-            // Prevent triggering if clicking a link inside the card (if any)
             if (e.target.tagName === 'A') return;
             openPaperModal(index);
         });
@@ -385,6 +390,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const langToggleBtn = document.getElementById('lang-toggle-btn');
     if (langToggleBtn) {
         langToggleBtn.addEventListener('click', toggleLanguage);
+    }
+
+    // Fullscreen Toggle
+    if (modalMaximizeBtn) {
+        modalMaximizeBtn.addEventListener('click', () => {
+            paperModal.classList.toggle('fullscreen');
+            const isFullscreen = paperModal.classList.contains('fullscreen');
+            updateMaximizeIcon(isFullscreen);
+        });
+    }
+
+    function updateMaximizeIcon(isFullscreen) {
+        const maxIcon = modalMaximizeBtn.querySelector('.maximize-icon');
+        const minIcon = modalMaximizeBtn.querySelector('.minimize-icon');
+        if (isFullscreen) {
+            maxIcon.style.display = 'none';
+            minIcon.style.display = 'block';
+        } else {
+            maxIcon.style.display = 'block';
+            minIcon.style.display = 'none';
+        }
     }
 
     // Overlay Click to Close
@@ -420,7 +446,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!modalOverlay.classList.contains('active')) return;
 
         if (e.key === 'Escape') {
-            e.stopPropagation(); // Prevent event from bubbling to content viewer handler
+            e.stopPropagation();
             closePaperModal();
         } else if (e.key === 'ArrowLeft') {
             if (currentPaperIndex > 0) {
@@ -436,32 +462,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* =========================================
-       Recommendations Password Logic (Removed)
-       ========================================= */
-    // Password protection removed as per request.
-
-
-    /* =========================================
        Auto-calculate CAREER years
        ========================================= */
     function updateCareerYears() {
         const careerElement = document.getElementById('career-years');
         if (!careerElement) return;
 
-        const startDate = new Date('2024-01-01'); // Start date: January 1, 2024
+        const startDate = new Date('2024-01-01');
         const currentDate = new Date();
-
-        // Calculate difference in years
         const diffInMs = currentDate - startDate;
         const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365.25);
-
-        // Round up to nearest whole number
         const yearsRounded = Math.round(diffInYears);
-
         careerElement.textContent = yearsRounded;
     }
 
-    // Update on page load
     updateCareerYears();
-
 });
