@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const hoverPath = detailVisual.getAttribute('data-hover');
 
             if (visualPath.toLowerCase().endsWith('.pdf')) {
-                modalVisuals.innerHTML = `<embed src="${visualPath}" type="application/pdf" width="100%" height="400px" style="border-radius: 8px;">`;
+                modalVisuals.innerHTML = `<embed src="${visualPath}" type="application/pdf" class="modal-pdf-viewer" style="border-radius: 8px; width: 100%;">`;
             } else if (gifPath || hoverPath) {
                 const targetPath = gifPath || hoverPath;
                 const labelText = gifPath ? "▶️ Play animation" : "🔍 View Framework";
