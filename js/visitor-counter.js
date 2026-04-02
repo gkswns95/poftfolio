@@ -167,6 +167,7 @@
 
         if (hasLiked && likeBtn) {
             likeBtn.classList.add('liked');
+            likeBtn.style.cursor = 'default';
         }
 
         db.ref(`${DB_ROOT}/likes`).on('value', function (snapshot) {
@@ -187,47 +188,33 @@
     function toggleLike(likeBtn) {
         const hasLiked = localStorage.getItem(STORAGE_KEYS.liked) === 'true';
 
-        if (hasLiked) {
-            // Unlike
-            localStorage.setItem(STORAGE_KEYS.liked, 'false');
-            likeBtn.classList.remove('liked');
+        // 이미 좋아요를 누른 사람은 되돌릴 수 없음!
+        if (hasLiked) return;
 
-            if (isFirebaseReady) {
-                db.ref(`${DB_ROOT}/likes`).transaction(function (current) {
-                    return Math.max((current || 0) - 1, 0);
-                });
-            } else {
-                // Local mode
-                let localLikes = parseInt(localStorage.getItem(STORAGE_KEYS.localLikes) || '0', 10);
-                localLikes = Math.max(localLikes - 1, 0);
-                localStorage.setItem(STORAGE_KEYS.localLikes, localLikes);
-                animateNumber('like-count', 0, localLikes, 300);
-            }
+        // Like (one-way, irreversible)
+        localStorage.setItem(STORAGE_KEYS.liked, 'true');
+        likeBtn.classList.add('liked');
+        likeBtn.style.cursor = 'default';
+
+        // Trigger animations
+        likeBtn.classList.add('animate');
+        setTimeout(function () {
+            likeBtn.classList.remove('animate');
+        }, 600);
+
+        // Create floating heart particles
+        createHeartParticles(likeBtn);
+
+        if (isFirebaseReady) {
+            db.ref(`${DB_ROOT}/likes`).transaction(function (current) {
+                return (current || 0) + 1;
+            });
         } else {
-            // Like
-            localStorage.setItem(STORAGE_KEYS.liked, 'true');
-            likeBtn.classList.add('liked');
-
-            // Trigger animations
-            likeBtn.classList.add('animate');
-            setTimeout(function () {
-                likeBtn.classList.remove('animate');
-            }, 600);
-
-            // Create floating heart particles
-            createHeartParticles(likeBtn);
-
-            if (isFirebaseReady) {
-                db.ref(`${DB_ROOT}/likes`).transaction(function (current) {
-                    return (current || 0) + 1;
-                });
-            } else {
-                // Local mode
-                let localLikes = parseInt(localStorage.getItem(STORAGE_KEYS.localLikes) || '0', 10);
-                localLikes++;
-                localStorage.setItem(STORAGE_KEYS.localLikes, localLikes);
-                animateNumber('like-count', 0, localLikes, 300);
-            }
+            // Local mode
+            var localLikes = parseInt(localStorage.getItem(STORAGE_KEYS.localLikes) || '0', 10);
+            localLikes++;
+            localStorage.setItem(STORAGE_KEYS.localLikes, localLikes);
+            animateNumber('like-count', 0, localLikes, 300);
         }
     }
 
