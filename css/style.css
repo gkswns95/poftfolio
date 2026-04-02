@@ -1,7 +1,7 @@
 /* Global Overrides for Dashboard Layout */
 body {
-    overflow: hidden;
-    height: 100vh;
+    overflow: auto;
+    min-height: 100vh;
     background: var(--bg-surface-alt);
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
