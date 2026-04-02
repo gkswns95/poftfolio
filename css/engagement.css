@@ -267,47 +267,92 @@
 /* MacBook / smaller height screens */
 @media (max-height: 900px) {
     .engagement-section {
-        margin-top: 10px;
-        padding-top: 10px;
+        margin-top: 8px;
+        padding-top: 8px;
         gap: 8px;
     }
 
-
-
     .visitor-stat {
-        padding: 4px 9px;
-        gap: 5px;
+        padding: 3px 8px;
+        gap: 4px;
     }
 
     .visitor-count {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .visitor-label {
-        font-size: 0.65rem;
+        font-size: 0.6rem;
     }
 
     .visitor-stat-icon {
-        width: 13px;
-        height: 13px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .visitor-divider {
+        height: 14px;
     }
 
     .like-btn {
-        padding: 5px 12px 5px 9px;
-        gap: 5px;
+        padding: 4px 10px 4px 8px;
+        gap: 4px;
     }
 
     .heart-icon {
-        width: 17px;
-        height: 17px;
+        width: 16px;
+        height: 16px;
     }
 
     .like-count-text {
+        font-size: 0.75rem;
+    }
+}
+
+/* Very small height screens */
+@media (max-height: 750px) {
+    .engagement-section {
+        margin-top: 6px;
+        padding-top: 6px;
+        gap: 6px;
+    }
+
+    .visitor-stat {
+        padding: 2px 6px;
+        gap: 3px;
+        border-radius: 6px;
+    }
+
+    .visitor-count {
         font-size: 0.8rem;
     }
 
-    .like-message {
-        font-size: 0.72rem;
+    .visitor-label {
+        font-size: 0.55rem;
+    }
+
+    .visitor-stat-icon {
+        width: 11px;
+        height: 11px;
+    }
+
+    .visitor-divider {
+        height: 12px;
+    }
+
+    .like-btn {
+        padding: 3px 8px 3px 6px;
+        gap: 3px;
+        border-radius: 30px;
+    }
+
+    .heart-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .like-count-text {
+        font-size: 0.7rem;
     }
 }
 
@@ -320,7 +365,7 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-    .like-message {
-        font-size: 0.74rem;
+    .engagement-section {
+        gap: 8px;
     }
 }
