@@ -1459,7 +1459,7 @@
                                 </div>
                             </div>
                             <div class="doc-card-viewer">
-                                <iframe id="resume-iframe" src="resume_ko.html" title="Resume"></iframe>
+                                <iframe id="resume-iframe" src="resume_ko.html?v=1.1" title="Resume"></iframe>
                             </div>
                             <div class="doc-card-actions">
                                 <div class="doc-lang-toggle">
@@ -1534,12 +1534,12 @@
                     const downloadBtn = document.getElementById('resume-download-btn');
 
                     if (lang === 'ko') {
-                        iframe.src = 'resume_ko.html';
+                        iframe.src = 'resume_ko.html?v=1.1';
                         downloadBtn.href = 'resume_ko.html';
                         koBtn.classList.add('active');
                         enBtn.classList.remove('active');
                     } else {
-                        iframe.src = 'resume.html';
+                        iframe.src = 'resume.html?v=1.1';
                         downloadBtn.href = 'resume.html';
                         enBtn.classList.add('active');
                         koBtn.classList.remove('active');
